@@ -1,0 +1,186 @@
+const fs = require("fs");
+const path = require("path");
+
+const root = path.resolve(__dirname, "..");
+
+function walk(dir) {
+  const out = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name === ".git" || entry.name === "scripts") continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...walk(full));
+    else out.push(full);
+  }
+  return out;
+}
+
+function rel(file) {
+  return path.relative(root, file).replaceAll(path.sep, "/");
+}
+
+function titleCase(value) {
+  return value
+    .replace(/[_-]+/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase())
+    .replace(/\bTso\b/g, "TSO")
+    .replace(/\bCsv\b/g, "CSV")
+    .replace(/\bPng\b/g, "PNG")
+    .replace(/\bMape\b/g, "MAPE")
+    .replace(/\bMae\b/g, "MAE")
+    .replace(/\bPicp\b/g, "PICP")
+    .replace(/\bTabpfn\b/g, "TabPFN")
+    .replace(/\bChronos2\b/g, "Chronos2")
+    .replace(/\bXgboost\b/g, "XGBoost");
+}
+
+function domainOf(file) {
+  if (file.startsWith("load_forecast_outputs/")) return "Load";
+  if (file.startsWith("solar_forecast_outputs/")) return "Solar";
+  if (file.startsWith("wind_forecast_outputs/")) return "Wind";
+  return "Other";
+}
+
+function analysisType(file) {
+  const name = file.toLowerCase();
+  const base = path.basename(file).toLowerCase();
+  if (name.includes("accuracy") || name.includes("eval") || name.includes("mape") || name.includes("mae") || name.includes("scatter") || name.includes("absolute_error") || name.includes("signed_error")) return "Accuracy";
+  if (name.includes("stability") || name.includes("revision")) return "Stability";
+  if (name.includes("uncertainty") || name.includes("picp") || name.includes("badness") || name.includes("monthly")) return "Uncertainty";
+  if (name.includes("summary_plot") || name.includes("comparison") || name.includes("figure") || base.includes("summary") || base.includes("matrix")) return "Comparison and summary";
+  if (name.includes("prediction") || name.includes("day_ahead") || name.includes("actual") || name.includes("context") || base.includes("forecast")) return "Predictions and context";
+  return "Other";
+}
+
+function countryOf(file) {
+  const match = file.match(/(?:^|\/|_)(BE|DE|FR)(?:\/|_|$)/);
+  return match ? match[1] : "multi-country";
+}
+
+function modelOf(file) {
+  const compact = file.replace(/\.(csv|png)$/i, "");
+  const known = [
+    "Weekly_Persistence",
+    "TabPFN_Wind100mCovariates",
+    "TabPFN_NoCovariates",
+    "TabPFN",
+    "Chronos2_SunCovariate",
+    "Chronos2_NoCovariates",
+    "Chronos2_ZeroNight",
+    "Chronos2",
+    "XGBoost_Wind100mCovariates",
+    "XGBoost_NoCovariates",
+    "XGBoost",
+    "Persistence",
+    "Ridge",
+    "TSO",
+  ];
+  const found = known.find((token) => compact.toLowerCase().includes(token.toLowerCase()));
+  return found ? titleCase(found) : "multiple";
+}
+
+function describe(file) {
+  const base = path.basename(file, path.extname(file));
+  const type = analysisType(file).toLowerCase();
+  const country = countryOf(file);
+  const model = modelOf(file);
+  let subject = titleCase(base.replace(/^Figure_?\d+_?/i, ""));
+  subject = subject.replace(/\s+/g, " ").trim();
+  return `${type}; ${country}; ${model}; ${subject}.`;
+}
+
+function groupBy(items, keyFn) {
+  return items.reduce((groups, item) => {
+    const key = keyFn(item);
+    groups[key] ||= [];
+    groups[key].push(item);
+    return groups;
+  }, {});
+}
+
+function markdownLink(file) {
+  return `[${file}](${encodeURI(file).replaceAll("%2F", "/")})`;
+}
+
+const files = walk(root).map(rel).filter((file) => !file.startsWith(".git/"));
+const csvs = files.filter((file) => file.endsWith(".csv")).sort();
+const pngs = files.filter((file) => file.endsWith(".png")).sort();
+
+function makeDataGuide() {
+  const lines = [
+    "# Data Guide",
+    "",
+    "CSV artifacts are grouped by the same research domains used in the output folders. Within each domain, files are classified by analysis type so readers can jump directly to forecasts, accuracy, stability, and uncertainty results.",
+    "",
+    "## Category Map",
+    "",
+    "| Category | Folder | CSV files | Typical contents |",
+    "| --- | --- | ---: | --- |",
+  ];
+
+  for (const domain of ["Load", "Solar", "Wind"]) {
+    const domainFiles = csvs.filter((file) => domainOf(file) === domain);
+    const folder = domain === "Load" ? "load_forecast_outputs/" : domain === "Solar" ? "solar_forecast_outputs/" : "wind_forecast_outputs/";
+    lines.push(`| ${domain} | \`${folder}\` | ${domainFiles.length} | ${[...new Set(domainFiles.map(analysisType))].join(", ")} |`);
+  }
+
+  lines.push("", "## CSV Inventory", "");
+  for (const domain of ["Load", "Solar", "Wind", "Other"]) {
+    const domainFiles = csvs.filter((file) => domainOf(file) === domain);
+    if (!domainFiles.length) continue;
+    lines.push(`### ${domain}`, "");
+    const byType = groupBy(domainFiles, analysisType);
+    for (const type of Object.keys(byType).sort()) {
+      lines.push(`#### ${type}`, "");
+      lines.push("| File | Country | Model or scope |");
+      lines.push("| --- | --- | --- |");
+      for (const file of byType[type]) {
+        lines.push(`| ${markdownLink(file)} | ${countryOf(file)} | ${modelOf(file)} |`);
+      }
+      lines.push("");
+    }
+  }
+  return lines.join("\n");
+}
+
+function makePictureGuide() {
+  const lines = [
+    "# Picture Guide",
+    "",
+    "PNG figures are classified by domain and analysis type. Use the summary/comparison figures first for a quick read, then open country/model-specific images for detailed diagnostics.",
+    "",
+    "## Quick Classification",
+    "",
+    "| Domain | PNG files | Accuracy | Stability | Uncertainty | Comparison and summary | Other |",
+    "| --- | ---: | ---: | ---: | ---: | ---: | ---: |",
+  ];
+
+  for (const domain of ["Load", "Solar", "Wind"]) {
+    const domainFiles = pngs.filter((file) => domainOf(file) === domain);
+    const counts = groupBy(domainFiles, analysisType);
+    lines.push(`| ${domain} | ${domainFiles.length} | ${(counts.Accuracy || []).length} | ${(counts.Stability || []).length} | ${(counts.Uncertainty || []).length} | ${(counts["Comparison and summary"] || []).length} | ${(counts.Other || []).length} |`);
+  }
+
+  lines.push("", "## Figure Inventory", "");
+  for (const domain of ["Load", "Solar", "Wind", "Other"]) {
+    const domainFiles = pngs.filter((file) => domainOf(file) === domain);
+    if (!domainFiles.length) continue;
+    lines.push(`### ${domain}`, "");
+    const byType = groupBy(domainFiles, analysisType);
+    for (const type of Object.keys(byType).sort()) {
+      lines.push(`#### ${type}`, "");
+      lines.push("| Figure | Country | Model or scope | What to look for |");
+      lines.push("| --- | --- | --- | --- |");
+      for (const file of byType[type]) {
+        lines.push(`| ${markdownLink(file)} | ${countryOf(file)} | ${modelOf(file)} | ${describe(file)} |`);
+      }
+      lines.push("");
+    }
+  }
+  return lines.join("\n");
+}
+
+fs.writeFileSync(path.join(root, "DATA_GUIDE.md"), `${makeDataGuide()}\n`);
+fs.writeFileSync(path.join(root, "PICTURE_GUIDE.md"), `${makePictureGuide()}\n`);
+
+console.log(`Wrote DATA_GUIDE.md for ${csvs.length} CSV files`);
+console.log(`Wrote PICTURE_GUIDE.md for ${pngs.length} PNG files`);

@@ -6,17 +6,17 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 
 | Domain | PNG files | Accuracy | Stability | Uncertainty | Comparison and summary | Other |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Load | 39 | 6 | 3 | 6 | 24 | 0 |
+| Load | 57 | 6 | 21 | 6 | 24 | 0 |
 | Solar | 88 | 42 | 40 | 3 | 3 | 0 |
 | Wind | 404 | 191 | 207 | 6 | 0 | 0 |
 
 ## Figure Inventory
 
 <details>
-<summary>Load (39 figures)</summary>
+<summary>Load (57 figures)</summary>
 
 <details>
-<summary>BE (8 figures)</summary>
+<summary>BE (14 figures)</summary>
 
 #### Comparison and summary
 
@@ -31,10 +31,21 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Load Pred Vs Actual TabPFN Opt. |
 | [load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly%20Persistence.png) | BE | Persistence | comparison and summary; BE; Persistence; BE Load Pred Vs Actual Weekly Persistence. |
 
+#### Stability
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [load_forecast_outputs/figures/stability_cases/BE_stability_Chronos2.png](load_forecast_outputs/figures/stability_cases/BE_stability_Chronos2.png) | BE | Chronos2 | stability; BE; Chronos2; BE Stability Chronos2. |
+| [load_forecast_outputs/figures/stability_cases/BE_stability_Chronos2_opt.png](load_forecast_outputs/figures/stability_cases/BE_stability_Chronos2_opt.png) | BE | Chronos2 | stability; BE; Chronos2; BE Stability Chronos2 Opt. |
+| [load_forecast_outputs/figures/stability_cases/BE_stability_Ridge.png](load_forecast_outputs/figures/stability_cases/BE_stability_Ridge.png) | BE | Ridge | stability; BE; Ridge; BE Stability Ridge. |
+| [load_forecast_outputs/figures/stability_cases/BE_stability_Ridge_opt.png](load_forecast_outputs/figures/stability_cases/BE_stability_Ridge_opt.png) | BE | Ridge | stability; BE; Ridge; BE Stability Ridge Opt. |
+| [load_forecast_outputs/figures/stability_cases/BE_stability_TabPFN.png](load_forecast_outputs/figures/stability_cases/BE_stability_TabPFN.png) | BE | TabPFN | stability; BE; TabPFN; BE Stability TabPFN. |
+| [load_forecast_outputs/figures/stability_cases/BE_stability_TabPFN_opt.png](load_forecast_outputs/figures/stability_cases/BE_stability_TabPFN_opt.png) | BE | TabPFN | stability; BE; TabPFN; BE Stability TabPFN Opt. |
+
 </details>
 
 <details>
-<summary>DE (8 figures)</summary>
+<summary>DE (14 figures)</summary>
 
 #### Comparison and summary
 
@@ -49,10 +60,21 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Load Pred Vs Actual TabPFN Opt. |
 | [load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly%20Persistence.png) | DE | Persistence | comparison and summary; DE; Persistence; DE Load Pred Vs Actual Weekly Persistence. |
 
+#### Stability
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [load_forecast_outputs/figures/stability_cases/DE_stability_Chronos2.png](load_forecast_outputs/figures/stability_cases/DE_stability_Chronos2.png) | DE | Chronos2 | stability; DE; Chronos2; DE Stability Chronos2. |
+| [load_forecast_outputs/figures/stability_cases/DE_stability_Chronos2_opt.png](load_forecast_outputs/figures/stability_cases/DE_stability_Chronos2_opt.png) | DE | Chronos2 | stability; DE; Chronos2; DE Stability Chronos2 Opt. |
+| [load_forecast_outputs/figures/stability_cases/DE_stability_Ridge.png](load_forecast_outputs/figures/stability_cases/DE_stability_Ridge.png) | DE | Ridge | stability; DE; Ridge; DE Stability Ridge. |
+| [load_forecast_outputs/figures/stability_cases/DE_stability_Ridge_opt.png](load_forecast_outputs/figures/stability_cases/DE_stability_Ridge_opt.png) | DE | Ridge | stability; DE; Ridge; DE Stability Ridge Opt. |
+| [load_forecast_outputs/figures/stability_cases/DE_stability_TabPFN.png](load_forecast_outputs/figures/stability_cases/DE_stability_TabPFN.png) | DE | TabPFN | stability; DE; TabPFN; DE Stability TabPFN. |
+| [load_forecast_outputs/figures/stability_cases/DE_stability_TabPFN_opt.png](load_forecast_outputs/figures/stability_cases/DE_stability_TabPFN_opt.png) | DE | TabPFN | stability; DE; TabPFN; DE Stability TabPFN Opt. |
+
 </details>
 
 <details>
-<summary>FR (8 figures)</summary>
+<summary>FR (14 figures)</summary>
 
 #### Comparison and summary
 
@@ -66,6 +88,17 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Load Pred Vs Actual TabPFN. |
 | [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Load Pred Vs Actual TabPFN Opt. |
 | [load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly%20Persistence.png) | FR | Persistence | comparison and summary; FR; Persistence; FR Load Pred Vs Actual Weekly Persistence. |
+
+#### Stability
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [load_forecast_outputs/figures/stability_cases/FR_stability_Chronos2.png](load_forecast_outputs/figures/stability_cases/FR_stability_Chronos2.png) | FR | Chronos2 | stability; FR; Chronos2; FR Stability Chronos2. |
+| [load_forecast_outputs/figures/stability_cases/FR_stability_Chronos2_opt.png](load_forecast_outputs/figures/stability_cases/FR_stability_Chronos2_opt.png) | FR | Chronos2 | stability; FR; Chronos2; FR Stability Chronos2 Opt. |
+| [load_forecast_outputs/figures/stability_cases/FR_stability_Ridge.png](load_forecast_outputs/figures/stability_cases/FR_stability_Ridge.png) | FR | Ridge | stability; FR; Ridge; FR Stability Ridge. |
+| [load_forecast_outputs/figures/stability_cases/FR_stability_Ridge_opt.png](load_forecast_outputs/figures/stability_cases/FR_stability_Ridge_opt.png) | FR | Ridge | stability; FR; Ridge; FR Stability Ridge Opt. |
+| [load_forecast_outputs/figures/stability_cases/FR_stability_TabPFN.png](load_forecast_outputs/figures/stability_cases/FR_stability_TabPFN.png) | FR | TabPFN | stability; FR; TabPFN; FR Stability TabPFN. |
+| [load_forecast_outputs/figures/stability_cases/FR_stability_TabPFN_opt.png](load_forecast_outputs/figures/stability_cases/FR_stability_TabPFN_opt.png) | FR | TabPFN | stability; FR; TabPFN; FR Stability TabPFN Opt. |
 
 </details>
 

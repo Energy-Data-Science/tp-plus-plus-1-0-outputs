@@ -56,6 +56,12 @@ function countryOf(file) {
   return match ? match[1] : "multi-country";
 }
 
+function windSegmentOf(file) {
+  if (/Wind[_/]Onshore/i.test(file)) return "Onshore";
+  if (/Wind[_/]Offshore/i.test(file)) return "Offshore";
+  return "Summary and comparison";
+}
+
 function modelOf(file) {
   const compact = file.replace(/\.(csv|png)$/i, "");
   const known = [
@@ -99,6 +105,28 @@ function groupBy(items, keyFn) {
 
 function markdownLink(file) {
   return `[${file}](${encodeURI(file).replaceAll("%2F", "/")})`;
+}
+
+function detailsStart(lines, summary) {
+  lines.push("<details>", `<summary>${summary}</summary>`, "");
+}
+
+function detailsEnd(lines) {
+  lines.push("</details>", "");
+}
+
+function pushFigureTables(lines, filesForSection, headingLevel = 4) {
+  const marks = "#".repeat(headingLevel);
+  const byType = groupBy(filesForSection, analysisType);
+  for (const type of Object.keys(byType).sort()) {
+    lines.push(`${marks} ${type}`, "");
+    lines.push("| Figure | Country | Model or scope | What to look for |");
+    lines.push("| --- | --- | --- | --- |");
+    for (const file of byType[type]) {
+      lines.push(`| ${markdownLink(file)} | ${countryOf(file)} | ${modelOf(file)} | ${describe(file)} |`);
+    }
+    lines.push("");
+  }
 }
 
 const files = walk(root).map(rel).filter((file) => !file.startsWith(".git/"));
@@ -146,7 +174,7 @@ function makePictureGuide() {
   const lines = [
     "# Picture Guide",
     "",
-    "PNG figures are classified by domain and analysis type. Use the summary/comparison figures first for a quick read, then open country/model-specific images for detailed diagnostics.",
+    "PNG figures are classified by domain and analysis type. Use the expandable sections to move from domain to country-specific or wind-type-specific diagnostics.",
     "",
     "## Quick Classification",
     "",
@@ -161,20 +189,45 @@ function makePictureGuide() {
   }
 
   lines.push("", "## Figure Inventory", "");
-  for (const domain of ["Load", "Solar", "Wind", "Other"]) {
+
+  for (const domain of ["Load", "Solar"]) {
     const domainFiles = pngs.filter((file) => domainOf(file) === domain);
     if (!domainFiles.length) continue;
-    lines.push(`### ${domain}`, "");
-    const byType = groupBy(domainFiles, analysisType);
-    for (const type of Object.keys(byType).sort()) {
-      lines.push(`#### ${type}`, "");
-      lines.push("| Figure | Country | Model or scope | What to look for |");
-      lines.push("| --- | --- | --- | --- |");
-      for (const file of byType[type]) {
-        lines.push(`| ${markdownLink(file)} | ${countryOf(file)} | ${modelOf(file)} | ${describe(file)} |`);
-      }
-      lines.push("");
+    detailsStart(lines, `${domain} (${domainFiles.length} figures)`);
+    for (const country of ["BE", "DE", "FR", "multi-country"]) {
+      const countryFiles = domainFiles.filter((file) => countryOf(file) === country);
+      if (!countryFiles.length) continue;
+      detailsStart(lines, `${country} (${countryFiles.length} figures)`);
+      pushFigureTables(lines, countryFiles);
+      detailsEnd(lines);
     }
+    detailsEnd(lines);
+  }
+
+  const windFiles = pngs.filter((file) => domainOf(file) === "Wind");
+  if (windFiles.length) {
+    detailsStart(lines, `Wind (${windFiles.length} figures)`);
+    for (const segment of ["Onshore", "Offshore", "Summary and comparison"]) {
+      const segmentFiles = windFiles.filter((file) => windSegmentOf(file) === segment);
+      if (!segmentFiles.length) continue;
+      detailsStart(lines, `${segment} (${segmentFiles.length} figures)`);
+      for (const country of ["BE", "DE", "FR", "multi-country"]) {
+        const countryFiles = segmentFiles.filter((file) => countryOf(file) === country);
+        if (!countryFiles.length) continue;
+        detailsStart(lines, `${country} (${countryFiles.length} figures)`);
+        pushFigureTables(lines, countryFiles);
+        detailsEnd(lines);
+      }
+      detailsEnd(lines);
+    }
+    detailsEnd(lines);
+  }
+
+  const otherFiles = pngs.filter((file) => domainOf(file) === "Other");
+  if (otherFiles.length) {
+    detailsStart(lines, `Other (${otherFiles.length} figures)`);
+    pushFigureTables(lines, otherFiles);
+    detailsEnd(lines);
   }
   return lines.join("\n");
 }

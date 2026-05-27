@@ -7,7 +7,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | Domain | PNG files | Accuracy | Stability | Uncertainty | Comparison and summary | Other |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Load | 57 | 6 | 21 | 6 | 24 | 0 |
-| Solar | 88 | 42 | 40 | 3 | 3 | 0 |
+| Solar | 97 | 42 | 49 | 3 | 3 | 0 |
 | Wind | 404 | 191 | 207 | 6 | 0 | 0 |
 
 ## Figure Inventory
@@ -140,7 +140,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>Solar (88 figures)</summary>
+<summary>Solar (97 figures)</summary>
 
 <details>
 <summary>BE (28 figures)</summary>
@@ -239,7 +239,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>FR (19 figures)</summary>
+<summary>FR (28 figures)</summary>
 
 #### Accuracy
 
@@ -268,6 +268,15 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_NoCovariate_stability_Stability01_revision_over_time.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_NoCovariate_stability_Stability01_revision_over_time.png) | FR | Chronos2 | stability; FR; Chronos2; FR Solar Chronos2 NoCovariate Stability Stability01 Revision Over Time. |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_NoCovariate_stability_Stability02_revision_by_hour.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_NoCovariate_stability_Stability02_revision_by_hour.png) | FR | Chronos2 | stability; FR; Chronos2; FR Solar Chronos2 NoCovariate Stability Stability02 Revision By Hour. |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_NoCovariate_stability_Stability03_revision_distribution.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_NoCovariate_stability_Stability03_revision_distribution.png) | FR | Chronos2 | stability; FR; Chronos2; FR Solar Chronos2 NoCovariate Stability Stability03 Revision Distribution. |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_SunCovariate_stability_Stability01_revision_over_time.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_SunCovariate_stability_Stability01_revision_over_time.png) | FR | Chronos2 SunCovariate | stability; FR; Chronos2 SunCovariate; FR Solar Chronos2 SunCovariate Stability Stability01 Revision Over Time. |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_SunCovariate_stability_Stability02_revision_by_hour.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_SunCovariate_stability_Stability02_revision_by_hour.png) | FR | Chronos2 SunCovariate | stability; FR; Chronos2 SunCovariate; FR Solar Chronos2 SunCovariate Stability Stability02 Revision By Hour. |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_SunCovariate_stability_Stability03_revision_distribution.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_SunCovariate_stability_Stability03_revision_distribution.png) | FR | Chronos2 SunCovariate | stability; FR; Chronos2 SunCovariate; FR Solar Chronos2 SunCovariate Stability Stability03 Revision Distribution. |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_XGBoost_stability_Stability01_revision_over_time.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_XGBoost_stability_Stability01_revision_over_time.png) | FR | XGBoost | stability; FR; XGBoost; FR Solar XGBoost Stability Stability01 Revision Over Time. |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_XGBoost_stability_Stability02_revision_by_hour.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_XGBoost_stability_Stability02_revision_by_hour.png) | FR | XGBoost | stability; FR; XGBoost; FR Solar XGBoost Stability Stability02 Revision By Hour. |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_XGBoost_stability_Stability03_revision_distribution.png](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_XGBoost_stability_Stability03_revision_distribution.png) | FR | XGBoost | stability; FR; XGBoost; FR Solar XGBoost Stability Stability03 Revision Distribution. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_stability_Stability01_revision_over_time.png](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_stability_Stability01_revision_over_time.png) | FR | TabPFN | stability; FR; TabPFN; FR Solar TabPFN Test0 NoCovariate Stability Stability01 Revision Over Time. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_stability_Stability02_revision_by_hour.png](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_stability_Stability02_revision_by_hour.png) | FR | TabPFN | stability; FR; TabPFN; FR Solar TabPFN Test0 NoCovariate Stability Stability02 Revision By Hour. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_stability_Stability03_revision_distribution.png](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_stability_Stability03_revision_distribution.png) | FR | TabPFN | stability; FR; TabPFN; FR Solar TabPFN Test0 NoCovariate Stability Stability03 Revision Distribution. |

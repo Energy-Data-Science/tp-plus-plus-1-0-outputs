@@ -4,11 +4,11 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 
 ## Quick Classification
 
-| Domain | PNG files | Accuracy | Stability | Uncertainty | Comparison and summary | Other |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Load | 57 | 6 | 21 | 6 | 24 | 0 |
-| Solar | 97 | 42 | 49 | 3 | 3 | 0 |
-| Wind | 163 | 82 | 75 | 6 | 0 | 0 |
+| Domain | PNG files | Accuracy | Stability | Uncertainty | Predictions and context | Comparison and summary | Other |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Load | 57 | 6 | 21 | 6 | 24 | 0 | 0 |
+| Solar | 97 | 42 | 49 | 3 | 0 | 3 | 0 |
+| Wind | 163 | 72 | 72 | 0 | 0 | 19 | 0 |
 
 ## Figure Inventory
 
@@ -18,18 +18,18 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <details>
 <summary>BE (14 figures)</summary>
 
-#### Comparison and summary
+#### Predictions and context
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2.png) | BE | Chronos2 | comparison and summary; BE; Chronos2; BE Load Pred Vs Actual Chronos2. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2_opt.png) | BE | Chronos2 | comparison and summary; BE; Chronos2; BE Load Pred Vs Actual Chronos2 Opt. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge.png) | BE | Ridge | comparison and summary; BE; Ridge; BE Load Pred Vs Actual Ridge. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge_opt.png) | BE | Ridge | comparison and summary; BE; Ridge; BE Load Pred Vs Actual Ridge Opt. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TSO.png) | BE | TSO | comparison and summary; BE; TSO; BE Load Pred Vs Actual TSO. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Load Pred Vs Actual TabPFN. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Load Pred Vs Actual TabPFN Opt. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly%20Persistence.png) | BE | Persistence | comparison and summary; BE; Persistence; BE Load Pred Vs Actual Weekly Persistence. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2.png) | BE | Chronos2 | predictions and context; BE; Chronos2; BE Load Pred Vs Actual Chronos2. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2_opt.png) | BE | Chronos2 | predictions and context; BE; Chronos2; BE Load Pred Vs Actual Chronos2 Opt. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge.png) | BE | Ridge | predictions and context; BE; Ridge; BE Load Pred Vs Actual Ridge. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge_opt.png) | BE | Ridge | predictions and context; BE; Ridge; BE Load Pred Vs Actual Ridge Opt. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TSO.png) | BE | TSO | predictions and context; BE; TSO; BE Load Pred Vs Actual TSO. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN.png) | BE | TabPFN | predictions and context; BE; TabPFN; BE Load Pred Vs Actual TabPFN. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png) | BE | TabPFN | predictions and context; BE; TabPFN; BE Load Pred Vs Actual TabPFN Opt. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly%20Persistence.png) | BE | Persistence | predictions and context; BE; Persistence; BE Load Pred Vs Actual Weekly Persistence. |
 
 #### Stability
 
@@ -47,18 +47,18 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <details>
 <summary>DE (14 figures)</summary>
 
-#### Comparison and summary
+#### Predictions and context
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2.png) | DE | Chronos2 | comparison and summary; DE; Chronos2; DE Load Pred Vs Actual Chronos2. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2_opt.png) | DE | Chronos2 | comparison and summary; DE; Chronos2; DE Load Pred Vs Actual Chronos2 Opt. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge.png) | DE | Ridge | comparison and summary; DE; Ridge; DE Load Pred Vs Actual Ridge. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge_opt.png) | DE | Ridge | comparison and summary; DE; Ridge; DE Load Pred Vs Actual Ridge Opt. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TSO.png) | DE | TSO | comparison and summary; DE; TSO; DE Load Pred Vs Actual TSO. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Load Pred Vs Actual TabPFN. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Load Pred Vs Actual TabPFN Opt. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly%20Persistence.png) | DE | Persistence | comparison and summary; DE; Persistence; DE Load Pred Vs Actual Weekly Persistence. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2.png) | DE | Chronos2 | predictions and context; DE; Chronos2; DE Load Pred Vs Actual Chronos2. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2_opt.png) | DE | Chronos2 | predictions and context; DE; Chronos2; DE Load Pred Vs Actual Chronos2 Opt. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge.png) | DE | Ridge | predictions and context; DE; Ridge; DE Load Pred Vs Actual Ridge. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge_opt.png) | DE | Ridge | predictions and context; DE; Ridge; DE Load Pred Vs Actual Ridge Opt. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TSO.png) | DE | TSO | predictions and context; DE; TSO; DE Load Pred Vs Actual TSO. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN.png) | DE | TabPFN | predictions and context; DE; TabPFN; DE Load Pred Vs Actual TabPFN. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png) | DE | TabPFN | predictions and context; DE; TabPFN; DE Load Pred Vs Actual TabPFN Opt. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly%20Persistence.png) | DE | Persistence | predictions and context; DE; Persistence; DE Load Pred Vs Actual Weekly Persistence. |
 
 #### Stability
 
@@ -76,18 +76,18 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <details>
 <summary>FR (14 figures)</summary>
 
-#### Comparison and summary
+#### Predictions and context
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2.png) | FR | Chronos2 | comparison and summary; FR; Chronos2; FR Load Pred Vs Actual Chronos2. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2_opt.png) | FR | Chronos2 | comparison and summary; FR; Chronos2; FR Load Pred Vs Actual Chronos2 Opt. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge.png) | FR | Ridge | comparison and summary; FR; Ridge; FR Load Pred Vs Actual Ridge. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge_opt.png) | FR | Ridge | comparison and summary; FR; Ridge; FR Load Pred Vs Actual Ridge Opt. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TSO.png) | FR | TSO | comparison and summary; FR; TSO; FR Load Pred Vs Actual TSO. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Load Pred Vs Actual TabPFN. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Load Pred Vs Actual TabPFN Opt. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly%20Persistence.png) | FR | Persistence | comparison and summary; FR; Persistence; FR Load Pred Vs Actual Weekly Persistence. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2.png) | FR | Chronos2 | predictions and context; FR; Chronos2; FR Load Pred Vs Actual Chronos2. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2_opt.png) | FR | Chronos2 | predictions and context; FR; Chronos2; FR Load Pred Vs Actual Chronos2 Opt. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge.png) | FR | Ridge | predictions and context; FR; Ridge; FR Load Pred Vs Actual Ridge. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge_opt.png) | FR | Ridge | predictions and context; FR; Ridge; FR Load Pred Vs Actual Ridge Opt. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TSO.png) | FR | TSO | predictions and context; FR; TSO; FR Load Pred Vs Actual TSO. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png) | FR | TabPFN | predictions and context; FR; TabPFN; FR Load Pred Vs Actual TabPFN. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png) | FR | TabPFN | predictions and context; FR; TabPFN; FR Load Pred Vs Actual TabPFN Opt. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly%20Persistence.png) | FR | Persistence | predictions and context; FR; Persistence; FR Load Pred Vs Actual Weekly Persistence. |
 
 #### Stability
 
@@ -346,7 +346,13 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/accuracy/scatter.png) | BE | XGBoost NoCovariates | accuracy; BE; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | BE | XGBoost Wind100mCovariates | accuracy; BE; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | BE | XGBoost Wind100mCovariates | accuracy; BE; XGBoost Wind100mCovariates; Scatter. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Wind Onshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
+
+#### Comparison and summary
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Onshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
 
 #### Stability
 
@@ -364,12 +370,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png) | BE | XGBoost Wind100mCovariates | stability; BE; XGBoost Wind100mCovariates; Revision By Hour. |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png) | BE | XGBoost Wind100mCovariates | stability; BE; XGBoost Wind100mCovariates; Revision Distribution. |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png) | BE | XGBoost Wind100mCovariates | stability; BE; XGBoost Wind100mCovariates; Revision Over Time. |
-
-#### Uncertainty
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | uncertainty; BE; TabPFN; BE Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
 
 </details>
 
@@ -393,6 +393,12 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | DE | XGBoost Wind100mCovariates | accuracy; DE; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | DE | XGBoost Wind100mCovariates | accuracy; DE; XGBoost Wind100mCovariates; Scatter. |
 
+#### Comparison and summary
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+
 #### Stability
 
 | Figure | Country | Model or scope | What to look for |
@@ -409,12 +415,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png) | DE | XGBoost Wind100mCovariates | stability; DE; XGBoost Wind100mCovariates; Revision By Hour. |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png) | DE | XGBoost Wind100mCovariates | stability; DE; XGBoost Wind100mCovariates; Revision Distribution. |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png) | DE | XGBoost Wind100mCovariates | stability; DE; XGBoost Wind100mCovariates; Revision Over Time. |
-
-#### Uncertainty
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | uncertainty; DE; TabPFN; DE Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
 
 </details>
 
@@ -438,6 +438,12 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | FR | XGBoost Wind100mCovariates | accuracy; FR; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | FR | XGBoost Wind100mCovariates | accuracy; FR; XGBoost Wind100mCovariates; Scatter. |
 
+#### Comparison and summary
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+
 #### Stability
 
 | Figure | Country | Model or scope | What to look for |
@@ -454,12 +460,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png) | FR | XGBoost Wind100mCovariates | stability; FR; XGBoost Wind100mCovariates; Revision By Hour. |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png) | FR | XGBoost Wind100mCovariates | stability; FR; XGBoost Wind100mCovariates; Revision Distribution. |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png) | FR | XGBoost Wind100mCovariates | stability; FR; XGBoost Wind100mCovariates; Revision Over Time. |
-
-#### Uncertainty
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | uncertainty; FR; TabPFN; FR Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
 
 </details>
 
@@ -487,7 +487,13 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png) | BE | XGBoost NoCovariates | accuracy; BE; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | BE | XGBoost Wind100mCovariates | accuracy; BE; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | BE | XGBoost Wind100mCovariates | accuracy; BE; XGBoost Wind100mCovariates; Scatter. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Wind Offshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
+
+#### Comparison and summary
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Offshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
 
 #### Stability
 
@@ -505,12 +511,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png) | BE | XGBoost Wind100mCovariates | stability; BE; XGBoost Wind100mCovariates; Revision By Hour. |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png) | BE | XGBoost Wind100mCovariates | stability; BE; XGBoost Wind100mCovariates; Revision Distribution. |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png) | BE | XGBoost Wind100mCovariates | stability; BE; XGBoost Wind100mCovariates; Revision Over Time. |
-
-#### Uncertainty
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | uncertainty; BE; TabPFN; BE Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
 
 </details>
 
@@ -534,6 +534,12 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | DE | XGBoost Wind100mCovariates | accuracy; DE; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | DE | XGBoost Wind100mCovariates | accuracy; DE; XGBoost Wind100mCovariates; Scatter. |
 
+#### Comparison and summary
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+
 #### Stability
 
 | Figure | Country | Model or scope | What to look for |
@@ -550,12 +556,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.png) | DE | XGBoost Wind100mCovariates | stability; DE; XGBoost Wind100mCovariates; Revision By Hour. |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png) | DE | XGBoost Wind100mCovariates | stability; DE; XGBoost Wind100mCovariates; Revision Distribution. |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png) | DE | XGBoost Wind100mCovariates | stability; DE; XGBoost Wind100mCovariates; Revision Over Time. |
-
-#### Uncertainty
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | uncertainty; DE; TabPFN; DE Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
 
 </details>
 
@@ -578,7 +578,13 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png) | FR | XGBoost NoCovariates | accuracy; FR; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | FR | XGBoost Wind100mCovariates | accuracy; FR; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | FR | XGBoost Wind100mCovariates | accuracy; FR; XGBoost Wind100mCovariates; Scatter. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | FR | TabPFN | accuracy; FR; TabPFN; FR Wind Offshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
+
+#### Comparison and summary
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Offshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
 
 #### Stability
 
@@ -597,12 +603,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_distribution.png) | FR | XGBoost Wind100mCovariates | stability; FR; XGBoost Wind100mCovariates; Revision Distribution. |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/stability/revision_over_time.png) | FR | XGBoost Wind100mCovariates | stability; FR; XGBoost Wind100mCovariates; Revision Over Time. |
 
-#### Uncertainty
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | uncertainty; FR; TabPFN; FR Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
-
 </details>
 
 </details>
@@ -613,65 +613,50 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <details>
 <summary>BE (3 figures)</summary>
 
-#### Accuracy
+#### Comparison and summary
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_TSO_absolute_error_by_3h.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Wind Forecast TSO Absolute Error By 3h. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
-
-#### Stability
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | stability; BE; TabPFN; BE Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_TSO_absolute_error_by_3h.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Forecast TSO Absolute Error By 3h. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
 
 </details>
 
 <details>
 <summary>DE (3 figures)</summary>
 
-#### Accuracy
+#### Comparison and summary
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_TSO_absolute_error_by_3h.png) | DE | TabPFN | accuracy; DE; TabPFN; DE Wind Forecast TSO Absolute Error By 3h. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | accuracy; DE; TabPFN; DE Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
-
-#### Stability
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | stability; DE; TabPFN; DE Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_TSO_absolute_error_by_3h.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Forecast TSO Absolute Error By 3h. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
 
 </details>
 
 <details>
 <summary>FR (3 figures)</summary>
 
-#### Accuracy
+#### Comparison and summary
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_TSO_absolute_error_by_3h.png) | FR | TabPFN | accuracy; FR; TabPFN; FR Wind Forecast TSO Absolute Error By 3h. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | accuracy; FR; TabPFN; FR Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
-
-#### Stability
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | stability; FR; TabPFN; FR Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_TSO_absolute_error_by_3h.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Forecast TSO Absolute Error By 3h. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
 
 </details>
 
 <details>
 <summary>multi-country (1 figures)</summary>
 
-#### Accuracy
+#### Comparison and summary
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_TSO_signed_error_by_country.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_TSO_signed_error_by_country.png) | multi-country | TabPFN | accuracy; multi-country; TabPFN; Wind Forecast TSO Signed Error By Country. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_TSO_signed_error_by_country.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_TSO_signed_error_by_country.png) | multi-country | TabPFN | comparison and summary; multi-country; TabPFN; Wind Forecast TSO Signed Error By Country. |
 
 </details>
 

@@ -6,9 +6,9 @@ CSV artifacts are grouped by the same research domains used in the output folder
 
 | Category | Folder | CSV files | Typical contents |
 | --- | --- | ---: | --- |
-| Load | `load_forecast_outputs/` | 39 | Predictions and context, Accuracy, Stability, Uncertainty |
-| Solar | `solar_forecast_outputs/` | 122 | Accuracy, Stability, Predictions and context, Uncertainty |
-| Wind | `wind_forecast_outputs/` | 287 | Accuracy, Predictions and context, Stability, Uncertainty |
+| Load | `load_forecast_outputs/` | 39 | Predictions and context, Comparison and summary, Accuracy, Stability, Uncertainty |
+| Solar | `solar_forecast_outputs/` | 122 | Comparison and summary, Accuracy, Stability, Predictions and context, Uncertainty |
+| Wind | `wind_forecast_outputs/` | 287 | Accuracy, Predictions and context, Stability, Uncertainty, Comparison and summary |
 
 ## CSV Inventory
 
@@ -18,9 +18,16 @@ CSV artifacts are grouped by the same research domains used in the output folder
 
 | File | Country | Model or scope |
 | --- | --- | --- |
-| [load_forecast_outputs/csv/accuracy_mape_matrix.csv](load_forecast_outputs/csv/accuracy_mape_matrix.csv) | multi-country | multiple |
 | [load_forecast_outputs/csv/accuracy_metrics.csv](load_forecast_outputs/csv/accuracy_metrics.csv) | multi-country | multiple |
 | [load_forecast_outputs/csv/plotting_accuracy_metrics_from_individual_files.csv](load_forecast_outputs/csv/plotting_accuracy_metrics_from_individual_files.csv) | multi-country | multiple |
+
+#### Comparison and summary
+
+| File | Country | Model or scope |
+| --- | --- | --- |
+| [load_forecast_outputs/csv/accuracy_mape_matrix.csv](load_forecast_outputs/csv/accuracy_mape_matrix.csv) | multi-country | multiple |
+| [load_forecast_outputs/csv/stability_revision_pct_matrix.csv](load_forecast_outputs/csv/stability_revision_pct_matrix.csv) | multi-country | multiple |
+| [load_forecast_outputs/csv/uncertainty_picp_matrix.csv](load_forecast_outputs/csv/uncertainty_picp_matrix.csv) | multi-country | multiple |
 
 #### Predictions and context
 
@@ -61,7 +68,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [load_forecast_outputs/csv/plotting_stability_metrics_from_individual_files.csv](load_forecast_outputs/csv/plotting_stability_metrics_from_individual_files.csv) | multi-country | multiple |
 | [load_forecast_outputs/csv/revision_detail.csv](load_forecast_outputs/csv/revision_detail.csv) | multi-country | multiple |
 | [load_forecast_outputs/csv/stability_metrics.csv](load_forecast_outputs/csv/stability_metrics.csv) | multi-country | multiple |
-| [load_forecast_outputs/csv/stability_revision_pct_matrix.csv](load_forecast_outputs/csv/stability_revision_pct_matrix.csv) | multi-country | multiple |
 
 #### Uncertainty
 
@@ -71,7 +77,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [load_forecast_outputs/csv/plotting_uncertainty_metrics_from_individual_files.csv](load_forecast_outputs/csv/plotting_uncertainty_metrics_from_individual_files.csv) | multi-country | multiple |
 | [load_forecast_outputs/csv/uncertainty_metrics.csv](load_forecast_outputs/csv/uncertainty_metrics.csv) | multi-country | multiple |
 | [load_forecast_outputs/csv/uncertainty_metrics_by_3h_block.csv](load_forecast_outputs/csv/uncertainty_metrics_by_3h_block.csv) | multi-country | multiple |
-| [load_forecast_outputs/csv/uncertainty_picp_matrix.csv](load_forecast_outputs/csv/uncertainty_picp_matrix.csv) | multi-country | multiple |
 
 ### Solar
 
@@ -79,13 +84,10 @@ CSV artifacts are grouped by the same research domains used in the output folder
 
 | File | Country | Model or scope |
 | --- | --- | --- |
-| [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_AllModels_comparison_accuracy.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_AllModels_comparison_accuracy.csv) | BE | multiple |
 | [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Benchmark_accuracy_summary.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Benchmark_accuracy_summary.csv) | BE | multiple |
-| [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_AllModels_comparison_accuracy.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_AllModels_comparison_accuracy.csv) | DE | multiple |
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Benchmark_accuracy_summary.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Benchmark_accuracy_summary.csv) | DE | multiple |
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_XGBoost_accuracy_summary.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_XGBoost_accuracy_summary.csv) | DE | XGBoost |
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_XGBoost_prediction_eval.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_XGBoost_prediction_eval.csv) | DE | XGBoost |
-| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_AllModels_comparison_accuracy.csv](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_AllModels_comparison_accuracy.csv) | FR | multiple |
 | [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Benchmark_accuracy_summary.csv](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Benchmark_accuracy_summary.csv) | FR | multiple |
 | [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test0_NoCovariate_accuracy_hourly_mape.csv](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test0_NoCovariate_accuracy_hourly_mape.csv) | BE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test0_NoCovariate_accuracy_summary.csv](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test0_NoCovariate_accuracy_summary.csv) | BE | TabPFN |
@@ -93,20 +95,30 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.csv](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.csv) | BE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_summary.csv](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_summary.csv) | BE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_results_eval.csv](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_results_eval.csv) | BE | TabPFN |
-| [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_comparison_accuracy_metrics.csv](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_comparison_accuracy_metrics.csv) | BE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test0_NoCovariate_accuracy_hourly_mape.csv](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test0_NoCovariate_accuracy_hourly_mape.csv) | DE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test0_NoCovariate_accuracy_summary.csv](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test0_NoCovariate_accuracy_summary.csv) | DE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test0_NoCovariate_results_eval.csv](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test0_NoCovariate_results_eval.csv) | DE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.csv](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.csv) | DE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_summary.csv](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_summary.csv) | DE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_results_eval.csv](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_results_eval.csv) | DE | TabPFN |
-| [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_comparison_accuracy_metrics.csv](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_comparison_accuracy_metrics.csv) | DE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_accuracy_hourly_mape.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_accuracy_hourly_mape.csv) | FR | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_accuracy_summary.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_accuracy_summary.csv) | FR | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_results_eval.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test0_NoCovariate_results_eval.csv) | FR | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.csv) | FR | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_summary.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_summary.csv) | FR | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_results_eval.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_results_eval.csv) | FR | TabPFN |
+
+#### Comparison and summary
+
+| File | Country | Model or scope |
+| --- | --- | --- |
+| [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_AllModels_comparison_accuracy.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_AllModels_comparison_accuracy.csv) | BE | multiple |
+| [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_comparison_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_comparison_stability_summary.csv) | BE | Chronos2 |
+| [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_AllModels_comparison_accuracy.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_AllModels_comparison_accuracy.csv) | DE | multiple |
+| [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_comparison_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_comparison_stability_summary.csv) | DE | Chronos2 |
+| [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_AllModels_comparison_accuracy.csv](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_AllModels_comparison_accuracy.csv) | FR | multiple |
+| [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_comparison_accuracy_metrics.csv](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_comparison_accuracy_metrics.csv) | BE | TabPFN |
+| [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_comparison_accuracy_metrics.csv](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_comparison_accuracy_metrics.csv) | DE | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_comparison_accuracy_metrics.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_comparison_accuracy_metrics.csv) | FR | TabPFN |
 
 #### Predictions and context
@@ -132,7 +144,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_SunCovariate_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_SunCovariate_stability_summary.csv) | BE | Chronos2 SunCovariate |
 | [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_ZeroNight_stability_details.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_ZeroNight_stability_details.csv) | BE | Chronos2 ZeroNight |
 | [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_ZeroNight_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_ZeroNight_stability_summary.csv) | BE | Chronos2 ZeroNight |
-| [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_comparison_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_Chronos2_comparison_stability_summary.csv) | BE | Chronos2 |
 | [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_XGBoost_stability_details.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_XGBoost_stability_details.csv) | BE | XGBoost |
 | [solar_forecast_outputs/other_models_solar_outputs/BE_Solar_XGBoost_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/BE_Solar_XGBoost_stability_summary.csv) | BE | XGBoost |
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_NoCovariate_stability_details.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_NoCovariate_stability_details.csv) | DE | Chronos2 |
@@ -141,7 +152,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_SunCovariate_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_SunCovariate_stability_summary.csv) | DE | Chronos2 SunCovariate |
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_ZeroNight_stability_details.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_ZeroNight_stability_details.csv) | DE | Chronos2 ZeroNight |
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_ZeroNight_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_ZeroNight_stability_summary.csv) | DE | Chronos2 ZeroNight |
-| [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_comparison_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_Chronos2_comparison_stability_summary.csv) | DE | Chronos2 |
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_XGBoost_stability_details.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_XGBoost_stability_details.csv) | DE | XGBoost |
 | [solar_forecast_outputs/other_models_solar_outputs/DE_Solar_XGBoost_stability_summary.csv](solar_forecast_outputs/other_models_solar_outputs/DE_Solar_XGBoost_stability_summary.csv) | DE | XGBoost |
 | [solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_NoCovariate_stability_details.csv](solar_forecast_outputs/other_models_solar_outputs/FR_Solar_Chronos2_NoCovariate_stability_details.csv) | FR | Chronos2 |
@@ -331,8 +341,15 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/eval_df.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/summary.csv) | FR | XGBoost Wind100mCovariates |
-| [wind_forecast_outputs/accuracy_matrix.csv](wind_forecast_outputs/accuracy_matrix.csv) | multi-country | multiple |
 | [wind_forecast_outputs/all_model_accuracy_uncertainty_summary.csv](wind_forecast_outputs/all_model_accuracy_uncertainty_summary.csv) | multi-country | multiple |
+
+#### Comparison and summary
+
+| File | Country | Model or scope |
+| --- | --- | --- |
+| [wind_forecast_outputs/accuracy_matrix.csv](wind_forecast_outputs/accuracy_matrix.csv) | multi-country | multiple |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_uncertainty_by_3h_long_mixed_old_tabpfn.csv](wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_uncertainty_by_3h_long_mixed_old_tabpfn.csv) | multi-country | TabPFN |
+| [wind_forecast_outputs/uncertainty_matrix.csv](wind_forecast_outputs/uncertainty_matrix.csv) | multi-country | multiple |
 
 #### Predictions and context
 
@@ -523,6 +540,4 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/uncertainty/summary.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/uncertainty/monthly.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/uncertainty/summary.csv) | FR | XGBoost Wind100mCovariates |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_uncertainty_by_3h_long_mixed_old_tabpfn.csv](wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_uncertainty_by_3h_long_mixed_old_tabpfn.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/uncertainty_matrix.csv](wind_forecast_outputs/uncertainty_matrix.csv) | multi-country | multiple |
 

@@ -43,10 +43,13 @@ function domainOf(file) {
 function analysisType(file) {
   const name = file.toLowerCase();
   const base = path.basename(file).toLowerCase();
-  if (name.includes("accuracy") || name.includes("eval") || name.includes("mape") || name.includes("mae") || name.includes("scatter") || name.includes("absolute_error") || name.includes("signed_error")) return "Accuracy";
+  if (name.includes("summary_plot") || name.includes("summary_plots") || name.includes("matrix") || base.includes("comparison")) return "Comparison and summary";
+  if (base.includes("pred_vs_actual")) return "Predictions and context";
+  if (name.includes("accuracy") || name.includes("eval") || name.includes("mape") || name.includes("mae") || name.includes("absolute_error") || name.includes("signed_error")) return "Accuracy";
   if (name.includes("stability") || name.includes("revision")) return "Stability";
   if (name.includes("uncertainty") || name.includes("picp") || name.includes("badness") || name.includes("monthly")) return "Uncertainty";
-  if (name.includes("summary_plot") || name.includes("comparison") || name.includes("figure") || base.includes("summary") || base.includes("matrix")) return "Comparison and summary";
+  if (name.includes("figure")) return "Comparison and summary";
+  if (name.includes("scatter")) return "Accuracy";
   if (name.includes("prediction") || name.includes("day_ahead") || name.includes("actual") || name.includes("context") || base.includes("forecast")) return "Predictions and context";
   return "Other";
 }
@@ -171,6 +174,7 @@ function makeDataGuide() {
 }
 
 function makePictureGuide() {
+  const pictureTypes = ["Accuracy", "Stability", "Uncertainty", "Predictions and context", "Comparison and summary", "Other"];
   const lines = [
     "# Picture Guide",
     "",
@@ -178,14 +182,14 @@ function makePictureGuide() {
     "",
     "## Quick Classification",
     "",
-    "| Domain | PNG files | Accuracy | Stability | Uncertainty | Comparison and summary | Other |",
-    "| --- | ---: | ---: | ---: | ---: | ---: | ---: |",
+    `| Domain | PNG files | ${pictureTypes.join(" | ")} |`,
+    `| --- | ---: | ${pictureTypes.map(() => "---:").join(" | ")} |`,
   ];
 
   for (const domain of ["Load", "Solar", "Wind"]) {
     const domainFiles = pngs.filter((file) => domainOf(file) === domain);
     const counts = groupBy(domainFiles, analysisType);
-    lines.push(`| ${domain} | ${domainFiles.length} | ${(counts.Accuracy || []).length} | ${(counts.Stability || []).length} | ${(counts.Uncertainty || []).length} | ${(counts["Comparison and summary"] || []).length} | ${(counts.Other || []).length} |`);
+    lines.push(`| ${domain} | ${domainFiles.length} | ${pictureTypes.map((type) => (counts[type] || []).length).join(" | ")} |`);
   }
 
   lines.push("", "## Figure Inventory", "");

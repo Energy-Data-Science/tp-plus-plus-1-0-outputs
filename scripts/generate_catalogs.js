@@ -6,7 +6,7 @@ const root = path.resolve(__dirname, "..");
 function walk(dir) {
   const out = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (entry.name === ".git" || entry.name === "scripts") continue;
+    if (entry.name === ".git" || entry.name === "scripts" || entry.name === "wind_forecast_3h_cutoffs") continue;
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) out.push(...walk(full));
     else out.push(full);

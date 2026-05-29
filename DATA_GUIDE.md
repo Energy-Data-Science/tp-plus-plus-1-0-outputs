@@ -8,7 +8,7 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | --- | --- | ---: | --- |
 | Load | `load_forecast_outputs/` | 39 | Predictions and context, Accuracy, Stability, Uncertainty |
 | Solar | `solar_forecast_outputs/` | 122 | Accuracy, Stability, Predictions and context, Uncertainty |
-| Wind | `wind_forecast_outputs/` | 412 | Accuracy, Predictions and context, Stability, Uncertainty, Comparison and summary |
+| Wind | `wind_forecast_outputs/` | 287 | Accuracy, Predictions and context, Stability, Uncertainty |
 
 ## CSV Inventory
 
@@ -232,12 +232,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/BE/Wind_Offshore/TSO/accuracy/eval_df.csv](wind_forecast_outputs/BE/Wind_Offshore/TSO/accuracy/eval_df.csv) | BE | TSO |
 | [wind_forecast_outputs/BE/Wind_Offshore/TSO/accuracy/hourly_mae.csv](wind_forecast_outputs/BE/Wind_Offshore/TSO/accuracy/hourly_mae.csv) | BE | TSO |
 | [wind_forecast_outputs/BE/Wind_Offshore/TSO/accuracy/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/TSO/accuracy/summary.csv) | BE | TSO |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/accuracy/eval_df.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/accuracy/eval_df.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/accuracy/hourly_mae.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/accuracy/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/accuracy/summary.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/summary.csv) | BE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/accuracy/eval_df.csv](wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/accuracy/eval_df.csv) | BE | Weekly Persistence |
 | [wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/accuracy/hourly_mae.csv](wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/accuracy/hourly_mae.csv) | BE | Weekly Persistence |
 | [wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/accuracy/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/accuracy/summary.csv) | BE | Weekly Persistence |
@@ -256,12 +250,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/BE/Wind_Onshore/TSO/accuracy/eval_df.csv](wind_forecast_outputs/BE/Wind_Onshore/TSO/accuracy/eval_df.csv) | BE | TSO |
 | [wind_forecast_outputs/BE/Wind_Onshore/TSO/accuracy/hourly_mae.csv](wind_forecast_outputs/BE/Wind_Onshore/TSO/accuracy/hourly_mae.csv) | BE | TSO |
 | [wind_forecast_outputs/BE/Wind_Onshore/TSO/accuracy/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/TSO/accuracy/summary.csv) | BE | TSO |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/accuracy/eval_df.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/accuracy/eval_df.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/accuracy/hourly_mae.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/accuracy/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/accuracy/summary.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/summary.csv) | BE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/accuracy/eval_df.csv](wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/accuracy/eval_df.csv) | BE | Weekly Persistence |
 | [wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/accuracy/hourly_mae.csv](wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/accuracy/hourly_mae.csv) | BE | Weekly Persistence |
 | [wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/accuracy/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/accuracy/summary.csv) | BE | Weekly Persistence |
@@ -280,9 +268,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/DE/Wind_Offshore/TSO/accuracy/eval_df.csv](wind_forecast_outputs/DE/Wind_Offshore/TSO/accuracy/eval_df.csv) | DE | TSO |
 | [wind_forecast_outputs/DE/Wind_Offshore/TSO/accuracy/hourly_mae.csv](wind_forecast_outputs/DE/Wind_Offshore/TSO/accuracy/hourly_mae.csv) | DE | TSO |
 | [wind_forecast_outputs/DE/Wind_Offshore/TSO/accuracy/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/TSO/accuracy/summary.csv) | DE | TSO |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/summary.csv) | DE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/accuracy/eval_df.csv](wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/accuracy/eval_df.csv) | DE | Weekly Persistence |
 | [wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/accuracy/hourly_mae.csv](wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/accuracy/hourly_mae.csv) | DE | Weekly Persistence |
 | [wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/accuracy/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/accuracy/summary.csv) | DE | Weekly Persistence |
@@ -301,9 +286,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/DE/Wind_Onshore/TSO/accuracy/eval_df.csv](wind_forecast_outputs/DE/Wind_Onshore/TSO/accuracy/eval_df.csv) | DE | TSO |
 | [wind_forecast_outputs/DE/Wind_Onshore/TSO/accuracy/hourly_mae.csv](wind_forecast_outputs/DE/Wind_Onshore/TSO/accuracy/hourly_mae.csv) | DE | TSO |
 | [wind_forecast_outputs/DE/Wind_Onshore/TSO/accuracy/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/TSO/accuracy/summary.csv) | DE | TSO |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/summary.csv) | DE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/accuracy/eval_df.csv](wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/accuracy/eval_df.csv) | DE | Weekly Persistence |
 | [wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/accuracy/hourly_mae.csv](wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/accuracy/hourly_mae.csv) | DE | Weekly Persistence |
 | [wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/accuracy/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/accuracy/summary.csv) | DE | Weekly Persistence |
@@ -322,12 +304,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Offshore/TSO/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Offshore/TSO/accuracy/eval_df.csv) | FR | TSO |
 | [wind_forecast_outputs/FR/Wind_Offshore/TSO/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Offshore/TSO/accuracy/hourly_mae.csv) | FR | TSO |
 | [wind_forecast_outputs/FR/Wind_Offshore/TSO/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/TSO/accuracy/summary.csv) | FR | TSO |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/accuracy/eval_df.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/accuracy/hourly_mae.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/accuracy/summary.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/accuracy/summary.csv) | FR | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/accuracy/eval_df.csv) | FR | Weekly Persistence |
 | [wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/accuracy/hourly_mae.csv) | FR | Weekly Persistence |
 | [wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/accuracy/summary.csv) | FR | Weekly Persistence |
@@ -346,12 +322,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Onshore/TSO/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Onshore/TSO/accuracy/eval_df.csv) | FR | TSO |
 | [wind_forecast_outputs/FR/Wind_Onshore/TSO/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Onshore/TSO/accuracy/hourly_mae.csv) | FR | TSO |
 | [wind_forecast_outputs/FR/Wind_Onshore/TSO/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/TSO/accuracy/summary.csv) | FR | TSO |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/accuracy/eval_df.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/accuracy/hourly_mae.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/accuracy/summary.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/eval_df.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/hourly_mae.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/accuracy/summary.csv) | FR | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/accuracy/eval_df.csv](wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/accuracy/eval_df.csv) | FR | Weekly Persistence |
 | [wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/accuracy/hourly_mae.csv) | FR | Weekly Persistence |
 | [wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/accuracy/summary.csv) | FR | Weekly Persistence |
@@ -362,26 +332,7 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/summary.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/accuracy_matrix.csv](wind_forecast_outputs/accuracy_matrix.csv) | multi-country | multiple |
-| [wind_forecast_outputs/accuracy_matrix_from_saved_files.csv](wind_forecast_outputs/accuracy_matrix_from_saved_files.csv) | multi-country | multiple |
-| [wind_forecast_outputs/accuracy_matrix_with_tabpfn.csv](wind_forecast_outputs/accuracy_matrix_with_tabpfn.csv) | multi-country | TabPFN |
 | [wind_forecast_outputs/all_model_accuracy_uncertainty_summary.csv](wind_forecast_outputs/all_model_accuracy_uncertainty_summary.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_MAE.csv](wind_forecast_outputs/matrix_MAE.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_MAPE.csv](wind_forecast_outputs/matrix_MAPE.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_with_tabpfn_MAE.csv](wind_forecast_outputs/matrix_with_tabpfn_MAE.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/matrix_with_tabpfn_MAPE.csv](wind_forecast_outputs/matrix_with_tabpfn_MAPE.csv) | multi-country | TabPFN |
-
-#### Comparison and summary
-
-| File | Country | Model or scope |
-| --- | --- | --- |
-| [wind_forecast_outputs/all_model_summary_from_saved_files.csv](wind_forecast_outputs/all_model_summary_from_saved_files.csv) | multi-country | multiple |
-| [wind_forecast_outputs/all_model_summary_with_tabpfn_from_saved_files.csv](wind_forecast_outputs/all_model_summary_with_tabpfn_from_saved_files.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/matrix_R2.csv](wind_forecast_outputs/matrix_R2.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_RMSE.csv](wind_forecast_outputs/matrix_RMSE.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_n_samples.csv](wind_forecast_outputs/matrix_n_samples.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_with_tabpfn_R2.csv](wind_forecast_outputs/matrix_with_tabpfn_R2.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/matrix_with_tabpfn_RMSE.csv](wind_forecast_outputs/matrix_with_tabpfn_RMSE.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/overleaf_figures_flat/manifest.csv](wind_forecast_outputs/overleaf_figures_flat/manifest.csv) | multi-country | multiple |
 
 #### Predictions and context
 
@@ -390,51 +341,34 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/BE/Wind_Offshore/Chronos2_NoCovariates/context/context_test.csv](wind_forecast_outputs/BE/Wind_Offshore/Chronos2_NoCovariates/context/context_test.csv) | BE | Chronos2 NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/Chronos2_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Offshore/Chronos2_NoCovariates/predictions/day_ahead.csv) | BE | Chronos2 NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv) | BE | Chronos2 |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/context/context_test.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/context/context_test.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/predictions/day_ahead.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv) | BE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/predictions/day_ahead.csv) | BE | XGBoost NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv) | BE | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/Chronos2_NoCovariates/context/context_test.csv](wind_forecast_outputs/BE/Wind_Onshore/Chronos2_NoCovariates/context/context_test.csv) | BE | Chronos2 NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/Chronos2_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Onshore/Chronos2_NoCovariates/predictions/day_ahead.csv) | BE | Chronos2 NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv) | BE | Chronos2 |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/context/context_test.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/context/context_test.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/predictions/day_ahead.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv) | BE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/predictions/day_ahead.csv) | BE | XGBoost NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv) | BE | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/Chronos2_NoCovariates/context/context_test.csv](wind_forecast_outputs/DE/Wind_Offshore/Chronos2_NoCovariates/context/context_test.csv) | DE | Chronos2 NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/Chronos2_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Offshore/Chronos2_NoCovariates/predictions/day_ahead.csv) | DE | Chronos2 NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv) | DE | Chronos2 |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_NoCovariates/context/context_test.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_NoCovariates/context/context_test.csv) | DE | TabPFN NoCovariates |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv) | DE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/predictions/day_ahead.csv) | DE | XGBoost NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv) | DE | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/Chronos2_NoCovariates/context/context_test.csv](wind_forecast_outputs/DE/Wind_Onshore/Chronos2_NoCovariates/context/context_test.csv) | DE | Chronos2 NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/Chronos2_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Onshore/Chronos2_NoCovariates/predictions/day_ahead.csv) | DE | Chronos2 NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv) | DE | Chronos2 |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_NoCovariates/context/context_test.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_NoCovariates/context/context_test.csv) | DE | TabPFN NoCovariates |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv) | DE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/predictions/day_ahead.csv) | DE | XGBoost NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv) | DE | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/Chronos2_NoCovariates/context/context_test.csv](wind_forecast_outputs/FR/Wind_Offshore/Chronos2_NoCovariates/context/context_test.csv) | FR | Chronos2 NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/Chronos2_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Offshore/Chronos2_NoCovariates/predictions/day_ahead.csv) | FR | Chronos2 NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv) | FR | Chronos2 |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/context/context_test.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/context/context_test.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/predictions/day_ahead.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv) | FR | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/predictions/day_ahead.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/Chronos2_NoCovariates/context/context_test.csv](wind_forecast_outputs/FR/Wind_Onshore/Chronos2_NoCovariates/context/context_test.csv) | FR | Chronos2 NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/Chronos2_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Onshore/Chronos2_NoCovariates/predictions/day_ahead.csv) | FR | Chronos2 NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/predictions/day_ahead.csv) | FR | Chronos2 |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/context/context_test.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/context/context_test.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/predictions/day_ahead.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/predictions/day_ahead.csv) | FR | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/predictions/day_ahead.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/predictions/day_ahead.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/best_chronos2_context_by_series.csv](wind_forecast_outputs/best_chronos2_context_by_series.csv) | multi-country | Chronos2 |
-| [wind_forecast_outputs/best_tabpfn_context_by_series.csv](wind_forecast_outputs/best_tabpfn_context_by_series.csv) | multi-country | TabPFN |
 
 #### Stability
 
@@ -446,12 +380,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/details.csv) | BE | Chronos2 |
 | [wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv) | BE | Chronos2 |
 | [wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/summary.csv) | BE | Chronos2 |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/stability/details.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/stability/details.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/stability/revision_by_hour.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/stability/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/stability/summary.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/details.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/summary.csv) | BE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/stability/details.csv](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/stability/details.csv) | BE | XGBoost NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/stability/revision_by_hour.csv) | BE | XGBoost NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/stability/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/stability/summary.csv) | BE | XGBoost NoCovariates |
@@ -464,12 +392,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/details.csv) | BE | Chronos2 |
 | [wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv) | BE | Chronos2 |
 | [wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/summary.csv) | BE | Chronos2 |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/stability/details.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/stability/details.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/stability/revision_by_hour.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/stability/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/stability/summary.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/details.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/summary.csv) | BE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/stability/details.csv](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/stability/details.csv) | BE | XGBoost NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/stability/revision_by_hour.csv) | BE | XGBoost NoCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/stability/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/stability/summary.csv) | BE | XGBoost NoCovariates |
@@ -482,9 +404,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/details.csv) | DE | Chronos2 |
 | [wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv) | DE | Chronos2 |
 | [wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/stability/summary.csv) | DE | Chronos2 |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/details.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/stability/summary.csv) | DE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/stability/details.csv](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/stability/details.csv) | DE | XGBoost NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/stability/revision_by_hour.csv) | DE | XGBoost NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/stability/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/stability/summary.csv) | DE | XGBoost NoCovariates |
@@ -497,9 +416,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/details.csv) | DE | Chronos2 |
 | [wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv) | DE | Chronos2 |
 | [wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/stability/summary.csv) | DE | Chronos2 |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/details.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/stability/summary.csv) | DE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/stability/details.csv](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/stability/details.csv) | DE | XGBoost NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/stability/revision_by_hour.csv) | DE | XGBoost NoCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/stability/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/stability/summary.csv) | DE | XGBoost NoCovariates |
@@ -512,12 +428,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/stability/details.csv) | FR | Chronos2 |
 | [wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv) | FR | Chronos2 |
 | [wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/stability/summary.csv) | FR | Chronos2 |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/stability/details.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/stability/revision_by_hour.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/stability/summary.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/stability/details.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/stability/summary.csv) | FR | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/stability/details.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/stability/revision_by_hour.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/stability/summary.csv) | FR | XGBoost NoCovariates |
@@ -530,24 +440,12 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/stability/details.csv) | FR | Chronos2 |
 | [wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/stability/revision_by_hour.csv) | FR | Chronos2 |
 | [wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/stability/summary.csv) | FR | Chronos2 |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/stability/details.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/stability/revision_by_hour.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/stability/summary.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/stability/details.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/stability/revision_by_hour.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/stability/summary.csv) | FR | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/stability/details.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/stability/revision_by_hour.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/stability/summary.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/details.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/details.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/revision_by_hour.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/stability/summary.csv) | FR | XGBoost Wind100mCovariates |
-| [wind_forecast_outputs/matrix_stability_mean_abs_revision.csv](wind_forecast_outputs/matrix_stability_mean_abs_revision.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_stability_p95_abs_revision.csv](wind_forecast_outputs/matrix_stability_p95_abs_revision.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_with_tabpfn_stability_mean_abs_revision.csv](wind_forecast_outputs/matrix_with_tabpfn_stability_mean_abs_revision.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/matrix_with_tabpfn_stability_p95_abs_revision.csv](wind_forecast_outputs/matrix_with_tabpfn_stability_p95_abs_revision.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/stability_matrix_from_saved_files.csv](wind_forecast_outputs/stability_matrix_from_saved_files.csv) | multi-country | multiple |
-| [wind_forecast_outputs/stability_matrix_with_tabpfn.csv](wind_forecast_outputs/stability_matrix_with_tabpfn.csv) | multi-country | TabPFN |
 
 #### Uncertainty
 
@@ -559,10 +457,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv) | BE | Chronos2 |
 | [wind_forecast_outputs/BE/Wind_Offshore/TSO/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Offshore/TSO/uncertainty/monthly.csv) | BE | TSO |
 | [wind_forecast_outputs/BE/Wind_Offshore/TSO/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/TSO/uncertainty/summary.csv) | BE | TSO |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/uncertainty/monthly.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_NoCovariates/uncertainty/summary.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv) | BE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/uncertainty/monthly.csv) | BE | Weekly Persistence |
 | [wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Offshore/Weekly_Persistence/uncertainty/summary.csv) | BE | Weekly Persistence |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/uncertainty/monthly.csv) | BE | XGBoost NoCovariates |
@@ -575,10 +469,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv) | BE | Chronos2 |
 | [wind_forecast_outputs/BE/Wind_Onshore/TSO/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Onshore/TSO/uncertainty/monthly.csv) | BE | TSO |
 | [wind_forecast_outputs/BE/Wind_Onshore/TSO/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/TSO/uncertainty/summary.csv) | BE | TSO |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/uncertainty/monthly.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_NoCovariates/uncertainty/summary.csv) | BE | TabPFN NoCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv) | BE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv) | BE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/uncertainty/monthly.csv) | BE | Weekly Persistence |
 | [wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/uncertainty/summary.csv](wind_forecast_outputs/BE/Wind_Onshore/Weekly_Persistence/uncertainty/summary.csv) | BE | Weekly Persistence |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/uncertainty/monthly.csv) | BE | XGBoost NoCovariates |
@@ -591,8 +481,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv) | DE | Chronos2 |
 | [wind_forecast_outputs/DE/Wind_Offshore/TSO/uncertainty/monthly.csv](wind_forecast_outputs/DE/Wind_Offshore/TSO/uncertainty/monthly.csv) | DE | TSO |
 | [wind_forecast_outputs/DE/Wind_Offshore/TSO/uncertainty/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/TSO/uncertainty/summary.csv) | DE | TSO |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv) | DE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/uncertainty/monthly.csv](wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/uncertainty/monthly.csv) | DE | Weekly Persistence |
 | [wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/uncertainty/summary.csv](wind_forecast_outputs/DE/Wind_Offshore/Weekly_Persistence/uncertainty/summary.csv) | DE | Weekly Persistence |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/uncertainty/monthly.csv) | DE | XGBoost NoCovariates |
@@ -605,8 +493,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv) | DE | Chronos2 |
 | [wind_forecast_outputs/DE/Wind_Onshore/TSO/uncertainty/monthly.csv](wind_forecast_outputs/DE/Wind_Onshore/TSO/uncertainty/monthly.csv) | DE | TSO |
 | [wind_forecast_outputs/DE/Wind_Onshore/TSO/uncertainty/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/TSO/uncertainty/summary.csv) | DE | TSO |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv) | DE | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv) | DE | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/uncertainty/monthly.csv](wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/uncertainty/monthly.csv) | DE | Weekly Persistence |
 | [wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/uncertainty/summary.csv](wind_forecast_outputs/DE/Wind_Onshore/Weekly_Persistence/uncertainty/summary.csv) | DE | Weekly Persistence |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/uncertainty/monthly.csv) | DE | XGBoost NoCovariates |
@@ -619,10 +505,6 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv) | FR | Chronos2 |
 | [wind_forecast_outputs/FR/Wind_Offshore/TSO/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Offshore/TSO/uncertainty/monthly.csv) | FR | TSO |
 | [wind_forecast_outputs/FR/Wind_Offshore/TSO/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/TSO/uncertainty/summary.csv) | FR | TSO |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/uncertainty/monthly.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_NoCovariates/uncertainty/summary.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv) | FR | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/uncertainty/monthly.csv) | FR | Weekly Persistence |
 | [wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Offshore/Weekly_Persistence/uncertainty/summary.csv) | FR | Weekly Persistence |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/uncertainty/monthly.csv) | FR | XGBoost NoCovariates |
@@ -635,24 +517,12 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/Chronos2_Wind100mCovariates/uncertainty/summary.csv) | FR | Chronos2 |
 | [wind_forecast_outputs/FR/Wind_Onshore/TSO/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Onshore/TSO/uncertainty/monthly.csv) | FR | TSO |
 | [wind_forecast_outputs/FR/Wind_Onshore/TSO/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/TSO/uncertainty/summary.csv) | FR | TSO |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/uncertainty/monthly.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_NoCovariates/uncertainty/summary.csv) | FR | TabPFN NoCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/monthly.csv) | FR | TabPFN Wind100mCovariates |
-| [wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/TabPFN_Wind100mCovariates/uncertainty/summary.csv) | FR | TabPFN Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/uncertainty/monthly.csv) | FR | Weekly Persistence |
 | [wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/Weekly_Persistence/uncertainty/summary.csv) | FR | Weekly Persistence |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/uncertainty/monthly.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/uncertainty/summary.csv) | FR | XGBoost NoCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/uncertainty/monthly.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/uncertainty/monthly.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/uncertainty/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/uncertainty/summary.csv) | FR | XGBoost Wind100mCovariates |
-| [wind_forecast_outputs/matrix_uncertainty_CRPS_proxy.csv](wind_forecast_outputs/matrix_uncertainty_CRPS_proxy.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_uncertainty_MPIW.csv](wind_forecast_outputs/matrix_uncertainty_MPIW.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_uncertainty_PICP.csv](wind_forecast_outputs/matrix_uncertainty_PICP.csv) | multi-country | multiple |
-| [wind_forecast_outputs/matrix_with_tabpfn_uncertainty_CRPS_proxy.csv](wind_forecast_outputs/matrix_with_tabpfn_uncertainty_CRPS_proxy.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/matrix_with_tabpfn_uncertainty_MPIW.csv](wind_forecast_outputs/matrix_with_tabpfn_uncertainty_MPIW.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/matrix_with_tabpfn_uncertainty_PICP.csv](wind_forecast_outputs/matrix_with_tabpfn_uncertainty_PICP.csv) | multi-country | TabPFN |
-| [wind_forecast_outputs/summary_plots/Wind_Forecast_uncertainty_by_3h_long.csv](wind_forecast_outputs/summary_plots/Wind_Forecast_uncertainty_by_3h_long.csv) | multi-country | multiple |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_uncertainty_by_3h_long_mixed_old_tabpfn.csv](wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_uncertainty_by_3h_long_mixed_old_tabpfn.csv) | multi-country | TabPFN |
 | [wind_forecast_outputs/uncertainty_matrix.csv](wind_forecast_outputs/uncertainty_matrix.csv) | multi-country | multiple |
-| [wind_forecast_outputs/uncertainty_matrix_from_saved_files.csv](wind_forecast_outputs/uncertainty_matrix_from_saved_files.csv) | multi-country | multiple |
-| [wind_forecast_outputs/uncertainty_matrix_with_tabpfn.csv](wind_forecast_outputs/uncertainty_matrix_with_tabpfn.csv) | multi-country | TabPFN |
 

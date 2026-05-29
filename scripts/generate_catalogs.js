@@ -43,12 +43,12 @@ function domainOf(file) {
 function analysisType(file) {
   const name = file.toLowerCase();
   const base = path.basename(file).toLowerCase();
-  if (name.includes("summary_plot") || name.includes("summary_plots") || name.includes("matrix") || base.includes("comparison")) return "Comparison and summary";
+  if (name.includes("summary_plot") || name.includes("summary_plots") || name.includes("matrix") || base.includes("comparison")) return "Comparison/summary";
   if (base.includes("pred_vs_actual")) return "Predictions and context";
   if (name.includes("accuracy") || name.includes("eval") || name.includes("mape") || name.includes("mae") || name.includes("absolute_error") || name.includes("signed_error")) return "Accuracy";
   if (name.includes("stability") || name.includes("revision")) return "Stability";
   if (name.includes("uncertainty") || name.includes("picp") || name.includes("badness") || name.includes("monthly")) return "Uncertainty";
-  if (name.includes("figure")) return "Comparison and summary";
+  if (name.includes("figure")) return "Comparison/summary";
   if (name.includes("scatter")) return "Accuracy";
   if (name.includes("prediction") || name.includes("day_ahead") || name.includes("actual") || name.includes("context") || base.includes("forecast")) return "Predictions and context";
   return "Other";
@@ -62,7 +62,24 @@ function countryOf(file) {
 function windSegmentOf(file) {
   if (/Wind[_/]Onshore/i.test(file)) return "Onshore";
   if (/Wind[_/]Offshore/i.test(file)) return "Offshore";
-  return "Summary and comparison";
+  return "Comparison/summary";
+}
+
+function isComparisonSummaryFigure(file) {
+  const domain = domainOf(file);
+  const name = file.toLowerCase();
+  const base = path.basename(file).toLowerCase();
+  if (domain === "Wind") return name.includes("summary_plot") || name.includes("summary_plots") || windSegmentOf(file) === "Comparison/summary";
+  return countryOf(file) === "multi-country" || base.includes("comparison");
+}
+
+function pictureType(file) {
+  const name = file.toLowerCase();
+  const base = path.basename(file).toLowerCase();
+  if (isComparisonSummaryFigure(file)) return "Comparison/summary";
+  if (name.includes("stability") || name.includes("revision")) return "Stability";
+  if (name.includes("uncertainty") || name.includes("picp") || name.includes("badness") || name.includes("monthly")) return "Uncertainty";
+  return "Accuracy";
 }
 
 function modelOf(file) {
@@ -89,7 +106,7 @@ function modelOf(file) {
 
 function describe(file) {
   const base = path.basename(file, path.extname(file));
-  const type = analysisType(file).toLowerCase();
+  const type = pictureType(file).toLowerCase();
   const country = countryOf(file);
   const model = modelOf(file);
   let subject = titleCase(base.replace(/^Figure_?\d+_?/i, ""));
@@ -120,8 +137,9 @@ function detailsEnd(lines) {
 
 function pushFigureTables(lines, filesForSection, headingLevel = 4) {
   const marks = "#".repeat(headingLevel);
-  const byType = groupBy(filesForSection, analysisType);
-  for (const type of Object.keys(byType).sort()) {
+  const byType = groupBy(filesForSection, pictureType);
+  for (const type of ["Accuracy", "Stability", "Uncertainty", "Comparison/summary"]) {
+    if (!byType[type]?.length) continue;
     lines.push(`${marks} ${type}`, "");
     lines.push("| Figure | Country | Model or scope | What to look for |");
     lines.push("| --- | --- | --- | --- |");
@@ -174,7 +192,7 @@ function makeDataGuide() {
 }
 
 function makePictureGuide() {
-  const pictureTypes = ["Accuracy", "Stability", "Uncertainty", "Predictions and context", "Comparison and summary", "Other"];
+  const pictureTypes = ["Accuracy", "Stability", "Uncertainty", "Comparison/summary"];
   const lines = [
     "# Picture Guide",
     "",
@@ -188,7 +206,7 @@ function makePictureGuide() {
 
   for (const domain of ["Load", "Solar", "Wind"]) {
     const domainFiles = pngs.filter((file) => domainOf(file) === domain);
-    const counts = groupBy(domainFiles, analysisType);
+    const counts = groupBy(domainFiles, pictureType);
     lines.push(`| ${domain} | ${domainFiles.length} | ${pictureTypes.map((type) => (counts[type] || []).length).join(" | ")} |`);
   }
 
@@ -198,11 +216,17 @@ function makePictureGuide() {
     const domainFiles = pngs.filter((file) => domainOf(file) === domain);
     if (!domainFiles.length) continue;
     detailsStart(lines, `${domain} (${domainFiles.length} figures)`);
-    for (const country of ["BE", "DE", "FR", "multi-country"]) {
-      const countryFiles = domainFiles.filter((file) => countryOf(file) === country);
+    for (const country of ["BE", "DE", "FR"]) {
+      const countryFiles = domainFiles.filter((file) => countryOf(file) === country && !isComparisonSummaryFigure(file));
       if (!countryFiles.length) continue;
       detailsStart(lines, `${country} (${countryFiles.length} figures)`);
       pushFigureTables(lines, countryFiles);
+      detailsEnd(lines);
+    }
+    const comparisonFiles = domainFiles.filter(isComparisonSummaryFigure);
+    if (comparisonFiles.length) {
+      detailsStart(lines, `Comparison/summary (${comparisonFiles.length} figures)`);
+      pushFigureTables(lines, comparisonFiles);
       detailsEnd(lines);
     }
     detailsEnd(lines);
@@ -211,8 +235,8 @@ function makePictureGuide() {
   const windFiles = pngs.filter((file) => domainOf(file) === "Wind");
   if (windFiles.length) {
     detailsStart(lines, `Wind (${windFiles.length} figures)`);
-    for (const segment of ["Onshore", "Offshore", "Summary and comparison"]) {
-      const segmentFiles = windFiles.filter((file) => windSegmentOf(file) === segment);
+    for (const segment of ["Onshore", "Offshore"]) {
+      const segmentFiles = windFiles.filter((file) => windSegmentOf(file) === segment && !isComparisonSummaryFigure(file));
       if (!segmentFiles.length) continue;
       detailsStart(lines, `${segment} (${segmentFiles.length} figures)`);
       for (const country of ["BE", "DE", "FR", "multi-country"]) {
@@ -222,6 +246,12 @@ function makePictureGuide() {
         pushFigureTables(lines, countryFiles);
         detailsEnd(lines);
       }
+      detailsEnd(lines);
+    }
+    const comparisonFiles = windFiles.filter(isComparisonSummaryFigure);
+    if (comparisonFiles.length) {
+      detailsStart(lines, `Comparison/summary (${comparisonFiles.length} figures)`);
+      pushFigureTables(lines, comparisonFiles);
       detailsEnd(lines);
     }
     detailsEnd(lines);

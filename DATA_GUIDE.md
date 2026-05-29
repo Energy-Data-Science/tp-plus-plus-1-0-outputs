@@ -6,9 +6,9 @@ CSV artifacts are grouped by the same research domains used in the output folder
 
 | Category | Folder | CSV files | Typical contents |
 | --- | --- | ---: | --- |
-| Load | `load_forecast_outputs/` | 39 | Predictions and context, Comparison and summary, Accuracy, Stability, Uncertainty |
-| Solar | `solar_forecast_outputs/` | 122 | Comparison and summary, Accuracy, Stability, Predictions and context, Uncertainty |
-| Wind | `wind_forecast_outputs/` | 287 | Accuracy, Predictions and context, Stability, Uncertainty, Comparison and summary |
+| Load | `load_forecast_outputs/` | 39 | Predictions and context, Comparison/summary, Accuracy, Stability, Uncertainty |
+| Solar | `solar_forecast_outputs/` | 122 | Comparison/summary, Accuracy, Stability, Predictions and context, Uncertainty |
+| Wind | `wind_forecast_outputs/` | 287 | Accuracy, Predictions and context, Stability, Uncertainty, Comparison/summary |
 
 ## CSV Inventory
 
@@ -21,7 +21,7 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [load_forecast_outputs/csv/accuracy_metrics.csv](load_forecast_outputs/csv/accuracy_metrics.csv) | multi-country | multiple |
 | [load_forecast_outputs/csv/plotting_accuracy_metrics_from_individual_files.csv](load_forecast_outputs/csv/plotting_accuracy_metrics_from_individual_files.csv) | multi-country | multiple |
 
-#### Comparison and summary
+#### Comparison/summary
 
 | File | Country | Model or scope |
 | --- | --- | --- |
@@ -108,7 +108,7 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_summary.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_summary.csv) | FR | TabPFN |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_results_eval.csv](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_results_eval.csv) | FR | TabPFN |
 
-#### Comparison and summary
+#### Comparison/summary
 
 | File | Country | Model or scope |
 | --- | --- | --- |
@@ -343,7 +343,7 @@ CSV artifacts are grouped by the same research domains used in the output folder
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/summary.csv](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/summary.csv) | FR | XGBoost Wind100mCovariates |
 | [wind_forecast_outputs/all_model_accuracy_uncertainty_summary.csv](wind_forecast_outputs/all_model_accuracy_uncertainty_summary.csv) | multi-country | multiple |
 
-#### Comparison and summary
+#### Comparison/summary
 
 | File | Country | Model or scope |
 | --- | --- | --- |

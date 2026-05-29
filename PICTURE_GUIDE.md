@@ -4,11 +4,11 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 
 ## Quick Classification
 
-| Domain | PNG files | Accuracy | Stability | Uncertainty | Predictions and context | Comparison and summary | Other |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Load | 57 | 6 | 21 | 6 | 24 | 0 | 0 |
-| Solar | 97 | 42 | 49 | 3 | 0 | 3 | 0 |
-| Wind | 163 | 72 | 72 | 0 | 0 | 19 | 0 |
+| Domain | PNG files | Accuracy | Stability | Uncertainty | Comparison/summary |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Load | 57 | 24 | 18 | 0 | 15 |
+| Solar | 97 | 36 | 45 | 0 | 16 |
+| Wind | 163 | 72 | 72 | 0 | 19 |
 
 ## Figure Inventory
 
@@ -18,18 +18,18 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <details>
 <summary>BE (14 figures)</summary>
 
-#### Predictions and context
+#### Accuracy
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2.png) | BE | Chronos2 | predictions and context; BE; Chronos2; BE Load Pred Vs Actual Chronos2. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2_opt.png) | BE | Chronos2 | predictions and context; BE; Chronos2; BE Load Pred Vs Actual Chronos2 Opt. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge.png) | BE | Ridge | predictions and context; BE; Ridge; BE Load Pred Vs Actual Ridge. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge_opt.png) | BE | Ridge | predictions and context; BE; Ridge; BE Load Pred Vs Actual Ridge Opt. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TSO.png) | BE | TSO | predictions and context; BE; TSO; BE Load Pred Vs Actual TSO. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN.png) | BE | TabPFN | predictions and context; BE; TabPFN; BE Load Pred Vs Actual TabPFN. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png) | BE | TabPFN | predictions and context; BE; TabPFN; BE Load Pred Vs Actual TabPFN Opt. |
-| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly%20Persistence.png) | BE | Persistence | predictions and context; BE; Persistence; BE Load Pred Vs Actual Weekly Persistence. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2.png) | BE | Chronos2 | accuracy; BE; Chronos2; BE Load Pred Vs Actual Chronos2. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Chronos2_opt.png) | BE | Chronos2 | accuracy; BE; Chronos2; BE Load Pred Vs Actual Chronos2 Opt. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge.png) | BE | Ridge | accuracy; BE; Ridge; BE Load Pred Vs Actual Ridge. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Ridge_opt.png) | BE | Ridge | accuracy; BE; Ridge; BE Load Pred Vs Actual Ridge Opt. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TSO.png) | BE | TSO | accuracy; BE; TSO; BE Load Pred Vs Actual TSO. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Load Pred Vs Actual TabPFN. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_TabPFN_opt.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Load Pred Vs Actual TabPFN Opt. |
+| [load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/BE_load_pred_vs_actual_Weekly%20Persistence.png) | BE | Persistence | accuracy; BE; Persistence; BE Load Pred Vs Actual Weekly Persistence. |
 
 #### Stability
 
@@ -47,18 +47,18 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <details>
 <summary>DE (14 figures)</summary>
 
-#### Predictions and context
+#### Accuracy
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2.png) | DE | Chronos2 | predictions and context; DE; Chronos2; DE Load Pred Vs Actual Chronos2. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2_opt.png) | DE | Chronos2 | predictions and context; DE; Chronos2; DE Load Pred Vs Actual Chronos2 Opt. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge.png) | DE | Ridge | predictions and context; DE; Ridge; DE Load Pred Vs Actual Ridge. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge_opt.png) | DE | Ridge | predictions and context; DE; Ridge; DE Load Pred Vs Actual Ridge Opt. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TSO.png) | DE | TSO | predictions and context; DE; TSO; DE Load Pred Vs Actual TSO. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN.png) | DE | TabPFN | predictions and context; DE; TabPFN; DE Load Pred Vs Actual TabPFN. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png) | DE | TabPFN | predictions and context; DE; TabPFN; DE Load Pred Vs Actual TabPFN Opt. |
-| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly%20Persistence.png) | DE | Persistence | predictions and context; DE; Persistence; DE Load Pred Vs Actual Weekly Persistence. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2.png) | DE | Chronos2 | accuracy; DE; Chronos2; DE Load Pred Vs Actual Chronos2. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Chronos2_opt.png) | DE | Chronos2 | accuracy; DE; Chronos2; DE Load Pred Vs Actual Chronos2 Opt. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge.png) | DE | Ridge | accuracy; DE; Ridge; DE Load Pred Vs Actual Ridge. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Ridge_opt.png) | DE | Ridge | accuracy; DE; Ridge; DE Load Pred Vs Actual Ridge Opt. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TSO.png) | DE | TSO | accuracy; DE; TSO; DE Load Pred Vs Actual TSO. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN.png) | DE | TabPFN | accuracy; DE; TabPFN; DE Load Pred Vs Actual TabPFN. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_TabPFN_opt.png) | DE | TabPFN | accuracy; DE; TabPFN; DE Load Pred Vs Actual TabPFN Opt. |
+| [load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/DE_load_pred_vs_actual_Weekly%20Persistence.png) | DE | Persistence | accuracy; DE; Persistence; DE Load Pred Vs Actual Weekly Persistence. |
 
 #### Stability
 
@@ -76,18 +76,18 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <details>
 <summary>FR (14 figures)</summary>
 
-#### Predictions and context
+#### Accuracy
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2.png) | FR | Chronos2 | predictions and context; FR; Chronos2; FR Load Pred Vs Actual Chronos2. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2_opt.png) | FR | Chronos2 | predictions and context; FR; Chronos2; FR Load Pred Vs Actual Chronos2 Opt. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge.png) | FR | Ridge | predictions and context; FR; Ridge; FR Load Pred Vs Actual Ridge. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge_opt.png) | FR | Ridge | predictions and context; FR; Ridge; FR Load Pred Vs Actual Ridge Opt. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TSO.png) | FR | TSO | predictions and context; FR; TSO; FR Load Pred Vs Actual TSO. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png) | FR | TabPFN | predictions and context; FR; TabPFN; FR Load Pred Vs Actual TabPFN. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png) | FR | TabPFN | predictions and context; FR; TabPFN; FR Load Pred Vs Actual TabPFN Opt. |
-| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly%20Persistence.png) | FR | Persistence | predictions and context; FR; Persistence; FR Load Pred Vs Actual Weekly Persistence. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2.png) | FR | Chronos2 | accuracy; FR; Chronos2; FR Load Pred Vs Actual Chronos2. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Chronos2_opt.png) | FR | Chronos2 | accuracy; FR; Chronos2; FR Load Pred Vs Actual Chronos2 Opt. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge.png) | FR | Ridge | accuracy; FR; Ridge; FR Load Pred Vs Actual Ridge. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Ridge_opt.png) | FR | Ridge | accuracy; FR; Ridge; FR Load Pred Vs Actual Ridge Opt. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TSO.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TSO.png) | FR | TSO | accuracy; FR; TSO; FR Load Pred Vs Actual TSO. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN.png) | FR | TabPFN | accuracy; FR; TabPFN; FR Load Pred Vs Actual TabPFN. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_TabPFN_opt.png) | FR | TabPFN | accuracy; FR; TabPFN; FR Load Pred Vs Actual TabPFN Opt. |
+| [load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly Persistence.png](load_forecast_outputs/figures/FR_load_pred_vs_actual_Weekly%20Persistence.png) | FR | Persistence | accuracy; FR; Persistence; FR Load Pred Vs Actual Weekly Persistence. |
 
 #### Stability
 
@@ -103,37 +103,27 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>multi-country (15 figures)</summary>
+<summary>Comparison/summary (15 figures)</summary>
 
-#### Accuracy
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [load_forecast_outputs/figures/Figure_2_TSO_forecast_signed_error_distribution_by_country.png](load_forecast_outputs/figures/Figure_2_TSO_forecast_signed_error_distribution_by_country.png) | multi-country | TSO | accuracy; multi-country; TSO; TSO Forecast Signed Error Distribution By Country. |
-| [load_forecast_outputs/figures/Figure_3_TSO_forecast_absolute_error_by_3h_block.png](load_forecast_outputs/figures/Figure_3_TSO_forecast_absolute_error_by_3h_block.png) | multi-country | TSO | accuracy; multi-country; TSO; TSO Forecast Absolute Error By 3h Block. |
-| [load_forecast_outputs/figures/Figure_4_accuracy_by_model_country_3h_block.png](load_forecast_outputs/figures/Figure_4_accuracy_by_model_country_3h_block.png) | multi-country | multiple | accuracy; multi-country; multiple; Accuracy By Model Country 3h Block. |
-| [load_forecast_outputs/load_comparison_figures/Figure_1_TSO_forecast_signed_error_distribution_by_country.png](load_forecast_outputs/load_comparison_figures/Figure_1_TSO_forecast_signed_error_distribution_by_country.png) | multi-country | TSO | accuracy; multi-country; TSO; TSO Forecast Signed Error Distribution By Country. |
-| [load_forecast_outputs/load_comparison_figures/Figure_2_TSO_forecast_absolute_error_by_3h_block.png](load_forecast_outputs/load_comparison_figures/Figure_2_TSO_forecast_absolute_error_by_3h_block.png) | multi-country | TSO | accuracy; multi-country; TSO; TSO Forecast Absolute Error By 3h Block. |
-| [load_forecast_outputs/load_comparison_figures/Figure_3_accuracy_by_model_country_3h_block.png](load_forecast_outputs/load_comparison_figures/Figure_3_accuracy_by_model_country_3h_block.png) | multi-country | multiple | accuracy; multi-country; multiple; Accuracy By Model Country 3h Block. |
-
-#### Stability
+#### Comparison/summary
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [load_forecast_outputs/figures/Figure_5_stability_revision_percentage_by_country_3h_block.png](load_forecast_outputs/figures/Figure_5_stability_revision_percentage_by_country_3h_block.png) | multi-country | multiple | stability; multi-country; multiple; Stability Revision Percentage By Country 3h Block. |
-| [load_forecast_outputs/load_comparison_figures/Figure_4_stability_revision_percentage_by_country_3h_block.png](load_forecast_outputs/load_comparison_figures/Figure_4_stability_revision_percentage_by_country_3h_block.png) | multi-country | multiple | stability; multi-country; multiple; Stability Revision Percentage By Country 3h Block. |
-| [load_forecast_outputs/load_comparison_figures/Figure_5_stability_revision_percentage_by_country_3h_block.png](load_forecast_outputs/load_comparison_figures/Figure_5_stability_revision_percentage_by_country_3h_block.png) | multi-country | multiple | stability; multi-country; multiple; Stability Revision Percentage By Country 3h Block. |
-
-#### Uncertainty
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_BE.png](load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_BE.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps BE. |
-| [load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_DE.png](load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_DE.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps DE. |
-| [load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_FR.png](load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_FR.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps FR. |
-| [load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_BE.png](load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_BE.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps BE. |
-| [load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_DE.png](load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_DE.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps DE. |
-| [load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_FR.png](load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_FR.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps FR. |
+| [load_forecast_outputs/figures/Figure_2_TSO_forecast_signed_error_distribution_by_country.png](load_forecast_outputs/figures/Figure_2_TSO_forecast_signed_error_distribution_by_country.png) | multi-country | TSO | comparison/summary; multi-country; TSO; TSO Forecast Signed Error Distribution By Country. |
+| [load_forecast_outputs/figures/Figure_3_TSO_forecast_absolute_error_by_3h_block.png](load_forecast_outputs/figures/Figure_3_TSO_forecast_absolute_error_by_3h_block.png) | multi-country | TSO | comparison/summary; multi-country; TSO; TSO Forecast Absolute Error By 3h Block. |
+| [load_forecast_outputs/figures/Figure_4_accuracy_by_model_country_3h_block.png](load_forecast_outputs/figures/Figure_4_accuracy_by_model_country_3h_block.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Accuracy By Model Country 3h Block. |
+| [load_forecast_outputs/figures/Figure_5_stability_revision_percentage_by_country_3h_block.png](load_forecast_outputs/figures/Figure_5_stability_revision_percentage_by_country_3h_block.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Stability Revision Percentage By Country 3h Block. |
+| [load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_BE.png](load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_BE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps BE. |
+| [load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_DE.png](load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_DE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps DE. |
+| [load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_FR.png](load_forecast_outputs/figures/Figure_6_uncertainty_heatmaps_FR.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps FR. |
+| [load_forecast_outputs/load_comparison_figures/Figure_1_TSO_forecast_signed_error_distribution_by_country.png](load_forecast_outputs/load_comparison_figures/Figure_1_TSO_forecast_signed_error_distribution_by_country.png) | multi-country | TSO | comparison/summary; multi-country; TSO; TSO Forecast Signed Error Distribution By Country. |
+| [load_forecast_outputs/load_comparison_figures/Figure_2_TSO_forecast_absolute_error_by_3h_block.png](load_forecast_outputs/load_comparison_figures/Figure_2_TSO_forecast_absolute_error_by_3h_block.png) | multi-country | TSO | comparison/summary; multi-country; TSO; TSO Forecast Absolute Error By 3h Block. |
+| [load_forecast_outputs/load_comparison_figures/Figure_3_accuracy_by_model_country_3h_block.png](load_forecast_outputs/load_comparison_figures/Figure_3_accuracy_by_model_country_3h_block.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Accuracy By Model Country 3h Block. |
+| [load_forecast_outputs/load_comparison_figures/Figure_4_stability_revision_percentage_by_country_3h_block.png](load_forecast_outputs/load_comparison_figures/Figure_4_stability_revision_percentage_by_country_3h_block.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Stability Revision Percentage By Country 3h Block. |
+| [load_forecast_outputs/load_comparison_figures/Figure_5_stability_revision_percentage_by_country_3h_block.png](load_forecast_outputs/load_comparison_figures/Figure_5_stability_revision_percentage_by_country_3h_block.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Stability Revision Percentage By Country 3h Block. |
+| [load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_BE.png](load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_BE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps BE. |
+| [load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_DE.png](load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_DE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps DE. |
+| [load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_FR.png](load_forecast_outputs/load_comparison_figures/Figure_6_uncertainty_heatmaps_FR.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps FR. |
 
 </details>
 
@@ -143,7 +133,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <summary>Solar (97 figures)</summary>
 
 <details>
-<summary>BE (28 figures)</summary>
+<summary>BE (27 figures)</summary>
 
 #### Accuracy
 
@@ -161,12 +151,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.png](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Solar TabPFN Test2 SunExistCovariate Accuracy Hourly MAPE. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_24_horizons.png](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_24_horizons.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Solar TabPFN Test2 SunExistCovariate Accuracy Scatter 24 Horizons. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_h1.png](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_h1.png) | BE | TabPFN | accuracy; BE; TabPFN; BE Solar TabPFN Test2 SunExistCovariate Accuracy Scatter H1. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_comparison_daily_profile.png](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_comparison_daily_profile.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Solar TabPFN Comparison Daily Profile. |
 
 #### Stability
 
@@ -191,7 +175,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>DE (28 figures)</summary>
+<summary>DE (27 figures)</summary>
 
 #### Accuracy
 
@@ -209,12 +193,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.png](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.png) | DE | TabPFN | accuracy; DE; TabPFN; DE Solar TabPFN Test2 SunExistCovariate Accuracy Hourly MAPE. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_24_horizons.png](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_24_horizons.png) | DE | TabPFN | accuracy; DE; TabPFN; DE Solar TabPFN Test2 SunExistCovariate Accuracy Scatter 24 Horizons. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_h1.png](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_h1.png) | DE | TabPFN | accuracy; DE; TabPFN; DE Solar TabPFN Test2 SunExistCovariate Accuracy Scatter H1. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_comparison_daily_profile.png](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_comparison_daily_profile.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Solar TabPFN Comparison Daily Profile. |
 
 #### Stability
 
@@ -239,7 +217,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>FR (28 figures)</summary>
+<summary>FR (27 figures)</summary>
 
 #### Accuracy
 
@@ -257,12 +235,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.png](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_hourly_mape.png) | FR | TabPFN | accuracy; FR; TabPFN; FR Solar TabPFN Test2 SunExistCovariate Accuracy Hourly MAPE. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_24_horizons.png](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_24_horizons.png) | FR | TabPFN | accuracy; FR; TabPFN; FR Solar TabPFN Test2 SunExistCovariate Accuracy Scatter 24 Horizons. |
 | [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_h1.png](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_Test2_SunExistCovariate_accuracy_scatter_h1.png) | FR | TabPFN | accuracy; FR; TabPFN; FR Solar TabPFN Test2 SunExistCovariate Accuracy Scatter H1. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_comparison_daily_profile.png](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_comparison_daily_profile.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Solar TabPFN Comparison Daily Profile. |
 
 #### Stability
 
@@ -287,35 +259,28 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>multi-country (13 figures)</summary>
+<summary>Comparison/summary (16 figures)</summary>
 
-#### Accuracy
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [solar_forecast_outputs/solar_comparison_figures/Figure1_TSO_signed_error_distribution_by_country.png](solar_forecast_outputs/solar_comparison_figures/Figure1_TSO_signed_error_distribution_by_country.png) | multi-country | TSO | accuracy; multi-country; TSO; TSO Signed Error Distribution By Country. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure2_TSO_absolute_error_by_3h_block.png](solar_forecast_outputs/solar_comparison_figures/Figure2_TSO_absolute_error_by_3h_block.png) | multi-country | TSO | accuracy; multi-country; TSO; TSO Absolute Error By 3h Block. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_BE.png](solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_BE.png) | multi-country | multiple | accuracy; multi-country; multiple; Accuracy By Model 3h Block BE. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_DE.png](solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_DE.png) | multi-country | multiple | accuracy; multi-country; multiple; Accuracy By Model 3h Block DE. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_FR.png](solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_FR.png) | multi-country | multiple | accuracy; multi-country; multiple; Accuracy By Model 3h Block FR. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure_3_accuracy_by_model_country_3h_block.png](solar_forecast_outputs/solar_comparison_figures/Figure_3_accuracy_by_model_country_3h_block.png) | multi-country | multiple | accuracy; multi-country; multiple; Accuracy By Model Country 3h Block. |
-
-#### Stability
+#### Comparison/summary
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_BE.png](solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_BE.png) | multi-country | multiple | stability; multi-country; multiple; Stability By Model 3h Block BE. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_DE.png](solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_DE.png) | multi-country | multiple | stability; multi-country; multiple; Stability By Model 3h Block DE. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_FR.png](solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_FR.png) | multi-country | multiple | stability; multi-country; multiple; Stability By Model 3h Block FR. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure_4_stability_revision_magnitude_by_country_3h_block.png](solar_forecast_outputs/solar_comparison_figures/Figure_4_stability_revision_magnitude_by_country_3h_block.png) | multi-country | multiple | stability; multi-country; multiple; Stability Revision Magnitude By Country 3h Block. |
-
-#### Uncertainty
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_BE.png](solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_BE.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps 3h Block BE. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_DE.png](solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_DE.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps 3h Block DE. |
-| [solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_FR.png](solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_FR.png) | multi-country | multiple | uncertainty; multi-country; multiple; Uncertainty Heatmaps 3h Block FR. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure1_TSO_signed_error_distribution_by_country.png](solar_forecast_outputs/solar_comparison_figures/Figure1_TSO_signed_error_distribution_by_country.png) | multi-country | TSO | comparison/summary; multi-country; TSO; TSO Signed Error Distribution By Country. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure2_TSO_absolute_error_by_3h_block.png](solar_forecast_outputs/solar_comparison_figures/Figure2_TSO_absolute_error_by_3h_block.png) | multi-country | TSO | comparison/summary; multi-country; TSO; TSO Absolute Error By 3h Block. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_BE.png](solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_BE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Accuracy By Model 3h Block BE. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_DE.png](solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_DE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Accuracy By Model 3h Block DE. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_FR.png](solar_forecast_outputs/solar_comparison_figures/Figure3_accuracy_by_model_3h_block_FR.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Accuracy By Model 3h Block FR. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_BE.png](solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_BE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Stability By Model 3h Block BE. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_DE.png](solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_DE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Stability By Model 3h Block DE. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_FR.png](solar_forecast_outputs/solar_comparison_figures/Figure4_stability_by_model_3h_block_FR.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Stability By Model 3h Block FR. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_BE.png](solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_BE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps 3h Block BE. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_DE.png](solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_DE.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps 3h Block DE. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_FR.png](solar_forecast_outputs/solar_comparison_figures/Figure5_uncertainty_heatmaps_3h_block_FR.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Uncertainty Heatmaps 3h Block FR. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure_3_accuracy_by_model_country_3h_block.png](solar_forecast_outputs/solar_comparison_figures/Figure_3_accuracy_by_model_country_3h_block.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Accuracy By Model Country 3h Block. |
+| [solar_forecast_outputs/solar_comparison_figures/Figure_4_stability_revision_magnitude_by_country_3h_block.png](solar_forecast_outputs/solar_comparison_figures/Figure_4_stability_revision_magnitude_by_country_3h_block.png) | multi-country | multiple | comparison/summary; multi-country; multiple; Stability Revision Magnitude By Country 3h Block. |
+| [solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_comparison_daily_profile.png](solar_forecast_outputs/tabpfn_solar_outputs/BE_Solar_TabPFN_comparison_daily_profile.png) | BE | TabPFN | comparison/summary; BE; TabPFN; BE Solar TabPFN Comparison Daily Profile. |
+| [solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_comparison_daily_profile.png](solar_forecast_outputs/tabpfn_solar_outputs/DE_Solar_TabPFN_comparison_daily_profile.png) | DE | TabPFN | comparison/summary; DE; TabPFN; DE Solar TabPFN Comparison Daily Profile. |
+| [solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_comparison_daily_profile.png](solar_forecast_outputs/tabpfn_solar_outputs/FR_Solar_TabPFN_comparison_daily_profile.png) | FR | TabPFN | comparison/summary; FR; TabPFN; FR Solar TabPFN Comparison Daily Profile. |
 
 </details>
 
@@ -325,10 +290,10 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 <summary>Wind (163 figures)</summary>
 
 <details>
-<summary>Onshore (76 figures)</summary>
+<summary>Onshore (72 figures)</summary>
 
 <details>
-<summary>BE (26 figures)</summary>
+<summary>BE (24 figures)</summary>
 
 #### Accuracy
 
@@ -346,13 +311,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_NoCovariates/accuracy/scatter.png) | BE | XGBoost NoCovariates | accuracy; BE; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | BE | XGBoost Wind100mCovariates | accuracy; BE; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/BE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | BE | XGBoost Wind100mCovariates | accuracy; BE; XGBoost Wind100mCovariates; Scatter. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Onshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
 
 #### Stability
 
@@ -374,7 +332,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>DE (25 figures)</summary>
+<summary>DE (24 figures)</summary>
 
 #### Accuracy
 
@@ -392,12 +350,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_NoCovariates/accuracy/scatter.png) | DE | XGBoost NoCovariates | accuracy; DE; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | DE | XGBoost Wind100mCovariates | accuracy; DE; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/DE/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | DE | XGBoost Wind100mCovariates | accuracy; DE; XGBoost Wind100mCovariates; Scatter. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
 
 #### Stability
 
@@ -419,7 +371,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>FR (25 figures)</summary>
+<summary>FR (24 figures)</summary>
 
 #### Accuracy
 
@@ -437,12 +389,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_NoCovariates/accuracy/scatter.png) | FR | XGBoost NoCovariates | accuracy; FR; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | FR | XGBoost Wind100mCovariates | accuracy; FR; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/FR/Wind_Onshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | FR | XGBoost Wind100mCovariates | accuracy; FR; XGBoost Wind100mCovariates; Scatter. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
 
 #### Stability
 
@@ -466,10 +412,10 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>Offshore (77 figures)</summary>
+<summary>Offshore (72 figures)</summary>
 
 <details>
-<summary>BE (26 figures)</summary>
+<summary>BE (24 figures)</summary>
 
 #### Accuracy
 
@@ -487,13 +433,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png) | BE | XGBoost NoCovariates | accuracy; BE; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | BE | XGBoost Wind100mCovariates | accuracy; BE; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/BE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | BE | XGBoost Wind100mCovariates | accuracy; BE; XGBoost Wind100mCovariates; Scatter. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Offshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
 
 #### Stability
 
@@ -515,7 +454,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>DE (25 figures)</summary>
+<summary>DE (24 figures)</summary>
 
 #### Accuracy
 
@@ -533,12 +472,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png) | DE | XGBoost NoCovariates | accuracy; DE; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | DE | XGBoost Wind100mCovariates | accuracy; DE; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/DE/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | DE | XGBoost Wind100mCovariates | accuracy; DE; XGBoost Wind100mCovariates; Scatter. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
 
 #### Stability
 
@@ -560,7 +493,7 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>FR (26 figures)</summary>
+<summary>FR (24 figures)</summary>
 
 #### Accuracy
 
@@ -578,13 +511,6 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_NoCovariates/accuracy/scatter.png) | FR | XGBoost NoCovariates | accuracy; FR; XGBoost NoCovariates; Scatter. |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/hourly_mae.png) | FR | XGBoost Wind100mCovariates | accuracy; FR; XGBoost Wind100mCovariates; Hourly MAE. |
 | [wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png](wind_forecast_outputs/FR/Wind_Offshore/XGBoost_Wind100mCovariates/accuracy/scatter.png) | FR | XGBoost Wind100mCovariates | accuracy; FR; XGBoost Wind100mCovariates; Scatter. |
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Offshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
 
 #### Stability
 
@@ -608,57 +534,31 @@ PNG figures are classified by domain and analysis type. Use the expandable secti
 </details>
 
 <details>
-<summary>Summary and comparison (10 figures)</summary>
+<summary>Comparison/summary (19 figures)</summary>
 
-<details>
-<summary>BE (3 figures)</summary>
-
-#### Comparison and summary
+#### Comparison/summary
 
 | Figure | Country | Model or scope | What to look for |
 | --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_TSO_absolute_error_by_3h.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Forecast TSO Absolute Error By 3h. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison and summary; BE; TabPFN; BE Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
-
-</details>
-
-<details>
-<summary>DE (3 figures)</summary>
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_TSO_absolute_error_by_3h.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Forecast TSO Absolute Error By 3h. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison and summary; DE; TabPFN; DE Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
-
-</details>
-
-<details>
-<summary>FR (3 figures)</summary>
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_TSO_absolute_error_by_3h.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Forecast TSO Absolute Error By 3h. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison and summary; FR; TabPFN; FR Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
-
-</details>
-
-<details>
-<summary>multi-country (1 figures)</summary>
-
-#### Comparison and summary
-
-| Figure | Country | Model or scope | What to look for |
-| --- | --- | --- | --- |
-| [wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_TSO_signed_error_by_country.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_TSO_signed_error_by_country.png) | multi-country | TabPFN | comparison and summary; multi-country; TabPFN; Wind Forecast TSO Signed Error By Country. |
-
-</details>
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_TSO_absolute_error_by_3h.png) | BE | TabPFN | comparison/summary; BE; TabPFN; BE Wind Forecast TSO Absolute Error By 3h. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison/summary; BE; TabPFN; BE Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison/summary; BE; TabPFN; BE Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison/summary; BE; TabPFN; BE Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | BE | TabPFN | comparison/summary; BE; TabPFN; BE Wind Offshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | BE | TabPFN | comparison/summary; BE; TabPFN; BE Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/BE_Wind_Onshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | BE | TabPFN | comparison/summary; BE; TabPFN; BE Wind Onshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_TSO_absolute_error_by_3h.png) | DE | TabPFN | comparison/summary; DE; TabPFN; DE Wind Forecast TSO Absolute Error By 3h. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison/summary; DE; TabPFN; DE Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison/summary; DE; TabPFN; DE Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison/summary; DE; TabPFN; DE Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/DE_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | DE | TabPFN | comparison/summary; DE; TabPFN; DE Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_TSO_absolute_error_by_3h.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_TSO_absolute_error_by_3h.png) | FR | TabPFN | comparison/summary; FR; TabPFN; FR Wind Forecast TSO Absolute Error By 3h. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_accuracy_error_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison/summary; FR; TabPFN; FR Wind Forecast Accuracy Error By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Forecast_stability_revision_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison/summary; FR; TabPFN; FR Wind Forecast Stability Revision By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison/summary; FR; TabPFN; FR Wind Offshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Offshore_combined_scatter_predicted_vs_actual_mixed_old_tabpfn.png) | FR | TabPFN | comparison/summary; FR; TabPFN; FR Wind Offshore Combined Scatter Predicted Vs Actual Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/FR_Wind_Onshore_Wind_Forecast_uncertainty_heatmaps_by_3h_mixed_old_tabpfn.png) | FR | TabPFN | comparison/summary; FR; TabPFN; FR Wind Onshore Wind Forecast Uncertainty Heatmaps By 3h Mixed Old TabPFN. |
+| [wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_TSO_signed_error_by_country.png](wind_forecast_outputs/summary_plots_with_old_tabpfn/Wind_Forecast_TSO_signed_error_by_country.png) | multi-country | TabPFN | comparison/summary; multi-country; TabPFN; Wind Forecast TSO Signed Error By Country. |
 
 </details>
 

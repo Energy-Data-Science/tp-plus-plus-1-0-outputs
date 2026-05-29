@@ -55,7 +55,7 @@ function analysisType(file) {
 }
 
 function countryOf(file) {
-  const match = file.match(/(?:^|\/|_)(BE|DE|FR)(?:\/|_|$)/);
+  const match = file.match(/(?:^|\/|_)(BE|DE|FR)(?=\/|_|\.|$)/);
   return match ? match[1] : "multi-country";
 }
 
@@ -69,17 +69,28 @@ function isComparisonSummaryFigure(file) {
   const domain = domainOf(file);
   const name = file.toLowerCase();
   const base = path.basename(file).toLowerCase();
+  if (isHeatmapFigure(file)) return true;
   if (domain === "Wind") return name.includes("summary_plot") || name.includes("summary_plots") || windSegmentOf(file) === "Comparison/summary";
   return countryOf(file) === "multi-country" || base.includes("comparison");
 }
 
+function isHeatmapFigure(file) {
+  return path.basename(file).toLowerCase().includes("heatmap");
+}
+
 function pictureType(file) {
   const name = file.toLowerCase();
-  const base = path.basename(file).toLowerCase();
+  if (isHeatmapFigure(file)) return "Uncertainty";
   if (isComparisonSummaryFigure(file)) return "Comparison/summary";
   if (name.includes("stability") || name.includes("revision")) return "Stability";
   if (name.includes("uncertainty") || name.includes("picp") || name.includes("badness") || name.includes("monthly")) return "Uncertainty";
   return "Accuracy";
+}
+
+function quickPictureTypes(file) {
+  const types = new Set([pictureType(file)]);
+  if (isComparisonSummaryFigure(file)) types.add("Comparison/summary");
+  return [...types];
 }
 
 function modelOf(file) {
@@ -104,9 +115,9 @@ function modelOf(file) {
   return found ? titleCase(found) : "multiple";
 }
 
-function describe(file) {
+function describe(file, typeOverride = null) {
   const base = path.basename(file, path.extname(file));
-  const type = pictureType(file).toLowerCase();
+  const type = (typeOverride || pictureType(file)).toLowerCase();
   const country = countryOf(file);
   const model = modelOf(file);
   let subject = titleCase(base.replace(/^Figure_?\d+_?/i, ""));
@@ -135,16 +146,16 @@ function detailsEnd(lines) {
   lines.push("</details>", "");
 }
 
-function pushFigureTables(lines, filesForSection, headingLevel = 4) {
+function pushFigureTables(lines, filesForSection, headingLevel = 4, forceType = null) {
   const marks = "#".repeat(headingLevel);
-  const byType = groupBy(filesForSection, pictureType);
+  const byType = groupBy(filesForSection, (file) => forceType || pictureType(file));
   for (const type of ["Accuracy", "Stability", "Uncertainty", "Comparison/summary"]) {
     if (!byType[type]?.length) continue;
     lines.push(`${marks} ${type}`, "");
     lines.push("| Figure | Country | Model or scope | What to look for |");
     lines.push("| --- | --- | --- | --- |");
     for (const file of byType[type]) {
-      lines.push(`| ${markdownLink(file)} | ${countryOf(file)} | ${modelOf(file)} | ${describe(file)} |`);
+      lines.push(`| ${markdownLink(file)} | ${countryOf(file)} | ${modelOf(file)} | ${describe(file, forceType)} |`);
     }
     lines.push("");
   }
@@ -198,6 +209,8 @@ function makePictureGuide() {
     "",
     "PNG figures are classified by domain and analysis type. Use the expandable sections to move from domain to country-specific or wind-type-specific diagnostics.",
     "",
+    "Heatmap figures are listed both under the relevant country/type uncertainty section and under Comparison/summary, so category counts are not mutually exclusive.",
+    "",
     "## Quick Classification",
     "",
     `| Domain | PNG files | ${pictureTypes.join(" | ")} |`,
@@ -206,8 +219,11 @@ function makePictureGuide() {
 
   for (const domain of ["Load", "Solar", "Wind"]) {
     const domainFiles = pngs.filter((file) => domainOf(file) === domain);
-    const counts = groupBy(domainFiles, pictureType);
-    lines.push(`| ${domain} | ${domainFiles.length} | ${pictureTypes.map((type) => (counts[type] || []).length).join(" | ")} |`);
+    const counts = {};
+    for (const file of domainFiles) {
+      for (const type of quickPictureTypes(file)) counts[type] = (counts[type] || 0) + 1;
+    }
+    lines.push(`| ${domain} | ${domainFiles.length} | ${pictureTypes.map((type) => counts[type] || 0).join(" | ")} |`);
   }
 
   lines.push("", "## Figure Inventory", "");
@@ -217,7 +233,7 @@ function makePictureGuide() {
     if (!domainFiles.length) continue;
     detailsStart(lines, `${domain} (${domainFiles.length} figures)`);
     for (const country of ["BE", "DE", "FR"]) {
-      const countryFiles = domainFiles.filter((file) => countryOf(file) === country && !isComparisonSummaryFigure(file));
+      const countryFiles = domainFiles.filter((file) => countryOf(file) === country && (!isComparisonSummaryFigure(file) || isHeatmapFigure(file)));
       if (!countryFiles.length) continue;
       detailsStart(lines, `${country} (${countryFiles.length} figures)`);
       pushFigureTables(lines, countryFiles);
@@ -226,7 +242,7 @@ function makePictureGuide() {
     const comparisonFiles = domainFiles.filter(isComparisonSummaryFigure);
     if (comparisonFiles.length) {
       detailsStart(lines, `Comparison/summary (${comparisonFiles.length} figures)`);
-      pushFigureTables(lines, comparisonFiles);
+      pushFigureTables(lines, comparisonFiles, 4, "Comparison/summary");
       detailsEnd(lines);
     }
     detailsEnd(lines);
@@ -236,7 +252,7 @@ function makePictureGuide() {
   if (windFiles.length) {
     detailsStart(lines, `Wind (${windFiles.length} figures)`);
     for (const segment of ["Onshore", "Offshore"]) {
-      const segmentFiles = windFiles.filter((file) => windSegmentOf(file) === segment && !isComparisonSummaryFigure(file));
+      const segmentFiles = windFiles.filter((file) => windSegmentOf(file) === segment && (!isComparisonSummaryFigure(file) || isHeatmapFigure(file)));
       if (!segmentFiles.length) continue;
       detailsStart(lines, `${segment} (${segmentFiles.length} figures)`);
       for (const country of ["BE", "DE", "FR", "multi-country"]) {
@@ -251,7 +267,7 @@ function makePictureGuide() {
     const comparisonFiles = windFiles.filter(isComparisonSummaryFigure);
     if (comparisonFiles.length) {
       detailsStart(lines, `Comparison/summary (${comparisonFiles.length} figures)`);
-      pushFigureTables(lines, comparisonFiles);
+      pushFigureTables(lines, comparisonFiles, 4, "Comparison/summary");
       detailsEnd(lines);
     }
     detailsEnd(lines);

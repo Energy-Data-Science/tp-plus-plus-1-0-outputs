@@ -1,0 +1,65 @@
+\begin{longtable}{llllrrrr}
+\caption{Wind forecast error metrics across models and evaluation settings.}\label{tab:wind_forecast_error_metrics}\\
+\toprule
+Country & Variable & Model & Evaluation & MAPE & MAE & RMSE & R$^2$ \\
+\midrule
+\endfirsthead
+\toprule
+Country & Variable & Model & Evaluation & MAPE & MAE & RMSE & R$^2$ \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+BE & Wind Offshore & Chronos2 & hourly cutoffs & 441.81 & 425.35 & 612.06 & 0.328 \\
+BE & Wind Offshore & Chronos2 + cov & hourly cutoffs & 220.36 & 263.04 & 391.22 & 0.726 \\
+BE & Wind Offshore & TabPFN & daily cutoffs & 579.94 & 488.42 & 710.32 & 0.095 \\
+BE & Wind Offshore & TabPFN + cov & daily cutoffs & 362.35 & 383.20 & 569.31 & 0.418 \\
+BE & Wind Offshore & TSO forecast & daily cutoffs & 89.08 & 146.02 & 227.33 & 0.907 \\
+BE & Wind Offshore & Weekly persistence & hourly cutoffs & 1035.56 & 785.57 & 1013.77 & -0.840 \\
+BE & Wind Offshore & XGBoost & hourly cutoffs & 532.75 & 426.95 & 581.21 & 0.394 \\
+BE & Wind Offshore & XGBoost + cov & hourly cutoffs & 390.13 & 339.32 & 472.56 & 0.600 \\
+BE & Wind Onshore & Chronos2 & hourly cutoffs & 171.79 & 295.46 & 439.01 & 0.477 \\
+BE & Wind Onshore & Chronos2 + cov & hourly cutoffs & 51.68 & 102.19 & 147.19 & 0.941 \\
+BE & Wind Onshore & TabPFN & daily cutoffs & 222.86 & 370.63 & 549.80 & 0.178 \\
+BE & Wind Onshore & TabPFN + cov & daily cutoffs & 121.79 & 240.03 & 362.63 & 0.642 \\
+BE & Wind Onshore & TSO forecast & daily cutoffs & 40.04 & 100.27 & 145.48 & 0.943 \\
+BE & Wind Onshore & Weekly persistence & hourly cutoffs & 574.50 & 606.42 & 816.54 & -0.805 \\
+BE & Wind Onshore & XGBoost & hourly cutoffs & 227.98 & 309.56 & 454.77 & 0.438 \\
+BE & Wind Onshore & XGBoost + cov & hourly cutoffs & 134.41 & 187.85 & 270.46 & 0.801 \\
+DE & Wind Offshore & Chronos2 & hourly cutoffs & 180.26 & 1134.20 & 1483.57 & 0.387 \\
+DE & Wind Offshore & Chronos2 + cov & hourly cutoffs & 180.56 & 1062.14 & 1394.01 & 0.459 \\
+DE & Wind Offshore & TabPFN & daily cutoffs & 43.79 & 1154.03 & 1538.81 & -0.038 \\
+DE & Wind Offshore & TabPFN + cov & daily cutoffs & 158.48 & 1294.05 & 1743.04 & 0.154 \\
+DE & Wind Offshore & TSO forecast & daily cutoffs & 38.92 & 574.06 & 813.94 & 0.815 \\
+DE & Wind Offshore & Weekly persistence & hourly cutoffs & 428.70 & 1958.02 & 2454.45 & -0.679 \\
+DE & Wind Offshore & XGBoost & hourly cutoffs & 203.67 & 1182.29 & 1557.09 & 0.325 \\
+DE & Wind Offshore & XGBoost + cov & hourly cutoffs & 187.97 & 1126.90 & 1484.95 & 0.386 \\
+DE & Wind Onshore & Chronos2 & hourly cutoffs & 63.81 & 4415.88 & 6342.52 & 0.623 \\
+DE & Wind Onshore & Chronos2 + cov & hourly cutoffs & 41.92 & 2636.16 & 3609.81 & 0.878 \\
+DE & Wind Onshore & TabPFN & daily cutoffs & 40.82 & 6928.84 & 9360.68 & 0.344 \\
+DE & Wind Onshore & TabPFN + cov & daily cutoffs & 63.56 & 4691.67 & 6730.69 & 0.575 \\
+DE & Wind Onshore & TSO forecast & daily cutoffs & 13.54 & 1166.86 & 1651.62 & 0.974 \\
+DE & Wind Onshore & Weekly persistence & hourly cutoffs & 187.32 & 10217.75 & 13451.62 & -0.696 \\
+DE & Wind Onshore & XGBoost & hourly cutoffs & 71.11 & 4796.29 & 6782.04 & 0.569 \\
+DE & Wind Onshore & XGBoost + cov & hourly cutoffs & 60.05 & 4127.63 & 5855.87 & 0.678 \\
+FR & Wind Offshore & Chronos2 & hourly cutoffs & 166.25 & 197.85 & 281.37 & 0.463 \\
+FR & Wind Offshore & Chronos2 + cov & hourly cutoffs & 149.84 & 171.60 & 243.26 & 0.599 \\
+FR & Wind Offshore & TabPFN & daily cutoffs & 161.36 & 222.17 & 327.90 & 0.271 \\
+FR & Wind Offshore & TabPFN + cov & daily cutoffs & 152.37 & 212.63 & 311.73 & 0.341 \\
+FR & Wind Offshore & TSO forecast & daily cutoffs & 57.72 & 93.38 & 133.99 & 0.878 \\
+FR & Wind Offshore & Weekly persistence & hourly cutoffs & 429.88 & 407.88 & 533.35 & -0.932 \\
+FR & Wind Offshore & XGBoost & hourly cutoffs & 176.46 & 289.36 & 412.10 & -0.152 \\
+FR & Wind Offshore & XGBoost + cov & hourly cutoffs & 143.53 & 296.24 & 425.97 & -0.231 \\
+FR & Wind Onshore & Chronos2 & hourly cutoffs & 44.55 & 1672.87 & 2497.29 & 0.579 \\
+FR & Wind Onshore & Chronos2 + cov & hourly cutoffs & 37.59 & 1407.62 & 2060.82 & 0.713 \\
+FR & Wind Onshore & TabPFN & daily cutoffs & 50.20 & 1946.16 & 2958.94 & 0.408 \\
+FR & Wind Onshore & TabPFN + cov & daily cutoffs & 45.24 & 1733.96 & 2600.87 & 0.543 \\
+FR & Wind Onshore & TSO forecast & daily cutoffs & 19.86 & 792.44 & 1255.61 & 0.893 \\
+FR & Wind Onshore & Weekly persistence & hourly cutoffs & 112.34 & 3752.70 & 5195.32 & -0.824 \\
+FR & Wind Onshore & XGBoost & hourly cutoffs & 44.82 & 1655.18 & 2429.38 & 0.601 \\
+FR & Wind Onshore & XGBoost + cov & hourly cutoffs & 39.05 & 1476.39 & 2175.58 & 0.680 \\
+\end{longtable}

@@ -1,0 +1,34 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Selected accuracy metrics by country for offshore wind forecasting.}
+\label{tab:offshore_wind_selected_accuracy}
+\resizebox{0.95\textwidth}{!}{%
+\begin{tabular}{lllrrrr}
+\toprule
+Country & Case & Selected model & MAPE (\%) & MAE (MW) & RMSE (MW) & $R^2$ \\
+\midrule
+BE & Daily persistence & Daily persistence & 753.3 & 616.4 & 835.0 & -0.236 \\
+ & TSO forecast & TSO forecast & 88.1 & 154.4 & 232.6 & 0.903 \\
+ & Best TabPFN without TSO cov & TabPFN + offshore weather & 109.1 & 182.2 & 279.7 & 0.863 \\
+ & Best TabPFN with TSO cov & TabPFN + offshore weather + TSO cov & 72.2 & 150.2 & 231.4 & 0.906 \\
+ & Best Chronos2 without TSO cov & Chronos2 + offshore weather & 91.8 & 163.4 & 236.8 & 0.900 \\
+ & Best Chronos2 with TSO cov & Chronos2 + offshore weather + TSO cov & 79.0 & 137.4 & 200.9 & 0.928 \\
+\addlinespace
+DE & Daily persistence & Daily persistence & 269.3 & 1736.5 & 2222.0 & -0.258 \\
+ & TSO forecast & TSO forecast & 38.0 & 540.8 & 763.1 & 0.852 \\
+ & Best TabPFN without TSO cov & TabPFN + offshore weather & 69.9 & 755.0 & 1028.3 & 0.731 \\
+ & Best TabPFN with TSO cov & TabPFN + offshore weather + TSO cov & 43.2 & 562.2 & 798.1 & 0.838 \\
+ & Best Chronos2 without TSO cov & Chronos2 + offshore weather & 49.4 & 618.9 & 854.1 & 0.814 \\
+ & Best Chronos2 with TSO cov & Chronos2 + offshore weather + TSO cov & 40.3 & 488.7 & 689.4 & 0.879 \\
+\addlinespace
+FR & Daily persistence & Daily persistence & 225.3 & 346.6 & 467.3 & -0.076 \\
+ & TSO forecast & TSO forecast & 52.5 & 132.1 & 211.7 & 0.779 \\
+ & Best TabPFN without TSO cov & TabPFN + offshore weather & 78.6 & 157.9 & 229.9 & 0.733 \\
+ & Best TabPFN with TSO cov & TabPFN + offshore weather + TSO cov & 50.5 & 113.5 & 166.3 & 0.860 \\
+ & Best Chronos2 without TSO cov & Chronos2 + offshore weather & 56.0 & 110.9 & 155.3 & 0.881 \\
+ & Best Chronos2 with TSO cov & Chronos2 + offshore weather + TSO cov & 47.5 & 94.4 & 135.4 & 0.910 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

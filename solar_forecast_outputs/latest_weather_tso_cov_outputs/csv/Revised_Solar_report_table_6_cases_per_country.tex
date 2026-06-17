@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\caption{Selected solar forecast accuracy metrics by country.}
+\label{tab:solar_selected_accuracy_metrics}
+\small
+\begin{tabular}{lllrrrr}
+\toprule
+Country & Case & Selected model & MAPE (\%) & MAE (MW) & RMSE (MW) & $R^2$ \\
+\midrule
+BE & Daily persistence & Daily Persistence & 76.0 & 398.7 & 841.3 & 0.6868 \\
+ & TSO forecast & TSO Forecast & 27.9 & 148.1 & 317.3 & 0.9554 \\
+ & Best TabPFN without TSO cov & TabPFN (no cov) & 86.8 & 362.1 & 705.9 & 0.7795 \\
+ & Best TabPFN with TSO cov & TabPFN + TSO cov & 29.5 & 153.4 & 329.8 & 0.9519 \\
+ & Best Chronos2 without TSO cov & Chronos2 + Solar + Temp & 38.6 & 209.4 & 420.6 & 0.9217 \\
+ & Best Chronos2 with TSO cov & Chronos2 + TSO cov & 27.1 & 160.5 & 317.8 & 0.9553 \\
+\midrule
+DE & Daily persistence & Daily Persistence & 32.7 & 1672.2 & 3492.5 & 0.8942 \\
+ & TSO forecast & TSO Forecast & 12.6 & 552.7 & 1147.2 & 0.9886 \\
+ & Best TabPFN without TSO cov & TabPFN (no cov) & 36.4 & 1575.5 & 3188.1 & 0.9118 \\
+ & Best TabPFN with TSO cov & TabPFN + TSO cov & 12.4 & 531.7 & 1112.2 & 0.9893 \\
+ & Best Chronos2 without TSO cov & Chronos2 + Solar + Temp & 24.3 & 1164.8 & 2291.1 & 0.9545 \\
+ & Best Chronos2 with TSO cov & Chronos2 + TSO cov & 13.9 & 696.7 & 1304.3 & 0.9852 \\
+\midrule
+FR & Daily persistence & Daily Persistence & 22.6 & 585.8 & 1223.8 & 0.8810 \\
+ & TSO forecast & TSO Forecast & 40.9 & 533.8 & 921.5 & 0.9325 \\
+ & Best TabPFN without TSO cov & TabPFN (no cov) & 26.7 & 584.8 & 1113.8 & 0.9014 \\
+ & Best TabPFN with TSO cov & TabPFN + TSO cov & 23.5 & 368.7 & 707.2 & 0.9603 \\
+ & Best Chronos2 without TSO cov & Chronos2 + Solar + Temp & 19.4 & 425.4 & 819.0 & 0.9467 \\
+ & Best Chronos2 with TSO cov & Chronos2 + TSO cov & 15.6 & 332.0 & 629.3 & 0.9685 \\
+\bottomrule
+\end{tabular}
+\end{table}

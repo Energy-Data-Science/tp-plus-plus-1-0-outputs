@@ -29,7 +29,7 @@ The previous output publication has been archived as `tp-plus-plus-0-0-outputs`.
 | Uncertainty | PICP/coverage summaries, CRPS/interval metrics, uncertainty heatmaps, and rolling-calibration results. |
 | Predictions and context | Day-ahead forecasts, model predictions, actual values, context files, and covariate metadata. |
 | Comparison/summary | Cross-model, cross-country, reduced selected cases, publication-style figures, and summary tables. |
-| TSO forecast quality | ENTSO-E forecast error, completeness, missing-data, flatline, capacity, and TSO-vs-persistence diagnostics. |
+| TSO forecast | ENTSO-E forecast error, completeness, missing-data, flatline, capacity, and TSO-vs-persistence diagnostics. |
 
 ## Start Here
 

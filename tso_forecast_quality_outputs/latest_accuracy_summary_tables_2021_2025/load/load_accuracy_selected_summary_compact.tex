@@ -1,0 +1,58 @@
+\begin{longtable}{lllllllll}
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endfirsthead
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+BE & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 4.72 & 436.63 & 628.24 & 0.780 \\
+BE & TSO forecast & TSO Forecast & 2024-2025 & - & 2.62 & 241.98 & 327.25 & 0.940 \\
+BE & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.49 & 227.66 & 340.66 & 0.935 \\
+BE & Chronos2 with Temp & Chronos2 + Temp & 2024-2025 & 3 months & 2.40 & 219.06 & 332.80 & 0.938 \\
+BE & Chronos2 with Temp + tso forecast & Chronos2 + Temp + TSO cov & 2024-2025 & 3 months & 2.14 & 195.67 & 278.43 & 0.957 \\
+BE & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 2.24 & 206.02 & 290.71 & 0.953 \\
+BE & Ridge without covariates & Ridge & 2024-2025 & 3 months & 4.91 & 451.45 & 598.04 & 0.801 \\
+BE & Ridge with Wind & Ridge + Wind & 2024-2025 & 3 months & 4.90 & 450.89 & 598.88 & 0.800 \\
+BE & Ridge with Wind + tso forecast & Ridge + Wind + TSO cov & 2024-2025 & 3 months & 2.93 & 268.48 & 353.46 & 0.930 \\
+BE & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 2.99 & 273.75 & 359.91 & 0.928 \\
+BE & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.01 & 276.54 & 410.23 & 0.906 \\
+BE & TabPFN with renew volatility & TabPFN + renew\_volatility & 2024-2025 & 3 months & 3.04 & 279.18 & 411.72 & 0.906 \\
+BE & TabPFN with renew volatility + tso forecast & TabPFN + renew\_volatility + TSO cov & 2024-2025 & 3 months & 2.52 & 231.59 & 319.92 & 0.943 \\
+BE & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.53 & 231.94 & 318.27 & 0.944 \\
+FR & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 6.56 & 3433.32 & 5062.41 & 0.752 \\
+FR & TSO forecast & TSO Forecast & 2024-2025 & - & 1.91 & 948.44 & 1270.85 & 0.984 \\
+FR & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.22 & 1103.56 & 1637.57 & 0.974 \\
+FR & Chronos2 with Temp & Chronos2 + Temp & 2024-2025 & 3 months & 1.98 & 979.96 & 1487.54 & 0.979 \\
+FR & Chronos2 with Temp + tso forecast & Chronos2 + Temp + TSO cov & 2024-2025 & 3 months & 1.51 & 751.90 & 1047.86 & 0.989 \\
+FR & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 1.58 & 787.92 & 1102.04 & 0.988 \\
+FR & Ridge without covariates & Ridge & 2024-2025 & 3 months & 5.27 & 2613.62 & 3522.20 & 0.880 \\
+FR & Ridge with Temp & Ridge + Temp & 2024-2025 & 3 months & 4.81 & 2364.37 & 3132.72 & 0.905 \\
+FR & Ridge with Temp + tso forecast & Ridge + Temp + TSO cov & 2024-2025 & 3 months & 1.99 & 977.60 & 1282.61 & 0.984 \\
+FR & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 2.04 & 1006.99 & 1330.36 & 0.983 \\
+FR & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.22 & 1621.28 & 2466.58 & 0.941 \\
+FR & TabPFN with deg proxy & TabPFN + deg\_proxy & 2024-2025 & 3 months & 2.83 & 1412.45 & 2176.02 & 0.954 \\
+FR & TabPFN with deg proxy + tso forecast & TabPFN + deg\_proxy + TSO cov & 2024-2025 & 3 months & 1.89 & 944.48 & 1322.25 & 0.983 \\
+FR & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.03 & 1018.44 & 1416.12 & 0.981 \\
+DE & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 5.04 & 2652.91 & 4053.81 & 0.807 \\
+DE & TSO forecast & TSO Forecast & 2024-2025 & - & 3.68 & 1947.88 & 2507.31 & 0.926 \\
+DE & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.54 & 1330.89 & 2152.73 & 0.945 \\
+DE & Chronos2 with renew volatility & Chronos2 + renew\_volatility & 2024-2025 & 3 months & 2.57 & 1343.65 & 2171.76 & 0.944 \\
+DE & Chronos2 with renew volatility + tso forecast & Chronos2 + renew\_volatility + TSO cov & 2024-2025 & 3 months & 2.11 & 1117.08 & 1544.70 & 0.972 \\
+DE & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 2.16 & 1143.64 & 1598.66 & 0.970 \\
+DE & Ridge without covariates & Ridge & 2024-2025 & 3 months & 6.12 & 3227.29 & 4289.21 & 0.784 \\
+DE & Ridge with Temp & Ridge + Temp & 2024-2025 & 3 months & 6.04 & 3194.16 & 4262.91 & 0.786 \\
+DE & Ridge with Temp + tso forecast & Ridge + Temp + TSO cov & 2024-2025 & 3 months & 3.52 & 1884.26 & 2422.17 & 0.931 \\
+DE & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 3.62 & 1936.51 & 2486.24 & 0.927 \\
+DE & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.29 & 1734.05 & 2905.72 & 0.901 \\
+DE & TabPFN with Solar & TabPFN + Solar & 2024-2025 & 3 months & 3.06 & 1606.91 & 2750.93 & 0.911 \\
+DE & TabPFN with Solar + tso forecast & TabPFN + Solar + TSO cov & 2024-2025 & 3 months & 2.39 & 1260.47 & 1814.62 & 0.961 \\
+DE & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.60 & 1377.07 & 1914.97 & 0.957 \\
+\end{longtable}

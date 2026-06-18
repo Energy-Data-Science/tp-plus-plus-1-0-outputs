@@ -1,0 +1,30 @@
+\begin{longtable}{lllllllll}
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endfirsthead
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+BE & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 4.72 & 436.63 & 628.24 & 0.780 \\
+BE & TSO forecast & TSO Forecast & 2024-2025 & - & 2.62 & 241.98 & 327.25 & 0.940 \\
+BE & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.49 & 227.66 & 340.66 & 0.935 \\
+BE & Chronos2 with Temp & Chronos2 + Temp & 2024-2025 & 3 months & 2.40 & 219.06 & 332.80 & 0.938 \\
+BE & Chronos2 with Temp + tso forecast & Chronos2 + Temp + TSO cov & 2024-2025 & 3 months & 2.14 & 195.67 & 278.43 & 0.957 \\
+BE & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 2.24 & 206.02 & 290.71 & 0.953 \\
+BE & Ridge without covariates & Ridge & 2024-2025 & 3 months & 4.91 & 451.45 & 598.04 & 0.801 \\
+BE & Ridge with Wind & Ridge + Wind & 2024-2025 & 3 months & 4.90 & 450.89 & 598.88 & 0.800 \\
+BE & Ridge with Wind + tso forecast & Ridge + Wind + TSO cov & 2024-2025 & 3 months & 2.93 & 268.48 & 353.46 & 0.930 \\
+BE & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 2.99 & 273.75 & 359.91 & 0.928 \\
+BE & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.01 & 276.54 & 410.23 & 0.906 \\
+BE & TabPFN with renew volatility & TabPFN + renew\_volatility & 2024-2025 & 3 months & 3.04 & 279.18 & 411.72 & 0.906 \\
+BE & TabPFN with renew volatility + tso forecast & TabPFN + renew\_volatility + TSO cov & 2024-2025 & 3 months & 2.52 & 231.59 & 319.92 & 0.943 \\
+BE & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.53 & 231.94 & 318.27 & 0.944 \\
+\end{longtable}

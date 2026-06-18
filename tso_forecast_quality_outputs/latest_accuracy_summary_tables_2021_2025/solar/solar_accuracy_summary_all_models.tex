@@ -1,0 +1,58 @@
+\begin{longtable}{lllllllll}
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endfirsthead
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+BE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 75.98 & 398.75 & 841.28 & 0.687 \\
+BE & TSO forecast & TSO Forecast & 2024-2025 & - & 27.89 & 148.13 & 317.26 & 0.955 \\
+BE & Chronos2 without covariates & Chronos2 NoCov & 2024-2025 & 3 months (92 days) & 67.54 & 347.41 & 694.03 & 0.787 \\
+BE & Chronos2 with TSO forecast covariate & Chronos2 TSOCov & 2024-2025 & 3 months (92 days) & 28.72 & 169.62 & 337.67 & 0.950 \\
+BE & Chronos2 with weather + TSO forecast covariates & Chronos2 Weather TSOCov & 2024-2025 & 3 months (92 days) & 27.06 & 160.51 & 317.82 & 0.955 \\
+BE & Chronos2 with weather covariates & Chronos2 WeatherCov & 2024-2025 & 3 months (92 days) & 38.57 & 209.36 & 420.60 & 0.922 \\
+BE & TabPFN without covariates & TabPFN NoCov & 2024-2025 & 3 months (92 days) & 86.75 & 362.14 & 705.87 & 0.779 \\
+BE & TabPFN with TSO forecast covariate & TabPFN TSOCov & 2024-2025 & 3 months (92 days) & 29.47 & 153.44 & 329.77 & 0.952 \\
+BE & TabPFN with weather + TSO forecast covariates & TabPFN Weather TSOCov & 2024-2025 & 3 months (92 days) & 29.47 & 153.42 & 329.77 & 0.952 \\
+BE & TabPFN with weather covariates & TabPFN WeatherCov & 2024-2025 & 3 months (92 days) & 87.95 & 362.86 & 705.98 & 0.779 \\
+BE & XGBoost without covariates & XGBoost NoCov & 2024-2025 & 3 months (92 days) & 69.46 & 364.82 & 707.07 & 0.779 \\
+BE & XGBoost with TSO forecast covariate & XGBoost TSOCov & 2024-2025 & 3 months (92 days) & 30.73 & 175.59 & 350.69 & 0.946 \\
+BE & XGBoost with weather + TSO forecast covariates & XGBoost Weather TSOCov & 2024-2025 & 3 months (92 days) & 30.14 & 174.03 & 349.30 & 0.946 \\
+BE & XGBoost with weather covariates & XGBoost WeatherCov & 2024-2025 & 3 months (92 days) & 69.66 & 364.20 & 705.58 & 0.780 \\
+FR & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 22.57 & 585.77 & 1223.84 & 0.881 \\
+FR & TSO forecast & TSO Forecast & 2024-2025 & - & 40.94 & 533.81 & 921.50 & 0.933 \\
+FR & Chronos2 without covariates & Chronos2 NoCov & 2024-2025 & 3 months (92 days) & 24.26 & 544.32 & 1065.67 & 0.910 \\
+FR & Chronos2 with TSO forecast covariate & Chronos2 TSOCov & 2024-2025 & 3 months (92 days) & 16.55 & 354.92 & 672.06 & 0.964 \\
+FR & Chronos2 with weather + TSO forecast covariates & Chronos2 Weather TSOCov & 2024-2025 & 3 months (92 days) & 15.59 & 332.04 & 629.29 & 0.969 \\
+FR & Chronos2 with weather covariates & Chronos2 WeatherCov & 2024-2025 & 3 months (92 days) & 19.42 & 425.45 & 818.95 & 0.947 \\
+FR & TabPFN without covariates & TabPFN NoCov & 2024-2025 & 3 months (92 days) & 26.70 & 584.75 & 1113.82 & 0.901 \\
+FR & TabPFN with TSO forecast covariate & TabPFN TSOCov & 2024-2025 & 3 months (92 days) & 15.95 & 371.44 & 706.83 & 0.960 \\
+FR & TabPFN with weather + TSO forecast covariates & TabPFN Weather TSOCov & 2024-2025 & 3 months (92 days) & 23.48 & 368.71 & 707.24 & 0.960 \\
+FR & TabPFN with weather covariates & TabPFN WeatherCov & 2024-2025 & 3 months (92 days) & 37.52 & 593.50 & 1121.57 & 0.900 \\
+FR & XGBoost without covariates & XGBoost NoCov & 2024-2025 & 3 months (92 days) & 21.64 & 583.68 & 1147.57 & 0.895 \\
+FR & XGBoost with TSO forecast covariate & XGBoost TSOCov & 2024-2025 & 3 months (92 days) & 16.73 & 436.11 & 820.53 & 0.946 \\
+FR & XGBoost with weather + TSO forecast covariates & XGBoost Weather TSOCov & 2024-2025 & 3 months (92 days) & 16.51 & 434.59 & 817.48 & 0.947 \\
+FR & XGBoost with weather covariates & XGBoost WeatherCov & 2024-2025 & 3 months (92 days) & 21.62 & 586.84 & 1155.78 & 0.894 \\
+DE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 32.70 & 1672.23 & 3492.47 & 0.894 \\
+DE & TSO forecast & TSO Forecast & 2024-2025 & - & 12.56 & 552.69 & 1147.20 & 0.989 \\
+DE & Chronos2 without covariates & Chronos2 NoCov & 2024-2025 & 3 months (92 days) & 30.07 & 1522.39 & 3048.66 & 0.919 \\
+DE & Chronos2 with TSO forecast covariate & Chronos2 TSOCov & 2024-2025 & 3 months (92 days) & 14.39 & 722.68 & 1351.19 & 0.984 \\
+DE & Chronos2 with weather + TSO forecast covariates & Chronos2 Weather TSOCov & 2024-2025 & 3 months (92 days) & 13.91 & 696.66 & 1304.31 & 0.985 \\
+DE & Chronos2 with weather covariates & Chronos2 WeatherCov & 2024-2025 & 3 months (92 days) & 24.33 & 1164.75 & 2291.06 & 0.954 \\
+DE & TabPFN without covariates & TabPFN NoCov & 2024-2025 & 3 months (92 days) & 36.42 & 1575.54 & 3188.10 & 0.912 \\
+DE & TabPFN with TSO forecast covariate & TabPFN TSOCov & 2024-2025 & 3 months (92 days) & 12.42 & 531.74 & 1112.24 & 0.989 \\
+DE & TabPFN with weather + TSO forecast covariates & TabPFN Weather TSOCov & 2024-2025 & 3 months (92 days) & 12.42 & 532.51 & 1112.25 & 0.989 \\
+DE & TabPFN with weather covariates & TabPFN WeatherCov & 2024-2025 & 3 months (92 days) & 38.75 & 1593.13 & 3191.43 & 0.912 \\
+DE & XGBoost without covariates & XGBoost NoCov & 2024-2025 & 3 months (92 days) & 30.82 & 1619.69 & 3156.34 & 0.914 \\
+DE & XGBoost with TSO forecast covariate & XGBoost TSOCov & 2024-2025 & 3 months (92 days) & 12.91 & 683.29 & 1339.35 & 0.984 \\
+DE & XGBoost with weather + TSO forecast covariates & XGBoost Weather TSOCov & 2024-2025 & 3 months (92 days) & 12.72 & 672.33 & 1322.55 & 0.985 \\
+DE & XGBoost with weather covariates & XGBoost WeatherCov & 2024-2025 & 3 months (92 days) & 30.69 & 1617.12 & 3163.04 & 0.913 \\
+\end{longtable}

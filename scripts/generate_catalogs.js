@@ -43,6 +43,7 @@ function domainOf(file) {
   if (file.startsWith("load_forecast_outputs/")) return "Load";
   if (file.startsWith("solar_forecast_outputs/")) return "Solar";
   if (file.startsWith("wind_forecast_outputs/")) return "Wind";
+  if (file.startsWith("tso_forecast_quality_outputs/")) return "TSO forecast quality";
   return "Other";
 }
 
@@ -89,6 +90,7 @@ function isComparisonSummary(file) {
   return (
     isHeatmap(file) ||
     countryOf(file) === "multi-country" ||
+    lower.includes("latest_accuracy_summary_tables") ||
     lower.includes("latest_selected") ||
     lower.includes("reduced_selected") ||
     lower.includes("summary_plots") ||
@@ -182,15 +184,22 @@ function makeDataGuide(files) {
     "| --- | --- | ---: | --- |",
   ];
 
-  for (const domain of ["Load", "Solar", "Wind"]) {
+  for (const domain of ["Load", "Solar", "Wind", "TSO forecast quality"]) {
     const domainFiles = dataFiles.filter((file) => domainOf(file) === domain);
-    const folder = domain === "Load" ? "load_forecast_outputs/" : domain === "Solar" ? "solar_forecast_outputs/" : "wind_forecast_outputs/";
+    const folder =
+      domain === "Load"
+        ? "load_forecast_outputs/"
+        : domain === "Solar"
+          ? "solar_forecast_outputs/"
+          : domain === "Wind"
+            ? "wind_forecast_outputs/"
+            : "tso_forecast_quality_outputs/";
     const types = [...new Set(domainFiles.map(analysisType))].filter((type) => type !== "Other");
     lines.push(`| ${domain} | \`${folder}\` | ${domainFiles.length} | ${types.join(", ")} |`);
   }
 
   lines.push("", "## Inventory", "");
-  for (const domain of ["Load", "Solar", "Wind", "Other"]) {
+  for (const domain of ["Load", "Solar", "Wind", "TSO forecast quality", "Other"]) {
     const domainFiles = dataFiles.filter((file) => domainOf(file) === domain);
     if (!domainFiles.length) continue;
     lines.push(`### ${domain}`, "");
@@ -224,7 +233,7 @@ function makePictureGuide(files) {
     `| --- | ---: | ${pictureTypes.map(() => "---:").join(" | ")} |`,
   ];
 
-  for (const domain of ["Load", "Solar", "Wind"]) {
+  for (const domain of ["Load", "Solar", "Wind", "TSO forecast quality"]) {
     const domainFiles = pngs.filter((file) => domainOf(file) === domain);
     const counts = {};
     for (const file of domainFiles) {
@@ -247,6 +256,25 @@ function makePictureGuide(files) {
       detailsEnd(lines);
     }
     const comparisonFiles = domainFiles.filter(isComparisonSummary);
+    if (comparisonFiles.length) {
+      detailsStart(lines, `Comparison/summary (${comparisonFiles.length} figures)`);
+      pushFigureTables(lines, comparisonFiles, 4, "Comparison/summary");
+      detailsEnd(lines);
+    }
+    detailsEnd(lines);
+  }
+
+  const tsoFiles = pngs.filter((file) => domainOf(file) === "TSO forecast quality");
+  if (tsoFiles.length) {
+    detailsStart(lines, `TSO forecast quality (${tsoFiles.length} figures)`);
+    for (const country of ["BE", "DE", "FR"]) {
+      const countryFiles = tsoFiles.filter((file) => countryOf(file) === country && (!isComparisonSummary(file) || isHeatmap(file)));
+      if (!countryFiles.length) continue;
+      detailsStart(lines, `${country} (${countryFiles.length} figures)`);
+      pushFigureTables(lines, countryFiles);
+      detailsEnd(lines);
+    }
+    const comparisonFiles = tsoFiles.filter((file) => isComparisonSummary(file) || countryOf(file) === "multi-country");
     if (comparisonFiles.length) {
       detailsStart(lines, `Comparison/summary (${comparisonFiles.length} figures)`);
       pushFigureTables(lines, comparisonFiles, 4, "Comparison/summary");

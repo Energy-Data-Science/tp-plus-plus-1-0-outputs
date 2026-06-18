@@ -1,0 +1,30 @@
+\begin{longtable}{lllllllll}
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endfirsthead
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+DE & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 5.04 & 2652.91 & 4053.81 & 0.807 \\
+DE & TSO forecast & TSO Forecast & 2024-2025 & - & 3.68 & 1947.88 & 2507.31 & 0.926 \\
+DE & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.54 & 1330.89 & 2152.73 & 0.945 \\
+DE & Chronos2 with renew volatility & Chronos2 + renew\_volatility & 2024-2025 & 3 months & 2.57 & 1343.65 & 2171.76 & 0.944 \\
+DE & Chronos2 with renew volatility + tso forecast & Chronos2 + renew\_volatility + TSO cov & 2024-2025 & 3 months & 2.11 & 1117.08 & 1544.70 & 0.972 \\
+DE & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 2.16 & 1143.64 & 1598.66 & 0.970 \\
+DE & Ridge without covariates & Ridge & 2024-2025 & 3 months & 6.12 & 3227.29 & 4289.21 & 0.784 \\
+DE & Ridge with Temp & Ridge + Temp & 2024-2025 & 3 months & 6.04 & 3194.16 & 4262.91 & 0.786 \\
+DE & Ridge with Temp + tso forecast & Ridge + Temp + TSO cov & 2024-2025 & 3 months & 3.52 & 1884.26 & 2422.17 & 0.931 \\
+DE & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 3.62 & 1936.51 & 2486.24 & 0.927 \\
+DE & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.29 & 1734.05 & 2905.72 & 0.901 \\
+DE & TabPFN with Solar & TabPFN + Solar & 2024-2025 & 3 months & 3.06 & 1606.91 & 2750.93 & 0.911 \\
+DE & TabPFN with Solar + tso forecast & TabPFN + Solar + TSO cov & 2024-2025 & 3 months & 2.39 & 1260.47 & 1814.62 & 0.961 \\
+DE & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.60 & 1377.07 & 1914.97 & 0.957 \\
+\end{longtable}

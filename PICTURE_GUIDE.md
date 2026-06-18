@@ -11,6 +11,7 @@ Heatmap figures are intentionally listed under both the relevant country/type un
 | Load | 133 | 111 | 22 | 21 |
 | Solar | 52 | 48 | 4 | 10 |
 | Wind | 343 | 309 | 26 | 163 |
+| TSO forecast quality | 35 | 26 | 1 | 29 |
 
 ## Figure Inventory
 
@@ -323,6 +324,86 @@ Heatmap figures are intentionally listed under both the relevant country/type un
 | [solar_forecast_outputs/latest_weather_tso_cov_outputs/figures/Revised_Figure_mae_reduction_vs_tso_FR.png](solar_forecast_outputs/latest_weather_tso_cov_outputs/figures/Revised_Figure_mae_reduction_vs_tso_FR.png) | FR | TSO | comparison/summary; FR; TSO; Revised Figure MAE Reduction Vs TSO FR. |
 | [solar_forecast_outputs/latest_weather_tso_cov_outputs/figures/Revised_Figure_mae_reduction_vs_tso_all_countries.png](solar_forecast_outputs/latest_weather_tso_cov_outputs/figures/Revised_Figure_mae_reduction_vs_tso_all_countries.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Revised Figure MAE Reduction Vs TSO All Countries. |
 | [solar_forecast_outputs/latest_weather_tso_cov_outputs/figures/Revised_Figure_monthly_rmse_all_countries.png](solar_forecast_outputs/latest_weather_tso_cov_outputs/figures/Revised_Figure_monthly_rmse_all_countries.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Revised Figure Monthly RMSE All Countries. |
+
+</details>
+
+</details>
+
+<details>
+<summary>TSO forecast quality (35 figures)</summary>
+
+<details>
+<summary>BE (2 figures)</summary>
+
+#### Accuracy
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_BE_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_BE_2021_2025.png) | BE | TSO | accuracy; BE; TSO; Forecast Absolute Error By Year BE 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/monthly_completeness_BE_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/monthly_completeness_BE_2021_2025.png) | BE | TSO | accuracy; BE; TSO; Monthly Completeness BE 2021 2025. |
+
+</details>
+
+<details>
+<summary>DE (2 figures)</summary>
+
+#### Accuracy
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_DE_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_DE_2021_2025.png) | DE | TSO | accuracy; DE; TSO; Forecast Absolute Error By Year DE 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/monthly_completeness_DE_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/monthly_completeness_DE_2021_2025.png) | DE | TSO | accuracy; DE; TSO; Monthly Completeness DE 2021 2025. |
+
+</details>
+
+<details>
+<summary>FR (2 figures)</summary>
+
+#### Accuracy
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_FR_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_FR_2021_2025.png) | FR | TSO | accuracy; FR; TSO; Forecast Absolute Error By Year FR 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/monthly_completeness_FR_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/monthly_completeness_FR_2021_2025.png) | FR | TSO | accuracy; FR; TSO; Monthly Completeness FR 2021 2025. |
+
+</details>
+
+<details>
+<summary>Comparison/summary (29 figures)</summary>
+
+#### Comparison/summary
+
+| Figure | Country | Model or scope | What to look for |
+| --- | --- | --- | --- |
+| [tso_forecast_quality_outputs/reports_2021_2025/0_00_forecast_absolute_error_by_country_year_hue_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/0_00_forecast_absolute_error_by_country_year_hue_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; 0 00 Forecast Absolute Error By Country Year Hue 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/0_01_rmse_tso_by_country_year_hue_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/0_01_rmse_tso_by_country_year_hue_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; 0 01 RMSE TSO By Country Year Hue 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/0_02_rmse_persistence_by_country_year_hue_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/0_02_rmse_persistence_by_country_year_hue_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 0 02 RMSE Persistence By Country Year Hue 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/0_03_monthly_rmse_tso_forecast_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/0_03_monthly_rmse_tso_forecast_by_target_country_lines_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; 0 03 Monthly RMSE TSO Forecast By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/0_04_monthly_rmse_persistence_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/0_04_monthly_rmse_persistence_by_target_country_lines_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 0 04 Monthly RMSE Persistence By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_01_normalized_load_error_boxplot_by_model_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_01_normalized_load_error_boxplot_by_model_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; 1 01 Normalized Load Error Boxplot By Model 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_02_normalized_renewable_error_boxplot_by_model_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_02_normalized_renewable_error_boxplot_by_model_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; 1 02 Normalized Renewable Error Boxplot By Model 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_03_monthly_normalized_mae_tso_forecast_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_03_monthly_normalized_mae_tso_forecast_by_target_country_lines_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; 1 03 Monthly Normalized MAE TSO Forecast By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_03_monthly_rmae_tso_forecast_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_03_monthly_rmae_tso_forecast_by_target_country_lines_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; 1 03 Monthly Rmae TSO Forecast By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_04_monthly_normalized_mae_persistence_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_04_monthly_normalized_mae_persistence_by_target_country_lines_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 1 04 Monthly Normalized MAE Persistence By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_04_monthly_rmae_persistence_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_04_monthly_rmae_persistence_by_target_country_lines_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 1 04 Monthly Rmae Persistence By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_05_rmse_tso_vs_persistence_scatter_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_05_rmse_tso_vs_persistence_scatter_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 1 05 RMSE TSO Vs Persistence Scatter 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_06_monthly_rmae_tso_over_persistence_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_06_monthly_rmae_tso_over_persistence_by_target_country_lines_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 1 06 Monthly Rmae TSO Over Persistence By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_06_monthly_rmae_tso_over_persistence_by_target_country_lines_2021_2025_revised.png](tso_forecast_quality_outputs/reports_2021_2025/1_06_monthly_rmae_tso_over_persistence_by_target_country_lines_2021_2025_revised.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 1 06 Monthly Rmae TSO Over Persistence By Target Country Lines 2021 2025 Revised. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_07_monthly_tso_mae_reduction_vs_persistence_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_07_monthly_tso_mae_reduction_vs_persistence_by_target_country_lines_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 1 07 Monthly TSO MAE Reduction Vs Persistence By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/1_08_normalized_rmse_tso_vs_persistence_scatter_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/1_08_normalized_rmse_tso_vs_persistence_scatter_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; 1 08 Normalized RMSE TSO Vs Persistence Scatter 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/flatline_timeline_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/flatline_timeline_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Flatline Timeline 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/flatline_timeline_offshore_focus_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/flatline_timeline_offshore_focus_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Flatline Timeline Offshore Focus 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_country_year_hue_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_country_year_hue_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Forecast Absolute Error By Country Year Hue 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_all_countries_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_all_countries_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Forecast Absolute Error By Year All Countries 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/fr_missing_timeline_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/fr_missing_timeline_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Fr Missing Timeline 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/monthly_rmse_persistence_by_country_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/monthly_rmse_persistence_by_country_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; Monthly RMSE Persistence By Country 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/monthly_rmse_persistence_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/monthly_rmse_persistence_by_target_country_lines_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; Monthly RMSE Persistence By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/monthly_rmse_tso_forecast_by_country_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/monthly_rmse_tso_forecast_by_country_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Monthly RMSE TSO Forecast By Country 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/monthly_rmse_tso_forecast_by_target_country_lines_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/monthly_rmse_tso_forecast_by_target_country_lines_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; Monthly RMSE TSO Forecast By Target Country Lines 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/rmse_persistence_by_country_year_hue_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/rmse_persistence_by_country_year_hue_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; RMSE Persistence By Country Year Hue 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/rmse_skill_tso_vs_persistence_heatmap_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/rmse_skill_tso_vs_persistence_heatmap_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; RMSE Skill TSO Vs Persistence Heatmap 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/rmse_tso_by_country_year_hue_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/rmse_tso_by_country_year_hue_2021_2025.png) | multi-country | TSO | comparison/summary; multi-country; TSO; RMSE TSO By Country Year Hue 2021 2025. |
+| [tso_forecast_quality_outputs/reports_2021_2025/rmse_tso_vs_persistence_scatter_2021_2025.png](tso_forecast_quality_outputs/reports_2021_2025/rmse_tso_vs_persistence_scatter_2021_2025.png) | multi-country | Persistence | comparison/summary; multi-country; Persistence; RMSE TSO Vs Persistence Scatter 2021 2025. |
 
 </details>
 

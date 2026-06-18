@@ -1,0 +1,30 @@
+\begin{longtable}{lllllllll}
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endfirsthead
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+FR & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 6.56 & 3433.32 & 5062.41 & 0.752 \\
+FR & TSO forecast & TSO Forecast & 2024-2025 & - & 1.91 & 948.44 & 1270.85 & 0.984 \\
+FR & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.22 & 1103.56 & 1637.57 & 0.974 \\
+FR & Chronos2 with Temp & Chronos2 + Temp & 2024-2025 & 3 months & 1.98 & 979.96 & 1487.54 & 0.979 \\
+FR & Chronos2 with Temp + tso forecast & Chronos2 + Temp + TSO cov & 2024-2025 & 3 months & 1.51 & 751.90 & 1047.86 & 0.989 \\
+FR & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 1.58 & 787.92 & 1102.04 & 0.988 \\
+FR & Ridge without covariates & Ridge & 2024-2025 & 3 months & 5.27 & 2613.62 & 3522.20 & 0.880 \\
+FR & Ridge with Temp & Ridge + Temp & 2024-2025 & 3 months & 4.81 & 2364.37 & 3132.72 & 0.905 \\
+FR & Ridge with Temp + tso forecast & Ridge + Temp + TSO cov & 2024-2025 & 3 months & 1.99 & 977.60 & 1282.61 & 0.984 \\
+FR & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 2.04 & 1006.99 & 1330.36 & 0.983 \\
+FR & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.22 & 1621.28 & 2466.58 & 0.941 \\
+FR & TabPFN with deg proxy & TabPFN + deg\_proxy & 2024-2025 & 3 months & 2.83 & 1412.45 & 2176.02 & 0.954 \\
+FR & TabPFN with deg proxy + tso forecast & TabPFN + deg\_proxy + TSO cov & 2024-2025 & 3 months & 1.89 & 944.48 & 1322.25 & 0.983 \\
+FR & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.03 & 1018.44 & 1416.12 & 0.981 \\
+\end{longtable}

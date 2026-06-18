@@ -1,0 +1,30 @@
+\begin{longtable}{lllllllll}
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endfirsthead
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+BE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 753.30 & 616.37 & 834.96 & -0.236 \\
+BE & TSO forecast & TSO Forecast & 2024-2025 & - & 88.10 & 154.40 & 232.55 & 0.903 \\
+BE & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 510.86 & 428.75 & 607.20 & 0.333 \\
+BE & Chronos2 with offshore weather covariates & Chronos2 OffshoreWeather & 2024-2025 & 3 months (90 days) & 91.83 & 163.44 & 236.80 & 0.900 \\
+BE & Chronos2 with offshore weather + TSO forecast covariates & Chronos2 OffshoreWeather TSOForecast & 2024-2025 & 3 months (90 days) & 79.00 & 137.36 & 200.87 & 0.928 \\
+BE & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 105.70 & 157.54 & 231.49 & 0.904 \\
+BE & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 659.47 & 504.92 & 724.16 & 0.078 \\
+BE & TabPFN with offshore weather covariates & TabPFN OffshoreWeather & 2024-2025 & 2 weeks & 109.05 & 182.19 & 279.70 & 0.863 \\
+BE & TabPFN with offshore weather + TSO forecast covariates & TabPFN OffshoreWeather TSOForecast & 2024-2025 & 2 weeks & 72.19 & 150.17 & 231.42 & 0.906 \\
+BE & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 117.27 & 182.99 & 277.36 & 0.865 \\
+BE & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 30 days & 597.17 & 464.51 & 649.81 & 0.258 \\
+BE & XGBoost with offshore weather covariates & XGBoost OffshoreWeather & 2024-2025 & 30 days & 171.10 & 194.17 & 271.87 & 0.870 \\
+BE & XGBoost with offshore weather + TSO forecast covariates & XGBoost OffshoreWeather TSOForecast & 2024-2025 & 30 days & 150.22 & 168.86 & 239.56 & 0.899 \\
+BE & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 30 days & 246.56 & 229.22 & 313.82 & 0.827 \\
+\end{longtable}

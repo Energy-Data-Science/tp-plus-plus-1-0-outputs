@@ -1,0 +1,70 @@
+\begin{longtable}{lllllllll}
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endfirsthead
+\toprule
+Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{9}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+BE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 238.97 & 432.77 & 605.23 & -0.111 \\
+BE & TSO forecast & TSO Forecast & 2024-2025 & - & 35.91 & 109.18 & 159.12 & 0.923 \\
+BE & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 167.70 & 293.56 & 429.89 & 0.439 \\
+BE & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 45.23 & 94.82 & 134.93 & 0.945 \\
+BE & Chronos2 with 100m wind covariates & Chronos2 Wind100m & 2024-2025 & 3 months (90 days) & 49.20 & 113.25 & 161.55 & 0.921 \\
+BE & Chronos2 with 100m wind + TSO forecast covariates & Chronos2 Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 35.14 & 86.77 & 124.63 & 0.953 \\
+BE & Ridge without covariates & Ridge NoCovariates & 2024-2025 & 3 months (90 days) & 256.24 & 319.22 & 449.56 & 0.387 \\
+BE & Ridge with TSO forecast covariate & Ridge TSOForecast & 2024-2025 & 3 months (90 days) & 63.38 & 127.29 & 180.71 & 0.901 \\
+BE & Ridge with 100m wind covariates & Ridge Wind100m & 2024-2025 & 3 months (90 days) & 140.58 & 235.86 & 326.27 & 0.677 \\
+BE & Ridge with 100m wind + TSO forecast covariates & Ridge Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 57.87 & 123.06 & 173.76 & 0.908 \\
+BE & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 205.96 & 357.50 & 532.24 & 0.141 \\
+BE & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 42.64 & 117.57 & 174.15 & 0.908 \\
+BE & TabPFN with 100m wind covariates & TabPFN Wind100m & 2024-2025 & 2 weeks & 143.10 & 272.30 & 405.14 & 0.502 \\
+BE & TabPFN with 100m wind + TSO forecast covariates & TabPFN Wind100m TSOForecast & 2024-2025 & 2 weeks & 41.42 & 114.25 & 169.52 & 0.913 \\
+BE & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 3 months (90 days) & 212.56 & 329.38 & 472.07 & 0.324 \\
+BE & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 3 months (90 days) & 79.59 & 142.02 & 202.88 & 0.875 \\
+BE & XGBoost with 100m wind covariates & XGBoost Wind100m & 2024-2025 & 3 months (90 days) & 153.97 & 225.59 & 319.16 & 0.691 \\
+BE & XGBoost with 100m wind + TSO forecast covariates & XGBoost Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 76.29 & 134.59 & 192.46 & 0.888 \\
+FR & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 67.95 & 2515.88 & 3506.78 & 0.023 \\
+FR & TSO forecast & TSO Forecast & 2024-2025 & - & 19.21 & 759.91 & 1180.32 & 0.888 \\
+FR & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 44.46 & 1613.66 & 2352.02 & 0.560 \\
+FR & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 15.79 & 596.69 & 917.79 & 0.932 \\
+FR & Chronos2 with 100m wind covariates & Chronos2 Wind100m & 2024-2025 & 3 months (90 days) & 32.95 & 1202.03 & 1726.37 & 0.761 \\
+FR & Chronos2 with 100m wind + TSO forecast covariates & Chronos2 Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 15.17 & 589.30 & 909.00 & 0.934 \\
+FR & Ridge without covariates & Ridge NoCovariates & 2024-2025 & 3 months (90 days) & 53.87 & 1774.40 & 2552.23 & 0.477 \\
+FR & Ridge with TSO forecast covariate & Ridge TSOForecast & 2024-2025 & 3 months (90 days) & 23.43 & 832.61 & 1184.69 & 0.887 \\
+FR & Ridge with 100m wind covariates & Ridge Wind100m & 2024-2025 & 3 months (90 days) & 47.86 & 1596.47 & 2263.67 & 0.588 \\
+FR & Ridge with 100m wind + TSO forecast covariates & Ridge Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 23.30 & 832.88 & 1182.19 & 0.888 \\
+FR & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 54.33 & 1919.05 & 2823.55 & 0.360 \\
+FR & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 22.63 & 889.27 & 1368.22 & 0.850 \\
+FR & TabPFN with 100m wind covariates & TabPFN Wind100m & 2024-2025 & 2 weeks & 47.53 & 1715.26 & 2509.92 & 0.494 \\
+FR & TabPFN with 100m wind + TSO forecast covariates & TabPFN Wind100m TSOForecast & 2024-2025 & 2 weeks & 22.01 & 863.97 & 1313.83 & 0.861 \\
+FR & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 3 months (90 days) & 54.35 & 1847.43 & 2606.37 & 0.455 \\
+FR & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 3 months (90 days) & 26.05 & 945.19 & 1343.81 & 0.855 \\
+FR & XGBoost with 100m wind covariates & XGBoost Wind100m & 2024-2025 & 3 months (90 days) & 50.53 & 1690.57 & 2348.05 & 0.557 \\
+FR & XGBoost with 100m wind + TSO forecast covariates & XGBoost Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 27.21 & 979.65 & 1375.71 & 0.848 \\
+DE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 105.09 & 7037.15 & 9380.35 & 0.047 \\
+DE & TSO forecast & TSO Forecast & 2024-2025 & - & 13.43 & 1146.33 & 1606.42 & 0.972 \\
+DE & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 67.09 & 4452.41 & 6341.73 & 0.567 \\
+DE & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 15.47 & 1088.92 & 1506.61 & 0.975 \\
+DE & Chronos2 with 100m wind covariates & Chronos2 Wind100m & 2024-2025 & 3 months (90 days) & 43.35 & 2807.56 & 3891.96 & 0.836 \\
+DE & Chronos2 with 100m wind + TSO forecast covariates & Chronos2 Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 13.51 & 1061.84 & 1486.58 & 0.976 \\
+DE & Ridge without covariates & Ridge NoCovariates & 2024-2025 & 3 months (90 days) & 90.64 & 4936.98 & 6828.78 & 0.492 \\
+DE & Ridge with TSO forecast covariate & Ridge TSOForecast & 2024-2025 & 3 months (90 days) & 22.25 & 1517.20 & 2052.79 & 0.954 \\
+DE & Ridge with 100m wind covariates & Ridge Wind100m & 2024-2025 & 3 months (90 days) & 73.56 & 4140.94 & 5661.14 & 0.649 \\
+DE & Ridge with 100m wind + TSO forecast covariates & Ridge Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 22.21 & 1494.33 & 2018.02 & 0.955 \\
+DE & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 81.52 & 5465.29 & 7749.95 & 0.346 \\
+DE & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 16.55 & 1320.02 & 1859.08 & 0.962 \\
+DE & TabPFN with 100m wind covariates & TabPFN Wind100m & 2024-2025 & 2 weeks & 73.70 & 4994.15 & 7146.06 & 0.440 \\
+DE & TabPFN with 100m wind + TSO forecast covariates & TabPFN Wind100m TSOForecast & 2024-2025 & 2 weeks & 16.34 & 1307.20 & 1833.38 & 0.963 \\
+DE & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 3 months (90 days) & 82.46 & 5071.76 & 7002.75 & 0.466 \\
+DE & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 3 months (90 days) & 23.38 & 1641.86 & 2252.93 & 0.944 \\
+DE & XGBoost with 100m wind covariates & XGBoost Wind100m & 2024-2025 & 3 months (90 days) & 76.55 & 4501.41 & 6161.53 & 0.584 \\
+DE & XGBoost with 100m wind + TSO forecast covariates & XGBoost Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 23.81 & 1651.21 & 2269.99 & 0.944 \\
+\end{longtable}

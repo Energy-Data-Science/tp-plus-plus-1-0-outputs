@@ -1,6 +1,6 @@
 # TP++ 1.0 Outputs
 
-This repository showcases the refreshed TP++ 1.0 forecasting outputs for electricity load, solar generation, and wind generation across Belgium (BE), Germany (DE), and France (FR).
+This repository showcases the refreshed TP++ 1.0 forecasting outputs and TSO forecast-quality diagnostics for electricity load, solar generation, and wind generation across Belgium (BE), Germany (DE), and France (FR).
 
 The previous output publication has been archived as `tp-plus-plus-0-0-outputs`. This repository contains the newer daily-18UTC load configuration, the latest solar weather/TSO covariate configuration, and the latest selected wind comparison/onshore/offshore output sets.
 
@@ -16,6 +16,8 @@ The previous output publication has been archived as `tp-plus-plus-0-0-outputs`.
 | `wind_forecast_outputs/offshore_wind_2021_2025_daily18_offshore_weather/` | Latest offshore wind outputs by country/model, including predictions, accuracy, uncertainty, summaries, weather metadata, and reduced selected cases. |
 | `wind_forecast_outputs/wind_forecast/` | Existing wind scatterplot and comparison outputs from the earlier run. |
 | `wind_forecast_outputs/wind_forecast_3h_cutoffs/` | Existing 3h-cutoff wind scatterplot and summary outputs. |
+| `tso_forecast_quality_outputs/reports_2021_2025/` | TSO forecast-quality CSVs and figures for 2021-2025, including forecast error, completeness, missing-data, flatline, capacity, and TSO-vs-persistence diagnostics. |
+| `tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/` | Consolidated latest accuracy summary tables by country, case, and target. |
 | `DATA_GUIDE.md` | Categorized inventory of CSV and table artifacts. |
 | `PICTURE_GUIDE.md` | Expandable guide to PNG figures by domain, country, wind type, and comparison/summary category. |
 
@@ -27,6 +29,7 @@ The previous output publication has been archived as `tp-plus-plus-0-0-outputs`.
 | Uncertainty | PICP/coverage summaries, CRPS/interval metrics, uncertainty heatmaps, and rolling-calibration results. |
 | Predictions and context | Day-ahead forecasts, model predictions, actual values, context files, and covariate metadata. |
 | Comparison/summary | Cross-model, cross-country, reduced selected cases, publication-style figures, and summary tables. |
+| TSO forecast quality | ENTSO-E forecast error, completeness, missing-data, flatline, capacity, and TSO-vs-persistence diagnostics. |
 
 ## Start Here
 

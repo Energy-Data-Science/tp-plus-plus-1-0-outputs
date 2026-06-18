@@ -9,6 +9,7 @@ CSV, LaTeX table, and markdown artifacts are grouped by research domain and anal
 | Load | `load_forecast_outputs/` | 91 | Accuracy, Predictions and context, Uncertainty, Comparison/summary |
 | Solar | `solar_forecast_outputs/` | 188 | Accuracy, Predictions and context, Uncertainty, Comparison/summary |
 | Wind | `wind_forecast_outputs/` | 1174 | Uncertainty, Comparison/summary, Accuracy, Predictions and context |
+| TSO forecast quality | `tso_forecast_quality_outputs/` | 70 | Comparison/summary, Accuracy, Predictions and context |
 
 ## Inventory
 
@@ -1540,6 +1541,93 @@ CSV, LaTeX table, and markdown artifacts are grouped by research domain and anal
 | [wind_forecast_outputs/wind_forecast/matrix_with_tabpfn_R2.csv](wind_forecast_outputs/wind_forecast/matrix_with_tabpfn_R2.csv) | multi-country | TabPFN |
 | [wind_forecast_outputs/wind_forecast/overleaf_figures_flat/manifest.csv](wind_forecast_outputs/wind_forecast/overleaf_figures_flat/manifest.csv) | multi-country | multiple |
 | [wind_forecast_outputs/wind_forecast_3h_cutoffs/best_chronos2_context_by_series.csv](wind_forecast_outputs/wind_forecast_3h_cutoffs/best_chronos2_context_by_series.csv) | multi-country | Chronos2 |
+
+### TSO forecast quality
+
+#### Accuracy
+
+| File | Country | Model or scope |
+| --- | --- | --- |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/all_targets_accuracy_all_cases_by_country.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/all_targets_accuracy_all_cases_by_country.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/all_targets_accuracy_all_cases_by_country.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/all_targets_accuracy_all_cases_by_country.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_BE.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_BE.csv) | BE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_BE.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_BE.tex) | BE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_DE.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_DE.csv) | DE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_DE.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_DE.tex) | DE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_FR.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_FR.csv) | FR | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_FR.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/by_country/load_accuracy_selected_summary_FR.tex) | FR | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_all_cases_by_country.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_all_cases_by_country.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_all_cases_by_country.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_all_cases_by_country.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_selected_summary_by_country.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_selected_summary_by_country.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_selected_summary_compact.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_selected_summary_compact.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_selected_summary_tables_by_country.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/load/load_accuracy_selected_summary_tables_by_country.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_BE.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_BE.csv) | BE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_BE.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_BE.tex) | BE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_DE.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_DE.csv) | DE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_DE.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_DE.tex) | DE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_FR.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_FR.csv) | FR | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_FR.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/by_country/solar_accuracy_all_cases_FR.tex) | FR | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_accuracy_all_cases_by_country.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_accuracy_all_cases_by_country.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_accuracy_all_cases_by_country.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_accuracy_all_cases_by_country.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_accuracy_summary_all_models.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_accuracy_summary_all_models.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_accuracy_summary_all_models.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_accuracy_summary_all_models.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_BE.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_BE.csv) | BE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_BE.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_BE.tex) | BE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_DE.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_DE.csv) | DE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_DE.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_DE.tex) | DE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_FR.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_FR.csv) | FR | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_FR.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/by_country/offshore_wind_accuracy_all_cases_FR.tex) | FR | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/offshore_wind_accuracy_all_cases_by_country.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/offshore_wind_accuracy_all_cases_by_country.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/offshore_wind_accuracy_all_cases_by_country.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/offshore_wind_accuracy_all_cases_by_country.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/offshore_wind_six_case_accuracy_table.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/offshore_wind_six_case_accuracy_table.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/offshore_wind_six_case_accuracy_table.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_offshore/offshore_wind_six_case_accuracy_table.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_BE.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_BE.csv) | BE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_BE.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_BE.tex) | BE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_DE.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_DE.csv) | DE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_DE.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_DE.tex) | DE | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_FR.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_FR.csv) | FR | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_FR.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/by_country/onshore_wind_accuracy_all_cases_FR.tex) | FR | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/onshore_wind_accuracy_all_cases_by_country.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/onshore_wind_accuracy_all_cases_by_country.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/onshore_wind_accuracy_all_cases_by_country.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/onshore_wind_accuracy_all_cases_by_country.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/onshore_wind_six_case_accuracy_table.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/onshore_wind_six_case_accuracy_table.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/onshore_wind_six_case_accuracy_table.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/wind_onshore/onshore_wind_six_case_accuracy_table.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_monthly_models_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_monthly_models_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_overall_models_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_overall_models_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_yearly_models_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_yearly_models_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_yearly_persistence_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_yearly_persistence_2021_2025.csv) | multi-country | Persistence |
+| [tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_yearly_tso_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/accuracy_metrics_yearly_tso_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/monthly_rmae_tso_over_persistence_by_target_country_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/monthly_rmae_tso_over_persistence_by_target_country_2021_2025.csv) | multi-country | Persistence |
+| [tso_forecast_quality_outputs/reports_2021_2025/normalized_rmse_tso_vs_persistence_yearly_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/normalized_rmse_tso_vs_persistence_yearly_2021_2025.csv) | multi-country | Persistence |
+
+#### Predictions and context
+
+| File | Country | Model or scope |
+| --- | --- | --- |
+| [tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/forecast_absolute_error_by_year_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/model_prediction_errors_hourly_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/model_prediction_errors_hourly_2021_2025.csv) | multi-country | TSO |
+
+#### Comparison/summary
+
+| File | Country | Model or scope |
+| --- | --- | --- |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/README.md](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/README.md) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/manifest.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/manifest.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_revised_report_table_6_cases_per_country.csv](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_revised_report_table_6_cases_per_country.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_revised_report_table_6_cases_per_country.tex](tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/solar/solar_revised_report_table_6_cases_per_country.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/be_missing_timestamps_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/be_missing_timestamps_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/flatline_summary_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/flatline_summary_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/fr_gap_detail_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/fr_gap_detail_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/installed_capacity_entsoe_shifted_vs_energy_charts_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/installed_capacity_entsoe_shifted_vs_energy_charts_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/installed_capacity_entsoe_vs_energy_charts_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/installed_capacity_entsoe_vs_energy_charts_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/installed_renewable_capacity_energy_charts_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/installed_renewable_capacity_energy_charts_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/installed_renewable_capacity_entsoe_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/installed_renewable_capacity_entsoe_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/installed_renewable_capacity_entsoe_max_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/installed_renewable_capacity_entsoe_max_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/installed_renewable_capacity_entsoe_shifted_max_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/installed_renewable_capacity_entsoe_shifted_max_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/missing_summary_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/missing_summary_2021_2025.csv) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/missing_summary_table_2021_2025.tex](tso_forecast_quality_outputs/reports_2021_2025/missing_summary_table_2021_2025.tex) | multi-country | TSO |
+| [tso_forecast_quality_outputs/reports_2021_2025/model_comparison_tso_vs_persistence_overall_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/model_comparison_tso_vs_persistence_overall_2021_2025.csv) | multi-country | Persistence |
+| [tso_forecast_quality_outputs/reports_2021_2025/model_comparison_tso_vs_persistence_yearly_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/model_comparison_tso_vs_persistence_yearly_2021_2025.csv) | multi-country | Persistence |
+| [tso_forecast_quality_outputs/reports_2021_2025/quality_metrics_2021_2025.csv](tso_forecast_quality_outputs/reports_2021_2025/quality_metrics_2021_2025.csv) | multi-country | TSO |
 
 ### Other
 

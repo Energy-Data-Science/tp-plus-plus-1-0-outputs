@@ -1,0 +1,196 @@
+\begin{longtable}{llllllllll}
+\toprule
+Target & Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endfirsthead
+\toprule
+Target & Country & Case & Selected model & testing period & context length & MAPE (\%) & MAE (MW) & RMSE (MW) & R2 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{10}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Load & BE & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.49 & 227.66 & 340.66 & 0.935 \\
+Load & BE & Chronos2 with Temp & Chronos2 + Temp & 2024-2025 & 3 months & 2.40 & 219.06 & 332.80 & 0.938 \\
+Load & BE & Chronos2 with Temp + tso forecast & Chronos2 + Temp + TSO cov & 2024-2025 & 3 months & 2.14 & 195.67 & 278.43 & 0.957 \\
+Load & BE & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 2.24 & 206.02 & 290.71 & 0.953 \\
+Load & BE & Ridge without covariates & Ridge & 2024-2025 & 3 months & 4.91 & 451.45 & 598.04 & 0.801 \\
+Load & BE & Ridge with Wind & Ridge + Wind & 2024-2025 & 3 months & 4.90 & 450.89 & 598.88 & 0.800 \\
+Load & BE & Ridge with Wind + tso forecast & Ridge + Wind + TSO cov & 2024-2025 & 3 months & 2.93 & 268.48 & 353.46 & 0.930 \\
+Load & BE & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 2.99 & 273.75 & 359.91 & 0.928 \\
+Load & BE & TSO forecast & TSO Forecast & 2024-2025 & - & 2.62 & 241.98 & 327.25 & 0.940 \\
+Load & BE & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.01 & 276.54 & 410.23 & 0.906 \\
+Load & BE & TabPFN with renew volatility & TabPFN + renew\_volatility & 2024-2025 & 3 months & 3.04 & 279.18 & 411.72 & 0.906 \\
+Load & BE & TabPFN with renew volatility + tso forecast & TabPFN + renew\_volatility + TSO cov & 2024-2025 & 3 months & 2.52 & 231.59 & 319.92 & 0.943 \\
+Load & BE & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.53 & 231.94 & 318.27 & 0.944 \\
+Load & BE & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 4.72 & 436.63 & 628.24 & 0.780 \\
+Load & DE & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.54 & 1330.89 & 2152.73 & 0.945 \\
+Load & DE & Chronos2 with renew volatility & Chronos2 + renew\_volatility & 2024-2025 & 3 months & 2.57 & 1343.65 & 2171.76 & 0.944 \\
+Load & DE & Chronos2 with renew volatility + tso forecast & Chronos2 + renew\_volatility + TSO cov & 2024-2025 & 3 months & 2.11 & 1117.08 & 1544.70 & 0.972 \\
+Load & DE & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 2.16 & 1143.64 & 1598.66 & 0.970 \\
+Load & DE & Ridge without covariates & Ridge & 2024-2025 & 3 months & 6.12 & 3227.29 & 4289.21 & 0.784 \\
+Load & DE & Ridge with Temp & Ridge + Temp & 2024-2025 & 3 months & 6.04 & 3194.16 & 4262.91 & 0.786 \\
+Load & DE & Ridge with Temp + tso forecast & Ridge + Temp + TSO cov & 2024-2025 & 3 months & 3.52 & 1884.26 & 2422.17 & 0.931 \\
+Load & DE & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 3.62 & 1936.51 & 2486.24 & 0.927 \\
+Load & DE & TSO forecast & TSO Forecast & 2024-2025 & - & 3.68 & 1947.88 & 2507.31 & 0.926 \\
+Load & DE & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.29 & 1734.05 & 2905.72 & 0.901 \\
+Load & DE & TabPFN with Solar & TabPFN + Solar & 2024-2025 & 3 months & 3.06 & 1606.91 & 2750.93 & 0.911 \\
+Load & DE & TabPFN with Solar + tso forecast & TabPFN + Solar + TSO cov & 2024-2025 & 3 months & 2.39 & 1260.47 & 1814.62 & 0.961 \\
+Load & DE & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.60 & 1377.07 & 1914.97 & 0.957 \\
+Load & DE & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 5.04 & 2652.91 & 4053.81 & 0.807 \\
+Load & FR & Chronos2 without covariates & Chronos2 & 2024-2025 & 3 months & 2.22 & 1103.56 & 1637.57 & 0.974 \\
+Load & FR & Chronos2 with Temp & Chronos2 + Temp & 2024-2025 & 3 months & 1.98 & 979.96 & 1487.54 & 0.979 \\
+Load & FR & Chronos2 with Temp + tso forecast & Chronos2 + Temp + TSO cov & 2024-2025 & 3 months & 1.51 & 751.90 & 1047.86 & 0.989 \\
+Load & FR & Chronos2 with TSO forecast covariate & Chronos2 + tso\_forecast & 2024-2025 & 3 months & 1.58 & 787.92 & 1102.04 & 0.988 \\
+Load & FR & Ridge without covariates & Ridge & 2024-2025 & 3 months & 5.27 & 2613.62 & 3522.20 & 0.880 \\
+Load & FR & Ridge with Temp & Ridge + Temp & 2024-2025 & 3 months & 4.81 & 2364.37 & 3132.72 & 0.905 \\
+Load & FR & Ridge with Temp + tso forecast & Ridge + Temp + TSO cov & 2024-2025 & 3 months & 1.99 & 977.60 & 1282.61 & 0.984 \\
+Load & FR & Ridge with TSO forecast covariate & Ridge + tso\_forecast & 2024-2025 & 3 months & 2.04 & 1006.99 & 1330.36 & 0.983 \\
+Load & FR & TSO forecast & TSO Forecast & 2024-2025 & - & 1.91 & 948.44 & 1270.85 & 0.984 \\
+Load & FR & TabPFN without covariates & TabPFN & 2024-2025 & 3 months & 3.22 & 1621.28 & 2466.58 & 0.941 \\
+Load & FR & TabPFN with deg proxy & TabPFN + deg\_proxy & 2024-2025 & 3 months & 2.83 & 1412.45 & 2176.02 & 0.954 \\
+Load & FR & TabPFN with deg proxy + tso forecast & TabPFN + deg\_proxy + TSO cov & 2024-2025 & 3 months & 1.89 & 944.48 & 1322.25 & 0.983 \\
+Load & FR & TabPFN with TSO forecast covariate & TabPFN + tso\_forecast & 2024-2025 & 3 months & 2.03 & 1018.44 & 1416.12 & 0.981 \\
+Load & FR & Weekly persistence & Weekly Persistence & 2024-2025 & Weekly persistence & 6.56 & 3433.32 & 5062.41 & 0.752 \\
+Solar & BE & TSO forecast & TSO Forecast & 2024-2025 & - & 27.89 & 148.13 & 317.26 & 0.955 \\
+Solar & BE & TabPFN with weather + TSO forecast covariates & TabPFN Weather TSOCov & 2024-2025 & 3 months (92 days) & 29.47 & 153.42 & 329.77 & 0.952 \\
+Solar & BE & TabPFN with TSO forecast covariate & TabPFN TSOCov & 2024-2025 & 3 months (92 days) & 29.47 & 153.44 & 329.77 & 0.952 \\
+Solar & BE & Chronos2 with weather + TSO forecast covariates & Chronos2 Weather TSOCov & 2024-2025 & 3 months (92 days) & 27.06 & 160.51 & 317.82 & 0.955 \\
+Solar & BE & Chronos2 with TSO forecast covariate & Chronos2 TSOCov & 2024-2025 & 3 months (92 days) & 28.72 & 169.62 & 337.67 & 0.950 \\
+Solar & BE & XGBoost with weather + TSO forecast covariates & XGBoost Weather TSOCov & 2024-2025 & 3 months (92 days) & 30.14 & 174.03 & 349.30 & 0.946 \\
+Solar & BE & XGBoost with TSO forecast covariate & XGBoost TSOCov & 2024-2025 & 3 months (92 days) & 30.73 & 175.59 & 350.69 & 0.946 \\
+Solar & BE & Chronos2 with weather covariates & Chronos2 WeatherCov & 2024-2025 & 3 months (92 days) & 38.57 & 209.36 & 420.60 & 0.922 \\
+Solar & BE & Chronos2 without covariates & Chronos2 NoCov & 2024-2025 & 3 months (92 days) & 67.54 & 347.41 & 694.03 & 0.787 \\
+Solar & BE & TabPFN without covariates & TabPFN NoCov & 2024-2025 & 3 months (92 days) & 86.75 & 362.14 & 705.87 & 0.779 \\
+Solar & BE & TabPFN with weather covariates & TabPFN WeatherCov & 2024-2025 & 3 months (92 days) & 87.95 & 362.86 & 705.98 & 0.779 \\
+Solar & BE & XGBoost with weather covariates & XGBoost WeatherCov & 2024-2025 & 3 months (92 days) & 69.66 & 364.20 & 705.58 & 0.780 \\
+Solar & BE & XGBoost without covariates & XGBoost NoCov & 2024-2025 & 3 months (92 days) & 69.46 & 364.82 & 707.07 & 0.779 \\
+Solar & BE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 75.98 & 398.75 & 841.28 & 0.687 \\
+Solar & DE & TabPFN with TSO forecast covariate & TabPFN TSOCov & 2024-2025 & 3 months (92 days) & 12.42 & 531.74 & 1112.24 & 0.989 \\
+Solar & DE & TabPFN with weather + TSO forecast covariates & TabPFN Weather TSOCov & 2024-2025 & 3 months (92 days) & 12.42 & 532.51 & 1112.25 & 0.989 \\
+Solar & DE & TSO forecast & TSO Forecast & 2024-2025 & - & 12.56 & 552.69 & 1147.20 & 0.989 \\
+Solar & DE & XGBoost with weather + TSO forecast covariates & XGBoost Weather TSOCov & 2024-2025 & 3 months (92 days) & 12.72 & 672.33 & 1322.55 & 0.985 \\
+Solar & DE & XGBoost with TSO forecast covariate & XGBoost TSOCov & 2024-2025 & 3 months (92 days) & 12.91 & 683.29 & 1339.35 & 0.984 \\
+Solar & DE & Chronos2 with weather + TSO forecast covariates & Chronos2 Weather TSOCov & 2024-2025 & 3 months (92 days) & 13.91 & 696.66 & 1304.31 & 0.985 \\
+Solar & DE & Chronos2 with TSO forecast covariate & Chronos2 TSOCov & 2024-2025 & 3 months (92 days) & 14.39 & 722.68 & 1351.19 & 0.984 \\
+Solar & DE & Chronos2 with weather covariates & Chronos2 WeatherCov & 2024-2025 & 3 months (92 days) & 24.33 & 1164.75 & 2291.06 & 0.954 \\
+Solar & DE & Chronos2 without covariates & Chronos2 NoCov & 2024-2025 & 3 months (92 days) & 30.07 & 1522.39 & 3048.66 & 0.919 \\
+Solar & DE & TabPFN without covariates & TabPFN NoCov & 2024-2025 & 3 months (92 days) & 36.42 & 1575.54 & 3188.10 & 0.912 \\
+Solar & DE & TabPFN with weather covariates & TabPFN WeatherCov & 2024-2025 & 3 months (92 days) & 38.75 & 1593.13 & 3191.43 & 0.912 \\
+Solar & DE & XGBoost with weather covariates & XGBoost WeatherCov & 2024-2025 & 3 months (92 days) & 30.69 & 1617.12 & 3163.04 & 0.913 \\
+Solar & DE & XGBoost without covariates & XGBoost NoCov & 2024-2025 & 3 months (92 days) & 30.82 & 1619.69 & 3156.34 & 0.914 \\
+Solar & DE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 32.70 & 1672.23 & 3492.47 & 0.894 \\
+Solar & FR & Chronos2 with weather + TSO forecast covariates & Chronos2 Weather TSOCov & 2024-2025 & 3 months (92 days) & 15.59 & 332.04 & 629.29 & 0.969 \\
+Solar & FR & Chronos2 with TSO forecast covariate & Chronos2 TSOCov & 2024-2025 & 3 months (92 days) & 16.55 & 354.92 & 672.06 & 0.964 \\
+Solar & FR & TabPFN with weather + TSO forecast covariates & TabPFN Weather TSOCov & 2024-2025 & 3 months (92 days) & 23.48 & 368.71 & 707.24 & 0.960 \\
+Solar & FR & TabPFN with TSO forecast covariate & TabPFN TSOCov & 2024-2025 & 3 months (92 days) & 15.95 & 371.44 & 706.83 & 0.960 \\
+Solar & FR & Chronos2 with weather covariates & Chronos2 WeatherCov & 2024-2025 & 3 months (92 days) & 19.42 & 425.45 & 818.95 & 0.947 \\
+Solar & FR & XGBoost with weather + TSO forecast covariates & XGBoost Weather TSOCov & 2024-2025 & 3 months (92 days) & 16.51 & 434.59 & 817.48 & 0.947 \\
+Solar & FR & XGBoost with TSO forecast covariate & XGBoost TSOCov & 2024-2025 & 3 months (92 days) & 16.73 & 436.11 & 820.53 & 0.946 \\
+Solar & FR & TSO forecast & TSO Forecast & 2024-2025 & - & 40.94 & 533.81 & 921.50 & 0.933 \\
+Solar & FR & Chronos2 without covariates & Chronos2 NoCov & 2024-2025 & 3 months (92 days) & 24.26 & 544.32 & 1065.67 & 0.910 \\
+Solar & FR & XGBoost without covariates & XGBoost NoCov & 2024-2025 & 3 months (92 days) & 21.64 & 583.68 & 1147.57 & 0.895 \\
+Solar & FR & TabPFN without covariates & TabPFN NoCov & 2024-2025 & 3 months (92 days) & 26.70 & 584.75 & 1113.82 & 0.901 \\
+Solar & FR & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 22.57 & 585.77 & 1223.84 & 0.881 \\
+Solar & FR & XGBoost with weather covariates & XGBoost WeatherCov & 2024-2025 & 3 months (92 days) & 21.62 & 586.84 & 1155.78 & 0.894 \\
+Solar & FR & TabPFN with weather covariates & TabPFN WeatherCov & 2024-2025 & 3 months (92 days) & 37.52 & 593.50 & 1121.57 & 0.900 \\
+Wind Onshore & BE & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 167.70 & 293.56 & 429.89 & 0.439 \\
+Wind Onshore & BE & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 45.23 & 94.82 & 134.93 & 0.945 \\
+Wind Onshore & BE & Chronos2 with 100m wind covariates & Chronos2 Wind100m & 2024-2025 & 3 months (90 days) & 49.20 & 113.25 & 161.55 & 0.921 \\
+Wind Onshore & BE & Chronos2 with 100m wind + TSO forecast covariates & Chronos2 Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 35.14 & 86.77 & 124.63 & 0.953 \\
+Wind Onshore & BE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 238.97 & 432.77 & 605.23 & -0.111 \\
+Wind Onshore & BE & Ridge without covariates & Ridge NoCovariates & 2024-2025 & 3 months (90 days) & 256.24 & 319.22 & 449.56 & 0.387 \\
+Wind Onshore & BE & Ridge with TSO forecast covariate & Ridge TSOForecast & 2024-2025 & 3 months (90 days) & 63.38 & 127.29 & 180.71 & 0.901 \\
+Wind Onshore & BE & Ridge with 100m wind covariates & Ridge Wind100m & 2024-2025 & 3 months (90 days) & 140.58 & 235.86 & 326.27 & 0.677 \\
+Wind Onshore & BE & Ridge with 100m wind + TSO forecast covariates & Ridge Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 57.87 & 123.06 & 173.76 & 0.908 \\
+Wind Onshore & BE & TSO forecast & TSO Forecast & 2024-2025 & - & 35.91 & 109.18 & 159.12 & 0.923 \\
+Wind Onshore & BE & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 205.96 & 357.50 & 532.24 & 0.141 \\
+Wind Onshore & BE & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 42.64 & 117.57 & 174.15 & 0.908 \\
+Wind Onshore & BE & TabPFN with 100m wind covariates & TabPFN Wind100m & 2024-2025 & 2 weeks & 143.10 & 272.30 & 405.14 & 0.502 \\
+Wind Onshore & BE & TabPFN with 100m wind + TSO forecast covariates & TabPFN Wind100m TSOForecast & 2024-2025 & 2 weeks & 41.42 & 114.25 & 169.52 & 0.913 \\
+Wind Onshore & BE & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 3 months (90 days) & 212.56 & 329.38 & 472.07 & 0.324 \\
+Wind Onshore & BE & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 3 months (90 days) & 79.59 & 142.02 & 202.88 & 0.875 \\
+Wind Onshore & BE & XGBoost with 100m wind covariates & XGBoost Wind100m & 2024-2025 & 3 months (90 days) & 153.97 & 225.59 & 319.16 & 0.691 \\
+Wind Onshore & BE & XGBoost with 100m wind + TSO forecast covariates & XGBoost Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 76.29 & 134.59 & 192.46 & 0.888 \\
+Wind Onshore & DE & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 67.09 & 4452.41 & 6341.73 & 0.567 \\
+Wind Onshore & DE & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 15.47 & 1088.92 & 1506.61 & 0.975 \\
+Wind Onshore & DE & Chronos2 with 100m wind covariates & Chronos2 Wind100m & 2024-2025 & 3 months (90 days) & 43.35 & 2807.56 & 3891.96 & 0.836 \\
+Wind Onshore & DE & Chronos2 with 100m wind + TSO forecast covariates & Chronos2 Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 13.51 & 1061.84 & 1486.58 & 0.976 \\
+Wind Onshore & DE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 105.09 & 7037.15 & 9380.35 & 0.047 \\
+Wind Onshore & DE & Ridge without covariates & Ridge NoCovariates & 2024-2025 & 3 months (90 days) & 90.64 & 4936.98 & 6828.78 & 0.492 \\
+Wind Onshore & DE & Ridge with TSO forecast covariate & Ridge TSOForecast & 2024-2025 & 3 months (90 days) & 22.25 & 1517.20 & 2052.79 & 0.954 \\
+Wind Onshore & DE & Ridge with 100m wind covariates & Ridge Wind100m & 2024-2025 & 3 months (90 days) & 73.56 & 4140.94 & 5661.14 & 0.649 \\
+Wind Onshore & DE & Ridge with 100m wind + TSO forecast covariates & Ridge Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 22.21 & 1494.33 & 2018.02 & 0.955 \\
+Wind Onshore & DE & TSO forecast & TSO Forecast & 2024-2025 & - & 13.43 & 1146.33 & 1606.42 & 0.972 \\
+Wind Onshore & DE & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 81.52 & 5465.29 & 7749.95 & 0.346 \\
+Wind Onshore & DE & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 16.55 & 1320.02 & 1859.08 & 0.962 \\
+Wind Onshore & DE & TabPFN with 100m wind covariates & TabPFN Wind100m & 2024-2025 & 2 weeks & 73.70 & 4994.15 & 7146.06 & 0.440 \\
+Wind Onshore & DE & TabPFN with 100m wind + TSO forecast covariates & TabPFN Wind100m TSOForecast & 2024-2025 & 2 weeks & 16.34 & 1307.20 & 1833.38 & 0.963 \\
+Wind Onshore & DE & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 3 months (90 days) & 82.46 & 5071.76 & 7002.75 & 0.466 \\
+Wind Onshore & DE & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 3 months (90 days) & 23.38 & 1641.86 & 2252.93 & 0.944 \\
+Wind Onshore & DE & XGBoost with 100m wind covariates & XGBoost Wind100m & 2024-2025 & 3 months (90 days) & 76.55 & 4501.41 & 6161.53 & 0.584 \\
+Wind Onshore & DE & XGBoost with 100m wind + TSO forecast covariates & XGBoost Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 23.81 & 1651.21 & 2269.99 & 0.944 \\
+Wind Onshore & FR & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 44.46 & 1613.66 & 2352.02 & 0.560 \\
+Wind Onshore & FR & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 15.79 & 596.69 & 917.79 & 0.932 \\
+Wind Onshore & FR & Chronos2 with 100m wind covariates & Chronos2 Wind100m & 2024-2025 & 3 months (90 days) & 32.95 & 1202.03 & 1726.37 & 0.761 \\
+Wind Onshore & FR & Chronos2 with 100m wind + TSO forecast covariates & Chronos2 Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 15.17 & 589.30 & 909.00 & 0.934 \\
+Wind Onshore & FR & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 67.95 & 2515.88 & 3506.78 & 0.023 \\
+Wind Onshore & FR & Ridge without covariates & Ridge NoCovariates & 2024-2025 & 3 months (90 days) & 53.87 & 1774.40 & 2552.23 & 0.477 \\
+Wind Onshore & FR & Ridge with TSO forecast covariate & Ridge TSOForecast & 2024-2025 & 3 months (90 days) & 23.43 & 832.61 & 1184.69 & 0.887 \\
+Wind Onshore & FR & Ridge with 100m wind covariates & Ridge Wind100m & 2024-2025 & 3 months (90 days) & 47.86 & 1596.47 & 2263.67 & 0.588 \\
+Wind Onshore & FR & Ridge with 100m wind + TSO forecast covariates & Ridge Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 23.30 & 832.88 & 1182.19 & 0.888 \\
+Wind Onshore & FR & TSO forecast & TSO Forecast & 2024-2025 & - & 19.21 & 759.91 & 1180.32 & 0.888 \\
+Wind Onshore & FR & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 54.33 & 1919.05 & 2823.55 & 0.360 \\
+Wind Onshore & FR & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 22.63 & 889.27 & 1368.22 & 0.850 \\
+Wind Onshore & FR & TabPFN with 100m wind covariates & TabPFN Wind100m & 2024-2025 & 2 weeks & 47.53 & 1715.26 & 2509.92 & 0.494 \\
+Wind Onshore & FR & TabPFN with 100m wind + TSO forecast covariates & TabPFN Wind100m TSOForecast & 2024-2025 & 2 weeks & 22.01 & 863.97 & 1313.83 & 0.861 \\
+Wind Onshore & FR & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 3 months (90 days) & 54.35 & 1847.43 & 2606.37 & 0.455 \\
+Wind Onshore & FR & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 3 months (90 days) & 26.05 & 945.19 & 1343.81 & 0.855 \\
+Wind Onshore & FR & XGBoost with 100m wind covariates & XGBoost Wind100m & 2024-2025 & 3 months (90 days) & 50.53 & 1690.57 & 2348.05 & 0.557 \\
+Wind Onshore & FR & XGBoost with 100m wind + TSO forecast covariates & XGBoost Wind100m TSOForecast & 2024-2025 & 3 months (90 days) & 27.21 & 979.65 & 1375.71 & 0.848 \\
+Wind Offshore & BE & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 510.86 & 428.75 & 607.20 & 0.333 \\
+Wind Offshore & BE & Chronos2 with offshore weather covariates & Chronos2 OffshoreWeather & 2024-2025 & 3 months (90 days) & 91.83 & 163.44 & 236.80 & 0.900 \\
+Wind Offshore & BE & Chronos2 with offshore weather + TSO forecast covariates & Chronos2 OffshoreWeather TSOForecast & 2024-2025 & 3 months (90 days) & 79.00 & 137.36 & 200.87 & 0.928 \\
+Wind Offshore & BE & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 105.70 & 157.54 & 231.49 & 0.904 \\
+Wind Offshore & BE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 753.30 & 616.37 & 834.96 & -0.236 \\
+Wind Offshore & BE & TSO forecast & TSO Forecast & 2024-2025 & - & 88.10 & 154.40 & 232.55 & 0.903 \\
+Wind Offshore & BE & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 659.47 & 504.92 & 724.16 & 0.078 \\
+Wind Offshore & BE & TabPFN with offshore weather covariates & TabPFN OffshoreWeather & 2024-2025 & 2 weeks & 109.05 & 182.19 & 279.70 & 0.863 \\
+Wind Offshore & BE & TabPFN with offshore weather + TSO forecast covariates & TabPFN OffshoreWeather TSOForecast & 2024-2025 & 2 weeks & 72.19 & 150.17 & 231.42 & 0.906 \\
+Wind Offshore & BE & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 117.27 & 182.99 & 277.36 & 0.865 \\
+Wind Offshore & BE & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 30 days & 597.17 & 464.51 & 649.81 & 0.258 \\
+Wind Offshore & BE & XGBoost with offshore weather covariates & XGBoost OffshoreWeather & 2024-2025 & 30 days & 171.10 & 194.17 & 271.87 & 0.870 \\
+Wind Offshore & BE & XGBoost with offshore weather + TSO forecast covariates & XGBoost OffshoreWeather TSOForecast & 2024-2025 & 30 days & 150.22 & 168.86 & 239.56 & 0.899 \\
+Wind Offshore & BE & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 30 days & 246.56 & 229.22 & 313.82 & 0.827 \\
+Wind Offshore & DE & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 174.84 & 1143.50 & 1494.37 & 0.431 \\
+Wind Offshore & DE & Chronos2 with offshore weather covariates & Chronos2 OffshoreWeather & 2024-2025 & 3 months (90 days) & 49.36 & 618.88 & 854.10 & 0.814 \\
+Wind Offshore & DE & Chronos2 with offshore weather + TSO forecast covariates & Chronos2 OffshoreWeather TSOForecast & 2024-2025 & 3 months (90 days) & 40.31 & 488.74 & 689.41 & 0.879 \\
+Wind Offshore & DE & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 51.09 & 511.21 & 709.31 & 0.872 \\
+Wind Offshore & DE & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 269.26 & 1736.54 & 2222.01 & -0.258 \\
+Wind Offshore & DE & TSO forecast & TSO Forecast & 2024-2025 & - & 38.05 & 540.81 & 763.05 & 0.852 \\
+Wind Offshore & DE & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 193.99 & 1337.27 & 1812.50 & 0.163 \\
+Wind Offshore & DE & TabPFN with offshore weather covariates & TabPFN OffshoreWeather & 2024-2025 & 2 weeks & 69.87 & 755.02 & 1028.27 & 0.731 \\
+Wind Offshore & DE & TabPFN with offshore weather + TSO forecast covariates & TabPFN OffshoreWeather TSOForecast & 2024-2025 & 2 weeks & 43.19 & 562.19 & 798.07 & 0.838 \\
+Wind Offshore & DE & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 50.93 & 614.89 & 861.80 & 0.811 \\
+Wind Offshore & DE & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 30 days & 214.77 & 1238.20 & 1633.96 & 0.320 \\
+Wind Offshore & DE & XGBoost with offshore weather covariates & XGBoost OffshoreWeather & 2024-2025 & 30 days & 122.27 & 775.86 & 1005.02 & 0.743 \\
+Wind Offshore & DE & XGBoost with offshore weather + TSO forecast covariates & XGBoost OffshoreWeather TSOForecast & 2024-2025 & 30 days & 94.97 & 660.91 & 877.91 & 0.804 \\
+Wind Offshore & DE & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 30 days & 110.28 & 754.04 & 986.87 & 0.752 \\
+Wind Offshore & FR & Chronos2 without covariates & Chronos2 NoCovariates & 2024-2025 & 3 months (90 days) & 166.97 & 235.69 & 330.08 & 0.464 \\
+Wind Offshore & FR & Chronos2 with offshore weather covariates & Chronos2 OffshoreWeather & 2024-2025 & 3 months (90 days) & 55.95 & 110.90 & 155.27 & 0.881 \\
+Wind Offshore & FR & Chronos2 with offshore weather + TSO forecast covariates & Chronos2 OffshoreWeather TSOForecast & 2024-2025 & 3 months (90 days) & 47.54 & 94.36 & 135.41 & 0.910 \\
+Wind Offshore & FR & Chronos2 with TSO forecast covariate & Chronos2 TSOForecast & 2024-2025 & 3 months (90 days) & 54.57 & 103.74 & 149.76 & 0.889 \\
+Wind Offshore & FR & Daily persistence & Daily Persistence & 2024-2025 & Daily persistence & 225.28 & 346.60 & 467.31 & -0.076 \\
+Wind Offshore & FR & TSO forecast & TSO Forecast & 2024-2025 & - & 52.51 & 132.07 & 211.72 & 0.779 \\
+Wind Offshore & FR & TabPFN without covariates & TabPFN NoCovariates & 2024-2025 & 2 weeks & 164.87 & 262.15 & 377.23 & 0.284 \\
+Wind Offshore & FR & TabPFN with offshore weather covariates & TabPFN OffshoreWeather & 2024-2025 & 2 weeks & 78.55 & 157.86 & 229.86 & 0.733 \\
+Wind Offshore & FR & TabPFN with offshore weather + TSO forecast covariates & TabPFN OffshoreWeather TSOForecast & 2024-2025 & 2 weeks & 50.50 & 113.53 & 166.35 & 0.860 \\
+Wind Offshore & FR & TabPFN with TSO forecast covariate & TabPFN TSOForecast & 2024-2025 & 2 weeks & 62.52 & 129.67 & 190.11 & 0.817 \\
+Wind Offshore & FR & XGBoost without covariates & XGBoost NoCovariates & 2024-2025 & 30 days & 178.44 & 249.84 & 349.42 & 0.385 \\
+Wind Offshore & FR & XGBoost with offshore weather covariates & XGBoost OffshoreWeather & 2024-2025 & 30 days & 114.16 & 162.49 & 221.97 & 0.751 \\
+Wind Offshore & FR & XGBoost with offshore weather + TSO forecast covariates & XGBoost OffshoreWeather TSOForecast & 2024-2025 & 30 days & 83.06 & 130.48 & 178.67 & 0.839 \\
+Wind Offshore & FR & XGBoost with TSO forecast covariate & XGBoost TSOForecast & 2024-2025 & 30 days & 103.12 & 150.96 & 208.83 & 0.780 \\
+\end{longtable}

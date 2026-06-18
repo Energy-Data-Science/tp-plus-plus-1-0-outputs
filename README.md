@@ -24,7 +24,6 @@ The previous output publication has been archived as `tp-plus-plus-0-0-outputs`.
 | Category | What it contains |
 | --- | --- |
 | Accuracy | Error metrics, scatterplots, boxplots, RMSE/MAE/MAPE summaries, and forecast-vs-actual diagnostics. |
-| Stability | Forecast revision magnitude, revision-by-hour plots, revision distributions, and stability summary tables. |
 | Uncertainty | PICP/coverage summaries, CRPS/interval metrics, uncertainty heatmaps, and rolling-calibration results. |
 | Predictions and context | Day-ahead forecasts, model predictions, actual values, context files, and covariate metadata. |
 | Comparison/summary | Cross-model, cross-country, reduced selected cases, publication-style figures, and summary tables. |

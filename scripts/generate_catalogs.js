@@ -2,8 +2,8 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const pictureTypes = ["Accuracy", "Stability", "Uncertainty", "Comparison/summary"];
-const dataTypes = ["Accuracy", "Stability", "Uncertainty", "Predictions and context", "Comparison/summary", "Other"];
+const pictureTypes = ["Accuracy", "Uncertainty", "Comparison/summary"];
+const dataTypes = ["Accuracy", "Uncertainty", "Predictions and context", "Comparison/summary", "Other"];
 
 function walk(dir) {
   const out = [];
@@ -106,7 +106,6 @@ function analysisType(file) {
   const lower = file.toLowerCase();
   const base = path.basename(file).toLowerCase();
   if (lower.includes("/predictions/") || lower.includes("/context/") || lower.includes("metadata") || base.includes("forecast") || base.includes("prediction")) return "Predictions and context";
-  if (lower.includes("/stability/") || base.includes("stability") || base.includes("revision")) return "Stability";
   if (lower.includes("/uncertainty/") || base.includes("uncertainty") || base.includes("picp") || base.includes("crps") || base.includes("interval") || base.includes("heatmap")) return "Uncertainty";
   if (lower.includes("/accuracy/") || base.includes("accuracy") || base.includes("scatter") || base.includes("rmse") || base.includes("mae") || base.includes("mape") || base.includes("error")) return "Accuracy";
   if (isComparisonSummary(file) || base.includes("summary")) return "Comparison/summary";
@@ -116,7 +115,6 @@ function analysisType(file) {
 function pictureType(file) {
   const lower = file.toLowerCase();
   const base = path.basename(file).toLowerCase();
-  if (lower.includes("/stability/") || base.includes("stability") || base.includes("revision")) return "Stability";
   if (isHeatmap(file) || lower.includes("/uncertainty/") || base.includes("uncertainty") || base.includes("picp") || base.includes("crps") || base.includes("interval")) return "Uncertainty";
   if (isComparisonSummary(file) && !(base.includes("scatter") || base.includes("rmse") || base.includes("mae") || base.includes("mape") || base.includes("accuracy"))) return "Comparison/summary";
   return "Accuracy";

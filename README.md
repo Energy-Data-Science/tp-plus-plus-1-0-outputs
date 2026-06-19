@@ -18,6 +18,8 @@ The previous output publication has been archived as `tp-plus-plus-0-0-outputs`.
 | `wind_forecast_outputs/wind_forecast_3h_cutoffs/` | Existing 3h-cutoff wind scatterplot and summary outputs. |
 | `tso_forecast_quality_outputs/reports_2021_2025/` | TSO forecast-quality CSVs and figures for 2021-2025, including forecast error, completeness, missing-data, flatline, capacity, and TSO-vs-persistence diagnostics. |
 | `tso_forecast_quality_outputs/latest_accuracy_summary_tables_2021_2025/` | Consolidated latest accuracy summary tables by country, case, and target. |
+| `input_data_reference/weather_data_for_results_260612/` | Compact metadata reference for the weather inputs used in the latest forecast outputs. |
+| `INPUT_DATA_GUIDE.md` | Explanation of input weather data, locations, variables, source files, and target-level usage. |
 | `DATA_GUIDE.md` | Categorized inventory of CSV and table artifacts. |
 | `PICTURE_GUIDE.md` | Expandable guide to PNG figures by domain, country, wind type, and comparison/summary category. |
 
@@ -35,7 +37,8 @@ The previous output publication has been archived as `tp-plus-plus-0-0-outputs`.
 
 1. Open [`PICTURE_GUIDE.md`](PICTURE_GUIDE.md) for the expandable figure guide.
 2. Open [`DATA_GUIDE.md`](DATA_GUIDE.md) for the categorized CSV/table inventory.
-3. Use the top-level output folders when you need the original artifact organization.
+3. Open [`INPUT_DATA_GUIDE.md`](INPUT_DATA_GUIDE.md) for the weather-input explanation and metadata reference.
+4. Use the top-level output folders when you need the original artifact organization.
 
 ## Notes for GitHub
 

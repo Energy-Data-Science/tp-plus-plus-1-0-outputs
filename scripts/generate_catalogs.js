@@ -14,7 +14,7 @@ const domainOrder = [
 function walk(dir) {
   const out = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    if ([".git", "scripts", "node_modules"].includes(entry.name)) continue;
+    if ([".git", "scripts", "node_modules", "input_data_reference"].includes(entry.name)) continue;
     if (entry.name === ".DS_Store") continue;
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) out.push(...walk(full));
@@ -178,7 +178,7 @@ function pushFigureTables(lines, filesForSection, headingLevel = 4, forcedType =
 }
 
 function makeDataGuide(files) {
-  const dataFiles = files.filter((file) => /\.(csv|tex|md)$/i.test(file)).sort();
+  const dataFiles = files.filter((file) => /\.(csv|tex|md)$/i.test(file) && file !== "INPUT_DATA_GUIDE.md").sort();
   const lines = [
     "# Data Guide",
     "",

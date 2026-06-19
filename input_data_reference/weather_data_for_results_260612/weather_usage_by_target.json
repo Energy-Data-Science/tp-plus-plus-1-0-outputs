@@ -1,0 +1,93 @@
+{
+  "load": {
+    "source_files": "openmeteo_temp_humidity_{BE,FR,DE}.csv",
+    "variables": [
+      "temperature/humidity fields as provided by Open-Meteo CSVs"
+    ],
+    "testing_period": "2024-2025",
+    "latest_analysis_notebook": "../Load_forecast_new/BE_FR_DE_load_forecast_daily_18utc_featurefirst.ipynb"
+  },
+  "solar": {
+    "weather_points": {
+      "BE": [
+        [
+          51.253,
+          4.453
+        ],
+        [
+          51.019,
+          3.75
+        ],
+        [
+          51.019,
+          3.164
+        ],
+        [
+          51.019,
+          5.391
+        ]
+      ],
+      "FR": [
+        [
+          44.692,
+          -0.82
+        ],
+        [
+          49.613,
+          3.75
+        ],
+        [
+          48.793,
+          5.977
+        ],
+        [
+          44.107,
+          0.0
+        ]
+      ],
+      "DE": [
+        [
+          49.73,
+          9.492
+        ],
+        [
+          54.65,
+          9.375
+        ],
+        [
+          52.659,
+          14.18
+        ],
+        [
+          51.604,
+          6.914
+        ]
+      ]
+    },
+    "variables": [
+      "shortwave_radiation",
+      "temperature_2m"
+    ],
+    "processing": "Columns matching requested coordinate tokens are averaged across selected points; point-level columns are also retained in the analysis dataset.",
+    "testing_period": "2024-2025",
+    "latest_analysis_notebook": "../Solar_forecast_tabpfn_new/XY_solar_forecast_weather_tso_cov_2024_2025.ipynb"
+  },
+  "wind_onshore": {
+    "source_files": "wind_100m_{country}.csv plus 2021/2025 supplements where present",
+    "variables": [
+      "100m wind covariates as provided in CSV files"
+    ],
+    "processing": "Used as Wind100m covariate cases in onshore wind models.",
+    "testing_period": "2024-2025",
+    "latest_analysis_notebook": "../Wind_forecast_new/onshore_wind_forecast_2021_2025_daily18.ipynb"
+  },
+  "wind_offshore": {
+    "source_files": "gfs_global_*_offshore.parquet plus generated *_offshore_weather_covariate_metadata.csv",
+    "variables": [
+      "offshore weather covariates selected by notebook and prefixed offshore_ after processing"
+    ],
+    "processing": "Country-specific offshore weather columns are resolved by country_weather_cols() and used in OffshoreWeather and OffshoreWeather_TSOForecast cases.",
+    "testing_period": "2024-2025",
+    "latest_analysis_notebook": "../Wind_forecast_new/offshore_wind_forecast_2021_2025_daily18_offshore_weather.ipynb"
+  }
+}
